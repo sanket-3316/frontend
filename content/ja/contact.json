@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "title": "お問い合わせ | Bremont Strategy",
+    "description": "Bremont Strategyの戦略的市場調査、競合分析、経営コンサルティングサービスについてお問い合わせください。米国、ドイツ、インドにオフィスがあります。",
+    "keywords": ["Bremont Strategyへのお問い合わせ", "コンサルティング", "市場調査", "戦略的コンサルティング"]
+  },
+  "form": {
+    "title": "メッセージを送る"
+  },
+  "info": {
+    "title": "グローバルオフィス",
+    "offices": [
+      {
+        "region": "グローバル本社",
+        "address": "<strong>Bremont Strategy</strong>、24a Trolley Square、Wilmington、Delaware、19801、USA",
+        "phone": "+1-302-846-2799",
+        "email": "<a href=\"mailto:sales@bremontstrategy.com\">sales@bremontstrategy.com</a>"
+      },
+      {
+        "region": "ヨーロッパ、中東、アフリカ",
+        "address": "<strong>Bremont Strategy</strong>、702、Techspace Eiswerk、Köpenicker Str. 40B、10179 Berlin、Germany",
+        "phone": "+49-176-7450-2496",
+        "email": "<a href=\"mailto:sales@bremontstrategy.com\">sales@bremontstrategy.com</a>"
+      },
+      {
+        "region": "アジア太平洋",
+        "address": "<strong>Bremont Strategy</strong>、504、Smartworks M-Agile、Sr No 112、Pancard Club Rd、Baner、Pune、Maharashtra、India 411045",
+        "phone": null,
+        "email": "<a href=\"mailto:sales@bremontstrategy.com\">sales@bremontstrategy.com</a>"
+      }
+    ],
+    "legalEmail": "<a href=\"mailto:legal@bremontstrategy.com\">legal@bremontstrategy.com</a>",
+    "legalNote": "データ管理およびプライバシーに関するお問い合わせは、法務コンプライアンス部門にお連絡ください。"
+  },
+  "connectWithUs": "フォローする"
+}

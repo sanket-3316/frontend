@@ -1,0 +1,40 @@
+================= hostinger Set-up =================
+
+server location : United States
+operating system : Ubuntu 24.04 LTS
+root password: w2YTZSHl.T/R357
+
+----------------- Access instance using CMD -----------------
+CMD: ssh root@153.92.211.228
+root password: w2YTZSHl.T/R357
+
+---------------- instance configuration ----------
+PHP version: PHP 8.3.6
+server: nginx 
+nginx version: nginx/1.24.0
+php fpm version: php-fpm8.3
+Composer version 2.10.1 
+mysql version : 8.0.46-0
+
+nginx config files :/etc/nginx/sites-availables
+
+--------------- Mysql Root login ---------------
+CMD: mysql -u root -p
+password: (press enter whithout entering password)
+
+--------------- PHP myAdmin-------------
+login URL : https://db.bremontstrategy.com
+security pop-up login userName: admin
+security pop-up login password: w2YTZSHl.T/R357
+
+php myAdmin username: palmer
+php myAdmin Password: Palmer@123
+
+----- DB connection for Laravel -----
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=palmercruz
+DB_USERNAME=palmer
+DB_PASSWORD=Palmer@123

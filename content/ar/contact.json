@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "title": "تواصل معنا | Bremont Strategy",
+    "description": "تواصل مع Bremont Strategy للاستفسار عن خدمات أبحاث السوق الاستراتيجية والتحليل التنافسي والاستشارات الإدارية. مكاتب في الولايات المتحدة وألمانيا والهند.",
+    "keywords": ["تواصل مع Bremont Strategy", "استشارات", "أبحاث السوق", "استشارات استراتيجية"]
+  },
+  "form": {
+    "title": "أرسل لنا رسالة"
+  },
+  "info": {
+    "title": "مكاتبنا العالمية",
+    "offices": [
+      {
+        "region": "المقر الرئيسي العالمي",
+        "address": "<strong>Bremont Strategy</strong>، 24a Trolley Square، Wilmington، Delaware، 19801، الولايات المتحدة الأمريكية",
+        "phone": "+1-302-846-2799",
+        "email": "<a href=\"mailto:sales@bremontstrategy.com\">sales@bremontstrategy.com</a>"
+      },
+      {
+        "region": "أوروبا والشرق الأوسط وأفريقيا",
+        "address": "<strong>Bremont Strategy</strong>، 702، Techspace Eiswerk، Köpenicker Str. 40B، 10179 Berlin، ألمانيا",
+        "phone": "+49-176-7450-2496",
+        "email": "<a href=\"mailto:sales@bremontstrategy.com\">sales@bremontstrategy.com</a>"
+      },
+      {
+        "region": "آسيا والمحيط الهادئ",
+        "address": "<strong>Bremont Strategy</strong>، 504، Smartworks M-Agile، Sr No 112، Pancard Club Rd، Baner، Pune، Maharashtra، الهند 411045",
+        "phone": null,
+        "email": "<a href=\"mailto:sales@bremontstrategy.com\">sales@bremontstrategy.com</a>"
+      }
+    ],
+    "legalEmail": "<a href=\"mailto:legal@bremontstrategy.com\">legal@bremontstrategy.com</a>",
+    "legalNote": "لاستفسارات إدارة البيانات والخصوصية، تواصل مع قسم الامتثال القانوني."
+  },
+  "connectWithUs": "تابعونا"
+}

@@ -1,0 +1,193 @@
+import { getCache, setCache } from './cache';
+
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+
+// ⏱ cache time (ms)
+const CACHE_TTL = 1000 * 60 * 5; // 5 minutes
+
+// 🔥 GENERIC FETCH FUNCTION
+async function fetchAPI(url: string, locale: string) {
+  const res = await fetch(url, {
+    headers: {
+      'Accept-Language': locale,
+    },
+    cache: 'no-store', // always fresh from backend
+  });
+
+  if (!res.ok) {
+    throw new Error(`API error: ${res.status}`);
+  }
+
+  return res.json();
+}
+
+
+export async function getCategories(locale: string) {
+  const cacheKey = `categories:${locale}`;
+
+  const cached = getCache<any[]>(cacheKey);
+  if (cached) {
+    console.log('CACHE HIT:', locale);
+    return cached;
+  }
+
+
+  try {
+    const data = await fetchAPI(
+      `${BASE_URL}/categories?lang=${locale}`, 
+      locale
+    );
+
+    const categories = data.categories || [];
+
+    // ✅ store in cache
+    setCache(cacheKey, categories, CACHE_TTL);
+
+    return categories;
+  } catch (error) {
+    console.error('Category API error:', error);
+    return [];
+  }
+}
+
+export async function getReports(
+  locale: string,
+  categoryId?: number,
+  limit: number = 6
+) {
+  const key = `reports:${locale}:${categoryId || 'all'}:${limit}`;
+
+  const cached = getCache<any[]>(key);
+  if (cached) {
+    console.log('CACHE HIT:', key);
+    return cached;
+  }
+
+  try {
+    const res = await fetch(`${BASE_URL}/reports`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+
+        // 🔥 language
+        'Accept-Language': locale || 'en',
+
+        // 🔥 custom headers
+        'X-Category-Id': categoryId ? String(categoryId) : '',
+        'X-Limit': String(limit),
+      },
+      cache: 'no-store',
+    });
+
+    if (!res.ok) throw new Error('Failed to fetch reports');
+
+    const data = await res.json();
+
+    setCache(key, data, CACHE_TTL);
+
+    return data;
+  } catch (error) {
+    console.error('Reports API error:', error);
+    return [];
+  }
+}
+
+export async function getCategoryReports(
+  locale: string,
+  categorySlug?: string,
+  search?: string
+) {
+  const key = `reports:${locale}:${categorySlug || 'all'}`;
+
+  const cached = getCache<any[]>(key);
+  if (cached) return cached;
+
+  try {
+    const res = await fetch(`${BASE_URL}/category-wise-reports`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept-Language': locale || 'en',
+        'X-Category-Slug': categorySlug ? String(categorySlug) : '',
+        'search': search || '',
+      },
+      cache: 'no-store',
+    });
+
+    if (!res.ok) throw new Error('Failed to fetch reports');
+
+    const json = await res.json();
+
+    const data = json || []; 
+
+    setCache(key, data, CACHE_TTL);
+
+    return data;
+  } catch (error) {
+    console.error('Reports API error:', error);
+    return [];
+  }
+}
+
+export async function searchReports(locale: string, category?: string) {
+  const key = `reports:${locale}:${category || 'all'}`;
+
+  const cached = getCache<any[]>(key);
+  if (cached) {
+    console.log('CACHE HIT:', key);
+    return cached;
+  }
+
+  let url = `${BASE_URL}/reports?lang=${locale}`;
+  if (category) {
+    url += `&category=${category}`;
+  }
+
+  try {
+    const data = await fetchAPI(url, locale);
+
+    setCache(key, data, CACHE_TTL);
+
+    return data;
+  } catch (error) {
+    console.error('Reports API error:', error);
+    return [];
+  }
+}
+
+
+export async function getSingleReport(
+  locale: string,
+  reportSlug?: string,
+) {
+  const key = `reports:${locale}:${reportSlug || 'all'}`;
+
+  const cached = getCache<any[]>(key);
+  if (cached) {
+    console.log('CACHE HIT:', key);
+    return cached;
+  }
+
+  try {
+    const res = await fetch(`${BASE_URL}/get-single-report`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept-Language': locale || 'en',
+        'X-Report-Slug': reportSlug ? String(reportSlug) : '',
+      },
+      cache: 'no-store',
+    });
+
+    if (!res.ok) throw new Error('Failed to fetch reports');
+
+    const data = await res.json();
+
+    setCache(key, data, CACHE_TTL);
+
+    return data;
+  } catch (error) {
+    console.error('Reports API error:', error);
+    return [];
+  }
+}

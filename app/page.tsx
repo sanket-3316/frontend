@@ -1,0 +1,6 @@
+import Home from './(site)/[locale]/page';
+import { DEFAULT_LOCALE } from '@/lib/config';
+
+export default function Page() {
+  return <Home params={{ locale: DEFAULT_LOCALE }} />;
+}

@@ -1,0 +1,111 @@
+{
+  "title": "시장 조사 허브 - 필요한 인사이트 제공",
+  "description": "포괄적인 시장 조사 보고서와 산업 인사이트를 확인하세요",
+  "keywords": [
+    "시장 조사",
+    "보고서",
+    "산업 인사이트",
+    "비즈니스 인텔리전스"
+  ],
+  "hero": {
+    "title": "경쟁력 있는 비즈니스 성장을 위한 AI 기반 시장 조사 도구 발견",
+    "subtitle": "더 스마트한 의사 결정을 위해 실시간으로 정확하고 실행 가능한 인사이트를 얻으세요. 당사의 AI 도구는 시장 동향과 경쟁사 분석을 제공하여 경쟁력을 유지하도록 돕습니다.",
+    "cta": "보고서 탐색",
+    "image": "/images/hero.jpg"
+  },
+  "statsSection": [
+    {
+      "icon": "FaChartLine",
+      "value": 42,
+      "prefix": "$",
+      "suffix": "억",
+      "label": "달성된 수익 영향"
+    },
+    {
+      "icon": "FaLightbulb",
+      "value": 15000,
+      "suffix": "+",
+      "label": "고성장 기회"
+    },
+    {
+      "icon": "FaGlobe",
+      "value": 60000,
+      "label": "연결된 시장"
+    },
+    {
+      "icon": "FaUsers",
+      "value": 330,
+      "suffix": "+",
+      "label": "분석가 및 컨설턴트"
+    }
+  ],
+  "exploreMarketResearchSection": {
+    "title": "Bremont Strategy와 함께 산업별 시장 조사 보고서 탐색",
+    "browseReportsBTN": "모든 보고서 보기",
+    "browseIndustryBTN": "모든 산업 보기"
+  },
+  "latestFromBremont": "Bremont Strategy 최신 소식",
+  "testimonialsSection": {
+    "title": "성과 중심의 고객 후기",
+    "testimonials": [
+      {
+        "content": "이 인사이트는 특정 지역에서 일부 제품의 성장을 방해하던 요인을 설명해 주었습니다. 몇 가지 변경 후 다음 검토에서 바로 효과를 확인했습니다.",
+        "name": "Arnold Shieh",
+        "organization": "IKEA"
+      },
+      {
+        "content": "시장 분석을 통해 적절한 기회를 식별할 수 있었고, 빠르게 높은 수익을 얻었습니다.",
+        "name": "Riccardo Carlo",
+        "organization": "McKinsey & Company"
+      },
+      {
+        "content": "팀은 항상 협조적이었고 함께 일하기 쉬웠습니다. 제안은 실용적이고 효과적이었습니다.",
+        "name": "John Katani",
+        "organization": "Strategy Group"
+      },
+      {
+        "content": "탁월한 지원과 깊이 있는 인사이트를 제공했습니다. 시장 조사에 적극 추천합니다.",
+        "name": "Sarah Williams",
+        "organization": "Deloitte"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "왜 우리를 선택해야 하는가",
+    "content": [
+      {
+        "title": "전문가 중심 인사이트",
+        "description": "당사의 시장 조사와 심층 분석은 의사 결정을 위한 실행 가능한 전략으로 이어집니다.",
+        "img": "/images/icon1.svg"
+      },
+      {
+        "title": "맞춤형 분석",
+        "description": "고객의 요구에 맞는 맞춤형 연구 솔루션을 제공합니다.",
+        "img": "/images/icon2.svg"
+      },
+      {
+        "title": "탁월함에 대한 헌신",
+        "description": "모든 과정에서 전문성과 윤리 기준을 유지하는 것이 우리의 목표입니다.",
+        "img": "/images/icon3.svg"
+      },
+      {
+        "title": "다양한 서비스",
+        "description": "개인부터 기업까지 다양한 요구를 충족하는 시장 조사 보고서를 제공합니다.",
+        "img": "/images/icon4.svg"
+      }
+    ]
+  },
+  "trustedByIndustryLeaders": "업계 리더들이 신뢰합니다",
+  "clientLogos": [
+    "/images/our-clients/abb.png",
+    "/images/our-clients/apple.png",
+    "/images/our-clients/basf.png",
+    "/images/our-clients/baxter.png",
+    "/images/our-clients/bosch.png",
+    "/images/our-clients/dolby.png",
+    "/images/our-clients/exxonmobil.png",
+    "/images/our-clients/herman.png",
+    "/images/our-clients/parker.png",
+    "/images/our-clients/sony.png"
+  ]
+}

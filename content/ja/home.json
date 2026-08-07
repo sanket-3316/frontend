@@ -1,0 +1,111 @@
+{
+  "title": "市場調査ハブ - 必要なインサイトを提供",
+  "description": "包括的な市場調査レポートと業界インサイトをご覧ください",
+  "keywords": [
+    "市場調査",
+    "レポート",
+    "業界インサイト",
+    "ビジネスインテリジェンス"
+  ],
+  "hero": {
+    "title": "競争力のあるビジネス成長のためのAI搭載市場調査ツールを発見",
+    "subtitle": "より賢いビジネス意思決定を実現するために、リアルタイムで正確かつ実用的なインサイトを取得できます。当社のAIツールは市場動向と競合分析を提供し、競争力と俊敏性を維持するのに役立ちます。",
+    "cta": "レポートを探す",
+    "image": "/images/hero.jpg"
+  },
+  "statsSection": [
+    {
+      "icon": "FaChartLine",
+      "value": 42,
+      "prefix": "$",
+      "suffix": "十億",
+      "label": "実現された収益インパクト"
+    },
+    {
+      "icon": "FaLightbulb",
+      "value": 15000,
+      "suffix": "+",
+      "label": "高成長の機会"
+    },
+    {
+      "icon": "FaGlobe",
+      "value": 60000,
+      "label": "接続された市場"
+    },
+    {
+      "icon": "FaUsers",
+      "value": 330,
+      "suffix": "+",
+      "label": "アナリストおよびコンサルタント"
+    }
+  ],
+  "exploreMarketResearchSection": {
+    "title": "Bremont Strategyと共に業界別の市場調査レポートを探る",
+    "browseReportsBTN": "すべてのレポートを見る",
+    "browseIndustryBTN": "すべての業界を見る"
+  },
+  "latestFromBremont": "Bremont Strategyの最新情報",
+  "testimonialsSection": {
+    "title": "成果に基づくお客様の声",
+    "testimonials": [
+      {
+        "content": "インサイトにより、特定地域で一部製品の成長を妨げていた要因が明らかになりました。いくつかの改善を行い、次回のレビューですぐに効果が現れました。",
+        "name": "Arnold Shieh",
+        "organization": "IKEA"
+      },
+      {
+        "content": "市場分析により適切な機会を特定することができました。強いリターンとともに結果がすぐに現れました。",
+        "name": "Riccardo Carlo",
+        "organization": "McKinsey & Company"
+      },
+      {
+        "content": "チームは常に対応が早く、協力しやすかったです。提案は実用的で効果的でした。",
+        "name": "John Katani",
+        "organization": "Strategy Group"
+      },
+      {
+        "content": "優れたサポートと深いビジネス洞察を提供してくれました。市場調査に強くおすすめします。",
+        "name": "Sarah Williams",
+        "organization": "Deloitte"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "私たちを選ぶ理由",
+    "content": [
+      {
+        "title": "専門家主導のインサイト",
+        "description": "当社の市場調査と深い知識、徹底した分析は、意思決定のための実行可能な指針へと変換されます。",
+        "img": "/images/icon1.svg"
+      },
+      {
+        "title": "カスタマイズされた分析",
+        "description": "お客様の市場調査ニーズに応じて、カスタマイズされた調査ソリューションを提供します。",
+        "img": "/images/icon2.svg"
+      },
+      {
+        "title": "卓越性への取り組み",
+        "description": "当社の主な目標は、常に専門性を示し、すべての行動において倫理基準を維持することです。",
+        "img": "/images/icon3.svg"
+      },
+      {
+        "title": "多様なサービス",
+        "description": "当社の市場調査レポートは、個人から企業全体まで幅広いニーズに対応し、ほとんどの分析要件をカバーします。",
+        "img": "/images/icon4.svg"
+      }
+    ]
+  },
+  "trustedByIndustryLeaders": "業界リーダーから信頼されています",
+  "clientLogos": [
+    "/images/our-clients/abb.png",
+    "/images/our-clients/apple.png",
+    "/images/our-clients/basf.png",
+    "/images/our-clients/baxter.png",
+    "/images/our-clients/bosch.png",
+    "/images/our-clients/dolby.png",
+    "/images/our-clients/exxonmobil.png",
+    "/images/our-clients/herman.png",
+    "/images/our-clients/parker.png",
+    "/images/our-clients/sony.png"
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "site": {
+    "name": "Bremont Strategy",
+    "description": "Leading independent management consulting firm for strategic market intelligence and capital allocation decisions"
+  },
+  "nav": {
+    "home": "Home",
+    "categories": "Industries",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "search": "Search"
+  },
+  "footer": {
+    "certifications": [
+      {
+        "image": "/images/certifications_logo-2026.png",
+        "title": "ISO Certified"
+      },
+      {
+        "image": "/images/esomar_2026.png",
+        "title": "Authorize.net"
+      }
+    ],
+    "information": [
+      {
+        "label": "FAQ",
+        "url": "/faq"
+      },
+      {
+        "label": "Conferences & Events",
+        "url": "/events"
+      }
+    ],
+    "links": [
+      {
+        "label": "Careers",
+        "url": "/careers"
+      },
+      {
+        "label": "Privacy Policy",
+        "url": "/privacy-policy"
+      }
+    ],
+    "contact": {
+      "title": "Global Headquarters",
+      "address": "24a Trolley Square, Wilmington, Delaware, 19801, USA",
+      "phones": [
+        "USA: +1-302-846-2799",
+        "EMEA: +49-176-7450-2496"
+      ],
+      "email": "sales@bremontstrategy.com"
+    },
+    "bottom": {
+      "company": "Bremont Strategy",
+      "copyright": "© 2026 All Rights Reserved."
+    },
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "#"
+      },
+      {
+        "name": "twitter",
+        "url": "#"
+      },
+      {
+        "name": "facebook",
+        "url": "#"
+      },
+      {
+        "name": "youtube",
+        "url": "#"
+      }
+    ]
+  },
+  "form": {
+    "title": "Contact Form",
+    "labels": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "job": "Job Title",
+      "company": "Company Name",
+      "message": "Area of Interest"
+    },
+    "placeholders": {
+      "name": "Enter your full name",
+      "email": "Enter your business email",
+      "phone": "Enter phone number (without country code)",
+      "job": "Enter your job title",
+      "company": "Enter your company name",
+      "message": "Enter your area of interest",
+      "custom_requirements": "Enter your custom or specific requirements"
+    },
+    "validation": {
+      "name": {
+        "required": true,
+        "min": 3
+      },
+      "email": {
+        "required": true,
+        "pattern": "email"
+      },
+      "phone": {
+        "required": true,
+        "min": 8
+      },
+      "message": {
+        "required": true
+      }
+    },
+    "errors": {
+      "name_required": "Name is required",
+      "name_min": "Name must be at least 3 characters",
+      "email_required": "Email is required",
+      "email_invalid": "Please enter a valid email address",
+      "phone_required": "Phone number is required",
+      "phone_min": "Phone number is too short",
+      "message_required": "Message is required",
+      "captcha_required": "Please enter the security code"
+    },
+    "captcha": {
+      "label": "Security Code",
+      "placeholder": "Enter the displayed security code"
+    },
+    "submit": "Submit",
+    "success": "Thank you! Your message has been sent."
+  },
+  "report": {
+    "noReportsFound": "No reports found in this category",
+    "categories": "Categories",
+    "reportTitle": "[[keyword]] Market",
+    "buyNow": "Buy Now",
+    "downloadFreePDF": "Download Free PDF Now",
+    "downloadPDF": "Download Free PDF",
+    "customizeYourReport": "Customize Your Report",
+    "getFreeSampleOfThisReport": "Get a free sample of this report",
+    "reportNotFound": "Report not found",
+    "aboutThisReport": "ABOUT THIS REPORT",
+    "tableOfContents": "TABLE OF CONTENTS",
+    "methodology": "METHODOLOGY",
+    "faqs": "FREQUENTLY ASKED QUESTIONS"
+  },
+  "search": {
+    "searchResult": "Search Results",
+    "resultFor": "Results for",
+    "noResultFound": "No results found",
+    "trySearchingWithDifferentKeywords": "Try searching with different keywords",
+    "searchQuery": "Enter a search query to get started",
+    "searchMarketResearchReports": "Search market research reports"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "site": {
+    "name": "マーケットリサーチハブ",
+    "description": "市場調査レポートとインサイトの主要プロバイダー"
+  },
+  "nav": {
+    "home": "ホーム",
+    "categories": "カテゴリ",
+    "about": "私たちについて",
+    "contact": "お問い合わせ",
+    "search": "検索"
+  },
+  "footer": {
+     "certifications": [
+      {
+        "image": "/images/certifications_logo-2026.png",
+        "title": "ISO Certified"
+      },
+      {
+        "image": "/images/esomar_2026.png",
+        "title": "Authorize.net"
+      }
+    ],
+    "information": [
+      {
+        "label": "よくある質問",
+        "url": "/faq"
+      },
+      {
+        "label": "カンファレンスとイベント",
+        "url": "/events"
+      }
+    ],
+    "links": [
+      {
+        "label": "採用情報",
+        "url": "/careers"
+      },
+      {
+        "label": "プライバシーポリシー",
+        "url": "/privacy-policy"
+      }
+    ],
+    "contact": {
+      "title": "グローバル本社",
+      "address": "24a Trolley Square、Wilmington、Delaware、19801、USA",
+      "phones": [
+        "米国: +1-302-846-2799",
+        "欧州・中東・アフリカ: +49-176-7450-2496"
+      ],
+      "email": "sales@bremontstrategy.com"
+    },
+    "bottom": {
+      "company": "Bremont Strategy",
+      "copyright": "© 2026 無断転載を禁じます。"
+    },
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "#"
+      },
+      {
+        "name": "twitter",
+        "url": "#"
+      },
+      {
+        "name": "facebook",
+        "url": "#"
+      },
+      {
+        "name": "youtube",
+        "url": "#"
+      }
+    ]
+  },
+  "form": {
+    "title": "お問い合わせフォーム",
+    "labels": {
+      "name": "お名前",
+      "email": "メールアドレス",
+      "phone": "電話番号",
+      "job": "役職",
+      "company": "会社名",
+      "message": "ご興味のある分野"
+    },
+    "placeholders": {
+      "name": "フルネームを入力してください",
+      "email": "ビジネスメールを入力してください",
+      "phone": "電話番号を入力（国コードなし）",
+      "job": "役職を入力してください",
+      "company": "会社名を入力してください",
+      "message": "ご興味のある分野をご記入ください",
+      "custom_requirements": "特別なご要望があればご記入ください"
+    },
+    "validation": {
+      "name": {
+        "required": true,
+        "min": 3
+      },
+      "email": {
+        "required": true,
+        "pattern": "email"
+      },
+      "phone": {
+        "required": true,
+        "min": 8
+      },
+      "message": {
+        "required": true
+      }
+    },
+    "errors": {
+      "name_required": "名前は必須です",
+      "name_min": "名前は3文字以上必要です",
+      "email_required": "メールは必須です",
+      "email_invalid": "有効なメールアドレスを入力してください",
+      "phone_required": "電話番号は必須です",
+      "phone_min": "電話番号が短すぎます",
+      "message_required": "メッセージは必須です",
+      "captcha_required": "セキュリティコードを入力してください"
+    },
+    "captcha": {
+      "label": "セキュリティコード",
+      "placeholder": "表示されたコードを入力してください"
+    },
+    "submit": "送信",
+    "success": "メッセージありがとうございます！"
+  },
+  "report": {
+    "noReportsFound": "このカテゴリーにはレポートが見つかりませんでした",
+    "categories": "カテゴリー",
+    "reportTitle": "[[keyword]]市場",
+    "buyNow": "今すぐ購入",
+    "downloadFreePDF": "無料PDFをダウンロード",
+    "downloadPDF": "PDFをダウンロード",
+    "customizeYourReport": "レポートをカスタマイズ",
+    "getFreeSampleOfThisReport": "このレポートの無料サンプルを入手",
+    "reportNotFound": "レポートが見つかりません",
+    "aboutThisReport": "本レポートについて",
+    "tableOfContents": "目次",
+    "methodology": "調査手法",
+    "faqs": "よくある質問"
+  },
+  "search": {
+    "searchResult": "検索結果",
+    "resultFor": "の検索結果",
+    "noResultFound": "結果が見つかりません",
+    "trySearchingWithDifferentKeywords": "別のキーワードで検索してみてください",
+    "searchQuery": "検索を開始するにはキーワードを入力してください",
+    "searchMarketResearchReports": "市場調査レポートを検索"
+  }
+}

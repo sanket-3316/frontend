@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "About Bremont Strategy | Leading Management Consulting Firm",
+    "description": "Bremont Strategy is a leading independent management consulting firm delivering bespoke business intelligence for multi-million dollar capital allocations worldwide.",
+    "keywords": ["about Bremont Strategy", "management consulting", "market research", "business intelligence", "strategic consulting"]
+  },
+  "hero": {
+    "title": "About Bremont Strategy",
+    "subtitle": "The Institutional Standard for Strategic Market Intelligence"
+  },
+  "about": {
+    "title": "Who We Are",
+    "description": "<strong>Bremont Strategy</strong> is a leading independent management consulting firm and an institutional cornerstone for market leaders, multinational enterprises, and tier-one investors navigating high-stakes strategic inflection points. We deliver commanding, bespoke business intelligence that provides the intellectual weight, pedigree, and definitive authority required for critical, <strong>multi-million dollar capital allocations worldwide</strong>.",
+    "description2": "Our practice stands as a rigorous alternative to commoditized, off-the-shelf data and automated market reporting. Recognizing that generic information introduces unacceptable corporate risk, we completely bypass transactional data packages. Instead, we <strong>architect elite strategic frameworks</strong> tailored exclusively to the complex architecture and precise friction points of your enterprise.",
+    "description3": "To navigate the intricacies of highly specialized global verticals — including <strong>technical chemicals, sustainable energy frameworks, and advanced agro-technologies</strong> — we mobilize dedicated practices of veteran principal analysts. We align our investigative parameters seamlessly with your internal mandate, eliminating market noise to secure an unassailable position of industry leadership.",
+    "description4": "We enforce absolute methodological integrity through an exacting, <a href=\"#validation-protocol\"><strong>four-stage consistency protocol</strong></a> that cross-references global macroeconomic trends with meticulous bottom-up micro-dynamics. We deliberately reject the short-term velocity of algorithmic reporting because corporate forecasting models capable of withstanding intense board-level scrutiny require profound human engineering.",
+    "description5": "Ultimately, our firm functions as an <strong>indispensable extension of your executive committee</strong> and internal strategy divisions. We provide the definitive intellectual insight and continuous, multi-year advisory support required to capitalize on industry disruptions and deploy capital with absolute, unshakeable confidence across any international market."
+  },
+  "services": {
+    "title": "Our Primary Intelligence Engine",
+    "description": "This tailored approach is anchored by an intensive, <strong>human-driven primary intelligence engine</strong> that completely subverts superficial automated surveys. Our global teams conduct targeted, high-level dialogues with supply chain architects and <strong>C-suite executives</strong> who shape modern industries, cross-validating these exclusive field insights with institutional-grade database validation."
+  },
+  "process": {
+    "id": "validation-protocol",
+    "title": "Our 4-Stage Global Validation Protocol",
+    "subtitle": "Our rigorous validation structure guarantees that all intelligence delivered to your board is stress-tested against geopolitical, macroeconomic, and technical volatility.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Deep-Dive Institutional Mining",
+        "description": "Establishing historical baselines via <strong>premium data nodes</strong>, corporate filings, and international trade ledgers."
+      },
+      {
+        "number": "02",
+        "title": "Targeted Primary Elicitation",
+        "description": "Conducting <strong>high-level, human-to-human interviews</strong> with key global stakeholders, competitors, and industry drivers."
+      },
+      {
+        "number": "03",
+        "title": "Tailored Quantitative Modeling",
+        "description": "Synthesizing field data into <strong>customized 10-year forecasting sheets</strong> mapped to your specific corporate growth scenarios."
+      },
+      {
+        "number": "04",
+        "title": "Principal SME Panel Review",
+        "description": "Final cross-validation by <strong>senior consultants with 10+ years of domain expertise</strong> to ensure absolute strategic alignment."
+      }
+    ]
+  },
+  "capabilities": {
+    "title": "Why Choose Bremont Strategy",
+    "items": [
+      {
+        "title": "Bespoke Project Initiation",
+        "description": "Engineered entirely around <strong>client-specific briefs</strong>, not pre-packaged or template-driven data."
+      },
+      {
+        "title": "85% Direct Executive Interviews",
+        "description": "Our primary data engine relies on <strong>recorded and transcribed direct interviews</strong> with supply chain architects and C-suite executives."
+      },
+      {
+        "title": "6–8 Week Dedicated Engineering",
+        "description": "<strong>Dedicated human-led engineering</strong> over 6–8 weeks versus 24–48 hour algorithmic generation."
+      },
+      {
+        "title": "4-Stage Global Triangulation",
+        "description": "Rigorous <strong>4-stage cross-validation protocol</strong> versus single-source secondary desk research of standardized data publishers."
+      },
+      {
+        "title": "Continuous Multi-Year Advisory",
+        "description": "<strong>Bespoke formats and continuous multi-year advisory</strong> engagement, not transactional PDF static delivery."
+      },
+      {
+        "title": "Board-Ready Intelligence",
+        "description": "Corporate forecasting models capable of withstanding <strong>intense board-level scrutiny</strong> through profound human engineering."
+      }
+    ]
+  },
+  "clients": {
+    "title": "Our Notable Clients",
+    "items": ["BASF", "UBS", "Ferrero", "P&G", "Deloitte"]
+  }
+}

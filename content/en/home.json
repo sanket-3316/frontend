@@ -1,0 +1,111 @@
+{
+  "title": "Bremont Strategy - Strategic Market Intelligence",
+  "description": "Discover comprehensive market research reports and industry insights",
+  "keywords": [
+    "market research",
+    "reports",
+    "industry insights",
+    "business intelligence"
+  ],
+  "hero": {
+    "title": "Discover AI-Powered Market Research Tools for Competitive Business Growth",
+    "subtitle": "Get precise, actionable insights in real-time to drive smarter business decisions. Our AI tools provide market trends and competitor analysis, helping you stay competitive and agile.",
+    "cta": "Explore Reports",
+    "image": "/images/hero.jpg"
+  },
+  "statsSection": [
+    {
+      "icon": "FaChartLine",
+      "value": 42,
+      "prefix": "$",
+      "suffix": "Bn",
+      "label": "Revenue Impact Delivered"
+    },
+    {
+      "icon": "FaLightbulb",
+      "value": 15000,
+      "suffix": "+",
+      "label": "High-growth Opportunities"
+    },
+    {
+      "icon": "FaGlobe",
+      "value": 60000,
+      "label": "Connected Markets"
+    },
+    {
+      "icon": "FaUsers",
+      "value": 330,
+      "suffix": "+",
+      "label": "Analysts & Consultants"
+    }
+  ],
+  "exploreMarketResearchSection": {
+    "title": "Explore Market Research Reports for Your Industry with Bremont Strategy",
+    "browseReportsBTN": "Browse All Reports",
+    "browseIndustryBTN": "View All Industry"
+  },
+  "latestFromBremont": "Latest from Bremont Strategy",
+  "testimonialsSection": {
+    "title": "Testimonials Driven By Impact",
+    "testimonials": [
+      {
+        "content": "The insights explained what was holding back a few of our products in a particular region. We made some changes, and the impact was clear in the very next review.",
+        "name": "Arnold Shieh",
+        "organization": "IKEA"
+      },
+      {
+        "content": "Their market analysis helped us identify the right opportunities. The results were visible quickly with strong returns.",
+        "name": "Riccardo Carlo",
+        "organization": "McKinsey & Company"
+      },
+      {
+        "content": "The team was always available and easy to work with. Their recommendations were practical and effective.",
+        "name": "John Katani",
+        "organization": "Strategy Group"
+      },
+      {
+        "content": "Excellent support and deep insights into our business. Highly recommended for market research needs.",
+        "name": "Sarah Williams",
+        "organization": "Deloitte"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Us",
+    "content": [
+      {
+        "title": "Expert-driven insights",
+        "description": "Our market research, in-depth knowledge, and thorough analysis can translate into actionable guidelines for your decisions.",
+        "img": "/images/icon1.svg"
+      },
+      {
+        "title": "Tailored analytics",
+        "description": "We cater to your market research demands by developing tailored                  research solutions.",
+        "img": "/images/icon2.svg"
+      },
+      {
+        "title": "Dedicated to excellence",
+        "description": "Our primary objective is to consistently demonstrate professionalism                  and uphold ethical standards in every action performed.",
+        "img": "/images/icon3.svg"
+      },
+      {
+        "title": "Versatile offerings",
+        "description": "Our market research report offerings span from individual to                  enterprise-wide scopes, covering most analytics needs.",
+        "img": "/images/icon4.svg"
+      }
+    ]
+  },
+  "trustedByIndustryLeaders": "Trusted By Industry Leaders",
+  "clientLogos": [
+    "/images/our-clients/abb.png",
+    "/images/our-clients/apple.png",
+    "/images/our-clients/basf.png",
+    "/images/our-clients/baxter.png",
+    "/images/our-clients/bosch.png",
+    "/images/our-clients/dolby.png",
+    "/images/our-clients/exxonmobil.png",
+    "/images/our-clients/herman.png",
+    "/images/our-clients/parker.png",
+    "/images/our-clients/sony.png"
+  ]
+}

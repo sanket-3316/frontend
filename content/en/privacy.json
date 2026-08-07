@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Privacy Policy | Bremont Strategy",
+    "description": "Bremont Strategy's Privacy Policy outlines our commitment to protecting the personal and business data you share with us as the Data Controller and Data Processor.",
+    "keywords": ["privacy policy", "Bremont Strategy", "data protection", "GDPR", "data controller"]
+  },
+  "hero": {
+    "title": "Privacy Policy",
+    "subtitle": "Our Commitment to Protecting Your Data"
+  },
+  "intro": "<strong>Bremont Strategy</strong> (the \"Company,\" \"we,\" \"us,\" or \"our\") operates the website <a href=\"https://www.bremontstrategy.com/\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.bremontstrategy.com/</a> (the \"Website\") and provides strategic market research, competitive analysis, and management consulting services globally (the \"Services\"). We recognize that your privacy is of paramount importance. This Privacy Policy outlines our commitment to protecting the personal and business data you share with us. <strong>Bremont Strategy acts as the Data Controller and Data Processor</strong> for all information collected through this Website.",
+  "sections": [
+    {
+      "number": "1",
+      "title": "Legal Basis for Data Processing",
+      "content": "We collect and process your information under clearly defined international legal frameworks:",
+      "items": [
+        "<strong>Performance of a Contract:</strong> To deliver strategic reports, fulfill transactions, or execute data services initiated by you.",
+        "<strong>Legitimate Business Interests:</strong> To optimize website performance, protect our network security, prevent corporate fraud, and conduct targeted professional B2B marketing.",
+        "<strong>Legal Compliance:</strong> To meet regulatory, tax, statutory, or law enforcement obligations globally."
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Information We Collect",
+      "content": "We limit our data collection to info that directly enhances your experience and delivers our specialized Services:",
+      "items": [
+        "<strong>Voluntary Corporate Information:</strong> We collect names, corporate email addresses, job titles, company names, industry verticals, and billing details when you request sample reports or complete a transaction.",
+        "<strong>Automated Usage Information:</strong> We passively track technical data such as IP addresses, device identifiers, browser types, and clickstream interactions to evaluate website usability trends.",
+        "<strong>Cookies:</strong> We utilize standard browser cookies to remember your display preferences and streamline your access. You can modify your browser settings to decline cookies at any time."
+      ]
+    },
+    {
+      "number": "3",
+      "title": "How We Use Your Information",
+      "content": "We use your data strictly to execute core business operations and strategic support:",
+      "items": [
+        "<strong>Service Execution:</strong> To process enterprise transactions, manage corporate accounts, and deliver customized market engineering sheets.",
+        "<strong>Targeted Communications:</strong> To respond to formal research inquiries, send service maintenance alerts, and deliver requested industry insights.",
+        "<strong>System Optimization:</strong> To analyze website metrics, troubleshoot technical issues, and improve our digital analytical toolkits."
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Information Sharing and Global Transfers",
+      "content": "We do not sell, rent, or trade your personal or corporate data to third parties for their direct marketing purposes. We share information only under these specific conditions:",
+      "items": [
+        "<strong>Authorized Service Partners:</strong> With verified technical consultants or secure payment gateways under strict confidentiality agreements.",
+        "<strong>Legal &amp; Structural Transmutations:</strong> When required by law enforcement, or during a corporate merger where the acquiring entity contractually commits to an identical level of privacy protection.",
+        "<strong>Cross-Border Transfers:</strong> Because we operate globally, your data may be securely transferred to and processed in countries outside your home jurisdiction (such as the <strong>United States or India</strong>). We apply full technical safeguards to ensure this data remains completely protected."
+      ]
+    },
+    {
+      "number": "5",
+      "title": "Data Security and Technical Safeguards",
+      "content": "We implement rigorous technical and organizational security measures to prevent unauthorized data access, alteration, or disclosure:",
+      "items": [
+        "All online payment channels use <strong>Secure Sockets Layer (SSL)</strong> software and fully comply with modern <strong>PCI-DSS encryption standards</strong>.",
+        "We restrict internal data access strictly to certified employees and analysts who require the information to execute your market research projects.",
+        "While we utilize industry-standard practices, no internet-based transmission is completely impenetrable, and interactions are conducted at your own risk."
+      ]
+    },
+    {
+      "number": "6",
+      "title": "Data Retention Lifecycle",
+      "content": "We store your corporate and personal information only for as long as your account remains active or as required to fulfill the precise business purposes outlined in this policy. If you choose to terminate your relationship with us, we will permanently delete or anonymize your data from our active storage infrastructure, unless legal, tax, or statutory preservation is mandatory.",
+      "items": []
+    },
+    {
+      "number": "7",
+      "title": "Your Rights and Data Control",
+      "content": "We extend comprehensive data management rights to all our global clients and web visitors, in alignment with international standards like <strong>GDPR</strong>:",
+      "items": [
+        "<strong>Access &amp; Rectification:</strong> You may request a complete summary of the data we hold about you or submit direct corrections to inaccurate information.",
+        "<strong>Erasure &amp; Restriction:</strong> You hold the right to request that we permanently wipe your data from our systems or restrict its processing based on legitimate grounds.",
+        "<strong>Opt-Out Execution:</strong> You can instantly stop receiving professional marketing updates by clicking the \"Unsubscribe\" button in our digital mailings or <a href=\"mailto:legal@bremontstrategy.com\">emailing our legal team</a>. We will fully execute all verified data control requests within <strong>48 to 72 business hours</strong>."
+      ]
+    },
+    {
+      "number": "8",
+      "title": "Policy Modifications and Updates",
+      "content": "We reserve the right to modify or update parts of this Privacy Policy at any time to match evolving industrial regulations or corporate practices. Any revisions become effective immediately upon publication on this page. For material updates that impact how we handle your personal data, we will notify you prominently via our Website homepage or through a direct email alert prior to the change taking effect.",
+      "items": []
+    },
+    {
+      "number": "9",
+      "title": "Grievance Redressal and Contact Information",
+      "content": "For data management requests, statutory compliance questions, or direct concerns regarding our privacy infrastructure, please contact our legal representative:",
+      "items": [
+        "<strong>Email:</strong> <a href=\"mailto:legal@bremontstrategy.com\">legal@bremontstrategy.com</a>",
+        "<strong>Postal Enquiries:</strong> Bremont Strategy, Legal Compliance Division, 24a Trolley Square, Wilmington, Delaware, 19801, USA"
+      ]
+    }
+  ],
+  "lastUpdated": "Last updated: 2026"
+}

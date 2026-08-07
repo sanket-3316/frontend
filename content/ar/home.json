@@ -1,0 +1,111 @@
+{
+  "title": "مركز أبحاث السوق - الرؤى التي تحتاجها",
+  "description": "اكتشف تقارير أبحاث السوق الشاملة ورؤى الصناعة",
+  "keywords": [
+    "أبحاث السوق",
+    "تقارير",
+    "رؤى الصناعة",
+    "ذكاء الأعمال"
+  ],
+  "hero": {
+    "title": "اكتشف أدوات أبحاث السوق المدعومة بالذكاء الاصطناعي لنمو أعمال تنافسي",
+    "subtitle": "احصل على رؤى دقيقة وقابلة للتنفيذ في الوقت الفعلي لاتخاذ قرارات أعمال أكثر ذكاءً. توفر أدواتنا تحليل الاتجاهات والسوق والمنافسين لمساعدتك على البقاء في المقدمة.",
+    "cta": "استكشاف التقارير",
+    "image": "/images/hero.jpg"
+  },
+  "statsSection": [
+    {
+      "icon": "FaChartLine",
+      "value": 42,
+      "prefix": "$",
+      "suffix": "مليار",
+      "label": "تأثير الإيرادات المحقق"
+    },
+    {
+      "icon": "FaLightbulb",
+      "value": 15000,
+      "suffix": "+",
+      "label": "فرص نمو عالية"
+    },
+    {
+      "icon": "FaGlobe",
+      "value": 60000,
+      "label": "أسواق متصلة"
+    },
+    {
+      "icon": "FaUsers",
+      "value": 330,
+      "suffix": "+",
+      "label": "محللون ومستشارون"
+    }
+  ],
+  "exploreMarketResearchSection": {
+    "title": "استكشف تقارير أبحاث السوق حسب الصناعة مع Bremont Strategy",
+    "browseReportsBTN": "تصفح جميع التقارير",
+    "browseIndustryBTN": "عرض جميع الصناعات"
+  },
+  "latestFromBremont": "أحدث ما لدى Bremont Strategy",
+  "testimonialsSection": {
+    "title": "شهادات قائمة على النتائج",
+    "testimonials": [
+      {
+        "content": "أوضحت هذه الرؤى ما كان يعيق بعض منتجاتنا في منطقة معينة. قمنا ببعض التغييرات وظهر التأثير بوضوح في المراجعة التالية.",
+        "name": "Arnold Shieh",
+        "organization": "IKEA"
+      },
+      {
+        "content": "ساعدنا تحليل السوق في تحديد الفرص المناسبة، وظهرت النتائج بسرعة مع عوائد قوية.",
+        "name": "Riccardo Carlo",
+        "organization": "McKinsey & Company"
+      },
+      {
+        "content": "كان الفريق متاحًا دائمًا وسهل التعامل. كانت التوصيات عملية وفعالة.",
+        "name": "John Katani",
+        "organization": "Strategy Group"
+      },
+      {
+        "content": "دعم ممتاز ورؤى عميقة لأعمالنا. نوصي بهم بشدة لأبحاث السوق.",
+        "name": "Sarah Williams",
+        "organization": "Deloitte"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "لماذا تختارنا",
+    "content": [
+      {
+        "title": "رؤى يقودها الخبراء",
+        "description": "تتحول أبحاثنا وتحليلاتنا المتعمقة إلى إرشادات عملية لاتخاذ القرارات.",
+        "img": "/images/icon1.svg"
+      },
+      {
+        "title": "تحليلات مخصصة",
+        "description": "نقدم حلول أبحاث مخصصة تلبي احتياجاتك.",
+        "img": "/images/icon2.svg"
+      },
+      {
+        "title": "الالتزام بالتميز",
+        "description": "هدفنا هو الحفاظ على الاحترافية والمعايير الأخلاقية في كل ما نقوم به.",
+        "img": "/images/icon3.svg"
+      },
+      {
+        "title": "خدمات متنوعة",
+        "description": "تغطي تقاريرنا احتياجات التحليل من الأفراد إلى المؤسسات.",
+        "img": "/images/icon4.svg"
+      }
+    ]
+  },
+  "trustedByIndustryLeaders": "موثوق به من قبل قادة الصناعة",
+  "clientLogos": [
+    "/images/our-clients/abb.png",
+    "/images/our-clients/apple.png",
+    "/images/our-clients/basf.png",
+    "/images/our-clients/baxter.png",
+    "/images/our-clients/bosch.png",
+    "/images/our-clients/dolby.png",
+    "/images/our-clients/exxonmobil.png",
+    "/images/our-clients/herman.png",
+    "/images/our-clients/parker.png",
+    "/images/our-clients/sony.png"
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "site": {
+    "name": "مركز أبحاث السوق",
+    "description": "مزود رائد لتقارير وأبحاث السوق"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "categories": "الفئات",
+    "about": "معلومات عنا",
+    "contact": "اتصل بنا",
+    "search": "بحث"
+  },
+  "footer": {
+    "certifications": [
+      {
+        "image": "/images/certifications_logo-2026.png",
+        "title": "ISO Certified"
+      },
+      {
+        "image": "/images/esomar_2026.png",
+        "title": "Authorize.net"
+      }
+    ],
+    "information": [
+      {
+        "label": "الأسئلة الشائعة",
+        "url": "/faq"
+      },
+      {
+        "label": "المؤتمرات والفعاليات",
+        "url": "/events"
+      }
+    ],
+    "links": [
+      {
+        "label": "الوظائف",
+        "url": "/careers"
+      },
+      {
+        "label": "سياسة الخصوصية",
+        "url": "/privacy-policy"
+      }
+    ],
+    "contact": {
+      "title": "المقر الرئيسي العالمي",
+      "address": "24a Trolley Square، Wilmington، Delaware، 19801، الولايات المتحدة الأمريكية",
+      "phones": [
+        "الولايات المتحدة: +1-302-846-2799",
+        "أوروبا والشرق الأوسط وأفريقيا: +49-176-7450-2496"
+      ],
+      "email": "sales@bremontstrategy.com"
+    },
+    "bottom": {
+      "company": "Bremont Strategy",
+      "copyright": "© 2026 جميع الحقوق محفوظة."
+    },
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "#"
+      },
+      {
+        "name": "twitter",
+        "url": "#"
+      },
+      {
+        "name": "facebook",
+        "url": "#"
+      },
+      {
+        "name": "youtube",
+        "url": "#"
+      }
+    ]
+  },
+  "form": {
+    "title": "نموذج الاتصال",
+    "labels": {
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "phone": "رقم الهاتف",
+      "job": "المسمى الوظيفي",
+      "company": "اسم الشركة",
+      "message": "مجال الاهتمام"
+    },
+    "placeholders": {
+      "name": "أدخل الاسم الكامل",
+      "email": "أدخل البريد الإلكتروني الخاص بالعمل",
+      "phone": "أدخل رقم الهاتف (بدون رمز الدولة)",
+      "job": "أدخل المسمى الوظيفي",
+      "company": "أدخل اسم الشركة",
+      "message": "أدخل مجال اهتمامك",
+      "custom_requirements": "أدخل متطلباتك المخصصة أو المحددة"
+    },
+    "validation": {
+      "name": {
+        "required": true,
+        "min": 3
+      },
+      "email": {
+        "required": true,
+        "pattern": "email"
+      },
+      "phone": {
+        "required": true,
+        "min": 8
+      },
+      "message": {
+        "required": true
+      }
+    },
+    "errors": {
+      "name_required": "الاسم مطلوب",
+      "name_min": "يجب أن يكون الاسم 3 أحرف على الأقل",
+      "email_required": "البريد الإلكتروني مطلوب",
+      "email_invalid": "يرجى إدخال بريد إلكتروني صالح",
+      "phone_required": "رقم الهاتف مطلوب",
+      "phone_min": "رقم الهاتف قصير جدًا",
+      "message_required": "الرسالة مطلوبة",
+      "captcha_required": "يرجى إدخال رمز التحقق"
+    },
+    "captcha": {
+      "label": "رمز التحقق",
+      "placeholder": "أدخل الرمز المعروض"
+    },
+    "submit": "إرسال",
+    "success": "تم إرسال رسالتك بنجاح!"
+  },
+  "report": {
+    "noReportsFound": "لم يتم العثور على تقارير في هذه الفئة",
+    "categories": "الفئات",
+    "reportTitle": "سوق [[keyword]]",
+    "buyNow": "اشترِ الآن",
+    "downloadFreePDF": "تحميل ملف PDF مجانًا",
+    "downloadPDF": "تحميل PDF",
+    "customizeYourReport": "تخصيص تقريرك",
+    "getFreeSampleOfThisReport": "احصل على عينة مجانية من هذا التقرير",
+    "reportNotFound": "لم يتم العثور على التقرير",
+    "aboutThisReport": "حول هذا التقرير",
+    "tableOfContents": "جدول المحتويات",
+    "methodology": "المنهجية",
+    "faqs": "الأسئلة الشائعة"
+  },
+  "search": {
+    "searchResult": "نتائج البحث",
+    "resultFor": "نتائج لـ",
+    "noResultFound": "لم يتم العثور على نتائج",
+    "trySearchingWithDifferentKeywords": "حاول البحث باستخدام كلمات مختلفة",
+    "searchQuery": "أدخل كلمة بحث للبدء",
+    "searchMarketResearchReports": "البحث في تقارير أبحاث السوق"
+  }
+}

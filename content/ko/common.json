@@ -1,0 +1,152 @@
+{
+  "site": {
+    "name": "마켓 리서치 허브",
+    "description": "시장 조사 보고서 및 인사이트 제공 선도 기업"
+  },
+  "nav": {
+    "home": "홈",
+    "categories": "카테고리",
+    "about": "회사 소개",
+    "contact": "문의하기",
+    "search": "검색"
+  },
+  "footer": {
+    "certifications": [
+      {
+        "image": "/images/certifications_logo-2026.png",
+        "title": "ISO Certified"
+      },
+      {
+        "image": "/images/esomar_2026.png",
+        "title": "Authorize.net"
+      }
+    ],
+    "information": [
+      {
+        "label": "자주 묻는 질문",
+        "url": "/faq"
+      },
+      {
+        "label": "컨퍼런스 및 이벤트",
+        "url": "/events"
+      }
+    ],
+    "links": [
+      {
+        "label": "채용",
+        "url": "/careers"
+      },
+      {
+        "label": "개인정보 처리방침",
+        "url": "/privacy-policy"
+      }
+    ],
+    "contact": {
+      "title": "글로벌 본사",
+      "address": "24a Trolley Square, Wilmington, Delaware, 19801, USA",
+      "phones": [
+        "미국: +1-302-846-2799",
+        "유럽·중동·아프리카: +49-176-7450-2496"
+      ],
+      "email": "sales@bremontstrategy.com"
+    },
+    "bottom": {
+      "company": "Bremont Strategy",
+      "copyright": "© 2026 모든 권리 보유."
+    },
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "#"
+      },
+      {
+        "name": "twitter",
+        "url": "#"
+      },
+      {
+        "name": "facebook",
+        "url": "#"
+      },
+      {
+        "name": "youtube",
+        "url": "#"
+      }
+    ]
+  },
+  "form": {
+    "title": "문의 양식",
+    "labels": {
+      "name": "이름",
+      "email": "이메일",
+      "phone": "전화번호",
+      "job": "직책",
+      "company": "회사명",
+      "message": "관심 있는 분야"
+    },
+    "placeholders": {
+      "name": "전체 이름을 입력하세요",
+      "email": "비즈니스 이메일을 입력하세요",
+      "phone": "전화번호 입력 (국가 코드 제외)",
+      "job": "직책을 입력하세요",
+      "company": "회사명을 입력하세요",
+      "message": "관심 있는 분야를 입력하세요",
+      "custom_requirements": "맞춤 또는 특정 요구 사항을 입력하세요"
+    },
+    "validation": {
+      "name": {
+        "required": true,
+        "min": 3
+      },
+      "email": {
+        "required": true,
+        "pattern": "email"
+      },
+      "phone": {
+        "required": true,
+        "min": 8
+      },
+      "message": {
+        "required": true
+      }
+    },
+    "errors": {
+      "name_required": "이름은 필수입니다",
+      "name_min": "이름은 최소 3자 이상이어야 합니다",
+      "email_required": "이메일은 필수입니다",
+      "email_invalid": "유효한 이메일을 입력하세요",
+      "phone_required": "전화번호는 필수입니다",
+      "phone_min": "전화번호가 너무 짧습니다",
+      "message_required": "메시지는 필수입니다",
+      "captcha_required": "보안 코드를 입력하세요"
+    },
+    "captcha": {
+      "label": "보안 코드",
+      "placeholder": "표시된 코드를 입력하세요"
+    },
+    "submit": "제출",
+    "success": "메시지가 성공적으로 전송되었습니다!"
+  },
+  "report": {
+    "noReportsFound": "이 카테고리에는 보고서가 없습니다",
+    "categories": "카테고리",
+    "reportTitle": "[[keyword]] 시장",
+    "buyNow": "지금 구매",
+    "downloadFreePDF": "무료 PDF 다운로드",
+    "downloadPDF": "PDF 다운로드",
+    "customizeYourReport": "보고서 맞춤 설정",
+    "getFreeSampleOfThisReport": "이 보고서의 무료 샘플 받기",
+    "reportNotFound": "보고서를 찾을 수 없습니다",
+    "aboutThisReport": "이 보고서에 대하여",
+    "tableOfContents": "목차",
+    "methodology": "조사 방법론",
+    "faqs": "자주 묻는 질문"
+  },
+  "search": {
+    "searchResult": "검색 결과",
+    "resultFor": "에 대한 결과",
+    "noResultFound": "검색 결과가 없습니다",
+    "trySearchingWithDifferentKeywords": "다른 키워드로 검색해 보세요",
+    "searchQuery": "검색을 시작하려면 키워드를 입력하세요",
+    "searchMarketResearchReports": "시장 조사 보고서 검색"
+  }
+}
