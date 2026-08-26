@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "우리 팀 | Bremont Strategy",
+    "description": "Bremont Strategy의 리서치 및 컨설팅 사업을 이끄는 리더십을 소개합니다. 수십 년에 걸친 시장 인텔리전스 및 전략 전문성을 결집했습니다.",
+    "keywords": ["Bremont Strategy 팀", "리더십", "리서치 매니저", "시니어 컨설턴트"]
+  },
+  "hero": {
+    "title": "우리 팀",
+    "subtitle": "Bremont Strategy의 리서치 및 컨설팅 사업을 이끄는 사람들."
+  },
+  "members": [
+    {
+      "name": "Phillip Holland",
+      "title": "리서치 매니저 | Bremont Strategy",
+      "linkedin": "https://www.linkedin.com/in/phillip-holland11/",
+      "bio": "Phillip Holland는 Bremont Strategy의 리서치 매니저로, 10년의 업계 경력과 그중 7년의 회사 내 전략적 리더십 경험을 보유하고 있습니다. 시장 인텔리전스 분야의 저명한 SME(주제 전문가)로서, 견고한 리서치 프레임워크 설계와 고부가가치 컨설팅 계약 리드를 전문으로 합니다. 그의 권위 있는 지침은 조직이 변화하는 시장 패러다임을 장기적인 경쟁 우위로 전환할 수 있게 합니다."
+    },
+    {
+      "name": "James Sifferman",
+      "title": "시니어 컨설턴트 | Bremont Strategy",
+      "linkedin": "https://www.linkedin.com/in/james-sifferman/",
+      "bio": "James Sifferman은 시장 조사 및 컨설팅 경험 7년(그중 회사 재직 3년)을 보유한 Bremont Strategy의 시니어 컨설턴트입니다. 인정받는 주제 전문가(SME)로서, 복잡한 시장 역학을 맞춤화된 고임팩트 전략적 인사이트로 전환하는 데 탁월합니다. 그의 분석적 정밀함은 고객이 업계 변화를 탐색하고, 새로운 기회를 발견하며, 사업 성장을 가속화할 수 있도록 지원합니다."
+    },
+    {
+      "name": "Mark Anderson",
+      "title": "사업 개발 부사장 | Bremont Strategy",
+      "linkedin": null,
+      "bio": "Mark Anderson은 시장 조사 분야에서 12년의 리더십 경력을 보유하고 있으며, 그중 6년은 Bremont Strategy에서 전략적 성장을 이끌었습니다. 인정받는 SME인 Mark는 고위험 상업 전략을 수립하고 고가치의 글로벌 파트너십을 구축합니다. 그의 비전은 복잡한 시장 혼란을 장기적인 경쟁 우위로 전환하여 고객을 업계 진화의 최전선에 위치시킵니다."
+    }
+  ]
+}

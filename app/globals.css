@@ -72,7 +72,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --bg-primary: #3b4acc;
+  --bg-primary: #074c65;
 }
 
 .dark {
@@ -355,6 +355,31 @@ nav .navbar .category-active {
   list-style: disc;
   margin-left: 18px;
   padding: 2px 5px;
+}
+
+.faq-answer ul {
+  list-style: disc;
+  margin-left: 18px;
+  padding: 2px 5px;
+}
+
+.faq-answer ol {
+  list-style: decimal;
+  margin-left: 18px;
+  padding: 2px 5px;
+}
+
+.faq-answer li {
+  margin-bottom: 6px;
+}
+
+.faq-answer p {
+  margin-bottom: 8px;
+}
+
+.faq-answer a {
+  color: #2563eb;
+  text-decoration: underline;
 }
 
 /* table css */

@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Frequently Asked Questions | Bremont Strategy",
+    "description": "Answers to common questions about Bremont Strategy's deliverables, methodology, licensing, and engagement process.",
+    "keywords": ["Bremont Strategy FAQ", "market research FAQ", "consulting engagement questions"]
+  },
+  "hero": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about working with Bremont Strategy."
+  },
+  "sections": [
+    {
+      "title": "Deliverables & Scope",
+      "items": [
+        {
+          "q": "What level of analytical depth does Bremont Strategy provide?",
+          "a": "<p>We deliver high-granularity institutional intelligence mapped to country, regional, and sector dynamics. Every deliverable includes historical baselines, real-time market sizing, and non-linear predictive forecasting designed to withstand institutional due diligence.</p>"
+        },
+        {
+          "q": "In what formats are deliverables provided?",
+          "a": "<p>Every engagement yields three core assets:</p><ul><li><strong>Executive Report:</strong> Board-ready PDF and editable PPT presentations.</li><li><strong>Financial Model:</strong> Unlocked, fully audit-tested Excel workbook.</li><li><strong>Structured Data:</strong> API-ready JSON/CSV datasets for immediate BI system integration.</li></ul>"
+        },
+        {
+          "q": "Can custom scopes or partial research mandates be arranged?",
+          "a": "<p>Yes. For targeted transactions, M&amp;A due diligence, or narrow regional expansions, our practice leaders structure bespoke intelligence mandates aligned precisely with your capital allocation requirements.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Methodology & Data Rigour",
+      "items": [
+        {
+          "q": "How does Bremont Strategy ensure data accuracy and authority?",
+          "a": "<p>We deploy a dual-layer validation framework:</p><ol><li><strong>Primary Intelligence:</strong> Direct field engagement and structured interviews with C-suite executives, procurement authorities, and key industry stakeholders.</li><li><strong>Deterministic Modeling:</strong> Triangulated quantitative modeling backed by verified trade, regulatory, and financial filings. We maintain a zero-tolerance policy for automated or synthetic data generation.</li></ol>"
+        },
+        {
+          "q": "How do your predictive forecasting models operate?",
+          "a": "<p>We reject linear CAGR approximations. Bremont Strategy utilizes bottom-up econometric modeling, regression analysis, and scenario-based forecasting to capture regulatory shifts, technology adoption S-curves, and macroeconomic cycles accurately.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Licensing & Engagement",
+      "items": [
+        {
+          "q": "What licensing models are available?",
+          "a": "<ul><li><strong>Single-User License:</strong> Designed for individual analysts or single-project research.</li><li><strong>Multi-User License:</strong> Authorization for 2–5 key decision-makers within a designated department.</li><li><strong>Enterprise License:</strong> Unrestricted global access across corporate entities, subsidiaries, and investment boards.</li></ul>"
+        },
+        {
+          "q": "What post-engagement support is included?",
+          "a": "<p>Every delivery includes direct access to our core research team for methodology walkthroughs, board-deck defense support, and up to 15% complimentary scope adjustments post-delivery.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Acquisition & Execution",
+      "items": [
+        {
+          "q": "How quickly are bespoke deliverables executed?",
+          "a": "<p>Standard intelligence assets are transferred immediately upon execution. Custom intelligence mandates and tailored modifications are completed within timelines agreed upon during initial scoping.</p>"
+        },
+        {
+          "q": "What payment methods and procurement workflows do you support?",
+          "a": "<p>We support corporate wire transfers, institutional purchase orders (POs), and major credit cards. Custom invoicing formats and vendor onboarding compliance can be processed via <a href=\"mailto:sales@bremontstrategy.com\">sales@bremontstrategy.com</a>.</p>"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Partner With Bremont Strategy",
+    "description": "Have a specific strategic mandate? Speak directly with our advisory team.",
+    "phone": "+1-302-846-2799",
+    "email": "sales@bremontstrategy.com"
+  }
+}

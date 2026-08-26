@@ -27,8 +27,8 @@
         "url": "/faq"
       },
       {
-        "label": "Conferences & Events",
-        "url": "/events"
+        "label": "Our Team",
+        "url": "/our-team"
       }
     ],
     "links": [
@@ -81,7 +81,8 @@
       "phone": "Phone Number",
       "job": "Job Title",
       "company": "Company Name",
-      "message": "Area of Interest"
+      "message": "Area of Interest",
+      "designation": "Designation"
     },
     "placeholders": {
       "name": "Enter your full name",
@@ -90,7 +91,8 @@
       "job": "Enter your job title",
       "company": "Enter your company name",
       "message": "Enter your area of interest",
-      "custom_requirements": "Enter your custom or specific requirements"
+      "custom_requirements": "Enter your custom or specific requirements",
+      "designation": "Enter your designation (optional)"
     },
     "validation": {
       "name": {

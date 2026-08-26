@@ -101,7 +101,7 @@ export default async function Home({ params }: HomePageProps) {
                     </Link>
 
                     <Link
-                      href={getLocalePath('/reports')}
+                      href={getLocalePath('/category/agriculture')}
                       className="  font-medium"
                     >
                       {content.hero.cta}

@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Our Team | Bremont Strategy",
+    "description": "Meet the leadership behind Bremont Strategy's research and consulting practice — decades of combined market intelligence and strategy expertise.",
+    "keywords": ["Bremont Strategy team", "leadership", "research manager", "senior consultant"]
+  },
+  "hero": {
+    "title": "Our Team",
+    "subtitle": "The people behind Bremont Strategy's research and consulting practice."
+  },
+  "members": [
+    {
+      "name": "Phillip Holland",
+      "title": "Research Manager | Bremont Strategy",
+      "linkedin": "https://www.linkedin.com/in/phillip-holland11/",
+      "bio": "Phillip Holland is a Research Manager at Bremont Strategy, bringing 10 years of industry expertise, including seven years of strategic leadership at the firm. As a distinguished SME in market intelligence, Phillip specializes in architecting robust research frameworks and leading high-value consulting engagements. His authoritative guidance enables organizations to turn changing market paradigms into long-term competitive advantages."
+    },
+    {
+      "name": "James Sifferman",
+      "title": "Senior Consultant | Bremont Strategy",
+      "linkedin": "https://www.linkedin.com/in/james-sifferman/",
+      "bio": "James Sifferman is a Senior Consultant at Bremont Strategy with 7 years of market research and consulting experience, including 3 years at the firm. A recognized Subject Matter Expert (SME), James excels at transforming complex market dynamics into customized, high-impact strategic insights. His analytical rigor empowers clients to navigate industry shifts, identify emerging opportunities, and accelerate business growth."
+    },
+    {
+      "name": "Mark Anderson",
+      "title": "Vice President of Business Development | Bremont Strategy",
+      "linkedin": null,
+      "bio": "Mark Anderson brings 12 years of market research leadership, including six years driving strategic growth at Bremont Strategy. A recognized SME, Mark shapes high-stakes commercial strategies and builds high-value global partnerships. His vision turns complex market disruptions into long-term competitive advantages, positioning clients at the forefront of industry evolution."
+    }
+  ]
+}

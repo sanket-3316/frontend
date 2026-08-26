@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "私たちのチーム | Bremont Strategy",
+    "description": "Bremont Strategyのリサーチおよびコンサルティング事業を率いるリーダーシップチームをご紹介します。数十年にわたる市場インテリジェンスと戦略の専門知識を結集しています。",
+    "keywords": ["Bremont Strategy チーム", "リーダーシップ", "リサーチマネージャー", "シニアコンサルタント"]
+  },
+  "hero": {
+    "title": "私たちのチーム",
+    "subtitle": "Bremont Strategyのリサーチおよびコンサルティング事業を支える人材。"
+  },
+  "members": [
+    {
+      "name": "Phillip Holland",
+      "title": "リサーチマネージャー | Bremont Strategy",
+      "linkedin": "https://www.linkedin.com/in/phillip-holland11/",
+      "bio": "Phillip Hollandは、Bremont Strategyのリサーチマネージャーであり、業界経験10年、うち7年は当社での戦略的リーダーシップを担ってきました。市場インテリジェンス分野の著名なSMEとして、堅牢なリサーチフレームワークの構築と高価値なコンサルティング案件のリードを専門としています。その権威ある指導力により、変化する市場パラダイムを長期的な競争優位性へと転換することを組織に可能にしています。"
+    },
+    {
+      "name": "James Sifferman",
+      "title": "シニアコンサルタント | Bremont Strategy",
+      "linkedin": "https://www.linkedin.com/in/james-sifferman/",
+      "bio": "James Siffermanは、市場調査およびコンサルティング経験7年（うち当社在籍3年）を持つBremont Strategyのシニアコンサルタントです。認定された主題専門家（SME）として、複雑な市場ダイナミクスをカスタマイズされた高インパクトな戦略的インサイトへと転換することに秀でています。その分析的な厳密さにより、クライアントは業界の変化を乗り越え、新たな機会を見出し、事業成長を加速させることができます。"
+    },
+    {
+      "name": "Mark Anderson",
+      "title": "事業開発担当副社長 | Bremont Strategy",
+      "linkedin": null,
+      "bio": "Mark Andersonは市場調査分野で12年のリーダーシップ経験を持ち、そのうち6年はBremont Strategyで戦略的成長を牽引してきました。認定されたSMEであるMarkは、ハイステークスな商業戦略を形作り、高価値なグローバルパートナーシップを構築しています。その先見性により、複雑な市場の混乱を長期的な競争優位性へと転換し、クライアントを業界進化の最前線に位置づけています。"
+    }
+  ]
+}

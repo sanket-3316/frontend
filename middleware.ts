@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 const DEFAULT_LOCALE = 'en';
-const locales = ['en', 'ja', 'ko', 'ar'];
+const locales = ['en', 'ja', 'ko'];
 
 export function middleware(request: NextRequest) {
   const { pathname, search } = request.nextUrl;
@@ -14,6 +14,11 @@ export function middleware(request: NextRequest) {
     pathname.startsWith('/api')
   ) {
     return;
+  }
+
+  // 🔥 0. Arabic locale permanently removed → 410 Gone
+  if (pathname === '/ar' || pathname.startsWith('/ar/')) {
+    return new NextResponse('Gone', { status: 410 });
   }
 
   // 🔥 1. Remove /en → redirect to clean URL

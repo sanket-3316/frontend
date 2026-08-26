@@ -43,7 +43,7 @@ export default function StatsSection({ stats }: StatsSectionProps) {
           return (
             <div
               key={index}
-              className="bg-white rounded-xl  p-6 flex flex-col items-center justify-center hover:shadow-md transition  shadow-lg shadow-cyan-500/10"
+              className="bg-white rounded-xl  p-6 flex flex-col items-center justify-center border border-[#074c651f] hover:shadow-md transition  shadow-lg shadow-cyan-500/10"
             >
 
               <h4 className="!text-2xl md:!text-3xl font-bold ">

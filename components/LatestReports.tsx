@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { getReports } from "@/lib/server/api";
 
@@ -11,7 +10,7 @@ type Report = {
     keyword: string;
     meta_desc: string;
     category: string;
-    thumbnail: string;
+    thumbnailSvg: string;
 };
 type Props = {
     lang: string
@@ -37,9 +36,10 @@ export default function LatestReports({ lang, reportTitle }: Props) {
                         report_id: item.report_id,
                         keyword: item.keyword, // or report_title if available
                         report_url: item.report_url,
-                        thumbnail: item.thumbnail
-                            ? `/images/reports/${item.thumbnail}`
-                            : "/images/reports/1.jpg",
+                        // Runtime SVG thumbnail — generated entirely on the frontend
+                        // (app/report/thumbnail/[file]/route.ts), no backend call.
+                        // `keyword` already comes from this same locale-aware fetch.
+                        thumbnailSvg: `/report/thumbnail/${item.report_url}.svg?keyword=${encodeURIComponent(item.keyword)}&lang=${locale}`,
                     }));
 
                     setReports(formatted);
@@ -162,23 +162,14 @@ function Card({ report, reportTitle }: { report: Report, reportTitle: string }) 
 
             {/* Image */}
             <div className="relative w-full h-[160px] md:h-[180px] rounded-lg overflow-hidden bg-gray-200">
-
-                {report.thumbnail ? (
-                    <Image
-                        src={report.thumbnail}
-                        alt={report.keyword}
-                        fill
-                        className="object-cover group-hover:scale-105 transition duration-300"
-                        sizes="(max-width: 768px) 100vw, 25vw"
-                        onError={(e: any) => {
-                            e.currentTarget.style.display = "none";
-                        }}
-                    />
-                ) : (
-                    <div className="flex items-center justify-center h-full text-gray-400 text-sm">
-                        No Image
-                    </div>
-                )}
+                {/* Plain <img>, not next/image — this is a locally-generated SVG,
+                    which the Next.js image optimizer doesn't handle by default. */}
+                <img
+                    src={report.thumbnailSvg}
+                    alt={report.keyword}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                />
             </div>
 
             {/* Title */}

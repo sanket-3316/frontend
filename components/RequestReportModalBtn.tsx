@@ -10,6 +10,8 @@ type Props = {
     keyword: string;
     formContent: any;
     reportContent: any;
+    variant?: 'primary' | 'outline';
+    icon?: string;
 };
 
 export default function RequestReportModalBtn({
@@ -19,9 +21,11 @@ export default function RequestReportModalBtn({
     keyword,
     formContent,
     reportContent,
+    variant = 'primary',
+    icon = '⬇',
 }: Props) {
     const [open, setOpen] = useState(false);
-    const reportTitle = reportContent?.reportTitle?.replace('[[keyword]]', keyword) 
+    const reportTitle = reportContent?.reportTitle?.replace('[[keyword]]', keyword)
 
     return (
         <>
@@ -29,9 +33,13 @@ export default function RequestReportModalBtn({
             <div className="flex flex-col gap-3 min-w-[250px]">
                 <button
                     onClick={() => setOpen(true)}
-                    className="gradient-wrapper  text-white rounded-full py-3"
+                    className={
+                        variant === 'outline'
+                            ? 'border rounded-full py-3 text-gray-700 hover:bg-gray-100'
+                            : 'gradient-wrapper text-white rounded-full py-3'
+                    }
                 >
-                    ⬇ {btnTitle}
+                    {icon} {btnTitle}
                 </button>
 
             </div>

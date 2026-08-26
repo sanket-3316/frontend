@@ -8,6 +8,13 @@ import { Locale } from '@/lib/config';
 import { getContent } from '@/lib/content';
 import { getHomeRoute } from '@/lib/routes';
 import { getSingleReport } from '@/lib/server/api';
+import {
+  generateMetadata as generateSEO,
+  SchemaScript,
+  generateOrganizationSchema,
+  generateBreadcrumbSchema,
+  generateReportSchema,
+} from '@/lib/seo';
 import { Metadata } from 'next';
 
 type Props = {
@@ -17,16 +24,29 @@ type Props = {
   };
 };
 
-// ✅ SEO Metadata
+const SITE_URL = 'https://www.bremontstrategy.com';
+
+// ✅ SEO Metadata — built from the actual report, not a hardcoded stand-in
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  return {
-    title: 'Semiconductor Wafer Reclaim Market Report',
-    description:
-      'Growth trends, market size, and forecast insights for semiconductor wafer reclaim market.',
-    alternates: {
-      canonical: `https://yourdomain.com/report/${params.slug}`,
+  const { locale, slug } = params;
+  const apiResp = await getSingleReport(locale, slug);
+  const report = apiResp?.report;
+
+  if (!report) {
+    return {
+      title: 'Report Not Found | Bremont Strategy',
+    };
+  }
+
+  return generateSEO(
+    {
+      title: report.report_title || `${report.keyword} Market Report`,
+      description: report.meta_desc || report.h1_long_title,
+      url: `/report/${slug}`,
     },
-  };
+    locale as Locale,
+    SITE_URL
+  );
 }
 
 export default async function ReportPage({ params }: Props) {
@@ -41,24 +61,22 @@ export default async function ReportPage({ params }: Props) {
     return <div>{common?.report?.reportNotFound}</div>;
   }
 
-  const processHTML = (html: string) => {
-    if (!html) return '';
 
-    try {
-      let index = 0;
+  const reportUrl = `${SITE_URL}${locale === 'en' ? '' : `/${locale}`}/report/${slug}`;
+  const organizationSchema = generateOrganizationSchema();
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: common.nav.home, url: `${SITE_URL}${locale === 'en' ? '' : `/${locale}`}/` },
+    { name: report.category_name, url: `${SITE_URL}/category/${report.category_slug}` },
+    { name: report.keyword, url: reportUrl },
+  ]);
+  const reportSchema = generateReportSchema(report, reportUrl);
 
-      return html.replace(/<h2([^>]*)>/gi, () => {
-        const id = `section-${index++}`;
-        return `<h2 id="${id}">`;
-      });
-    } catch (e) {
-      return html;
-    }
-  };
-
-  const processedHTML = processHTML(report.description);
   return (
     <div className="bg-gray-50 min-h-screen" id="report-page">
+      <SchemaScript schema={organizationSchema} />
+      <SchemaScript schema={breadcrumbSchema} />
+      <SchemaScript schema={reportSchema} />
+
       <ReportStickyBar
         reportId={report.report_id}
         keyword={report.keyword}
@@ -88,9 +106,16 @@ export default async function ReportPage({ params }: Props) {
 
           {/* RIGHT BUTTONS */}
           <div className="flex flex-col gap-3 min-w-[350px] justify-center">
-            <button className="border rounded-full py-3 text-gray-700 hover:bg-gray-100">
-              🔒 {common?.report?.buyNow}
-            </button>
+            <RequestReportModalBtn
+              variant="outline"
+              icon="🔒"
+              btnTitle={common?.report?.buyNow}
+              reportId={report.report_id}
+              categoryId={report.category_id}
+              keyword={report.keyword}
+              formContent={common.form}
+              reportContent={common?.report}
+            />
 
             <RequestReportModalBtn
               btnTitle={common?.report?.downloadFreePDF}
@@ -158,7 +183,7 @@ export default async function ReportPage({ params }: Props) {
           <div
             className={`subtitle !text-white transition-all duration-300 overflow-hidden `}
             dangerouslySetInnerHTML={{
-              __html: processedHTML
+              __html: report.description
             }}
           />
 

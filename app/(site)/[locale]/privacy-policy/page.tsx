@@ -82,14 +82,14 @@ export default async function PrivacyPolicyPage({ params }: { params: Params }) 
       <div dir={dir}>
 
         {/* HERO */}
-        <section className="bg-[#0b1f5c] py-16 px-4 text-center">
+        <section className="gradient-wrapper py-16 px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="flex justify-center mb-4">
               <div className="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center">
                 <Shield size={28} className="!text-white" />
               </div>
             </div>
-            <h1 className="text-4xl font-bold !text-white mb-3">
+            <h1 className="!text-3xl md:!text-5xl font-bold !text-white mb-3">
               {privacy?.hero?.title || 'Privacy Policy'}
             </h1>
             <p className="!text-white/80 text-lg">
@@ -118,7 +118,7 @@ export default async function PrivacyPolicyPage({ params }: { params: Params }) 
               >
                 {/* Section header */}
                 <div className="bg-gray-50 border-b border-gray-100 px-6 py-4 flex items-center gap-3">
-                  <div className="w-8 h-8 bg-[#0b1f5c] rounded-lg flex items-center justify-center text-white text-sm font-bold shrink-0">
+                  <div className="w-8 h-8 gradient-wrapper rounded-lg flex items-center justify-center text-white text-sm font-bold shrink-0">
                     {section.number}
                   </div>
                   <h2 className="text-lg font-bold text-[#0b1f5c]">
@@ -139,7 +139,7 @@ export default async function PrivacyPolicyPage({ params }: { params: Params }) 
                           key={j}
                           className="flex items-start gap-2"
                         >
-                          <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#0b1f5c] shrink-0" />
+                          <span className="mt-1.5 w-1.5 h-1.5 rounded-full gradient-wrapper shrink-0" />
                           <span dangerouslySetInnerHTML={{ __html: item }} />
                         </li>
                       ))}
@@ -157,7 +157,7 @@ export default async function PrivacyPolicyPage({ params }: { params: Params }) 
         </section>
 
         {/* CTA */}
-        <section className="py-12 px-4 bg-[#0b1f5c]">
+        <section className="py-12 px-4 gradient-wrapper">
           <div className="max-w-2xl mx-auto text-center">
             <h3 className="text-2xl font-bold !text-white mb-3">
               {locale === 'en' ? 'Questions about your data?' :
@@ -172,10 +172,10 @@ export default async function PrivacyPolicyPage({ params }: { params: Params }) 
                     'تواصل مع قسم الامتثال القانوني لطلبات إدارة البيانات أو استفسارات الخصوصية.'}
             </p>
             <a
-              href="mailto:legal@bremontstrategy.com"
+              href="mailto:sales@bremontstrategy.com"
               className="inline-block bg-white text-[#0b1f5c] font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition"
             >
-              legal@bremontstrategy.com
+              sales@bremontstrategy.com
             </a>
           </div>
         </section>

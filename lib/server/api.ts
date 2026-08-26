@@ -50,6 +50,28 @@ export async function getCategories(locale: string) {
   }
 }
 
+export async function getCareers() {
+  const cacheKey = 'careers';
+
+  const cached = getCache<any[]>(cacheKey);
+  if (cached) {
+    return cached;
+  }
+
+  try {
+    const data = await fetchAPI(`${BASE_URL}/careers`, 'en');
+
+    const careers = data.careers || [];
+
+    setCache(cacheKey, careers, CACHE_TTL);
+
+    return careers;
+  } catch (error) {
+    console.error('Careers API error:', error);
+    return [];
+  }
+}
+
 export async function getReports(
   locale: string,
   categoryId?: number,
@@ -129,8 +151,10 @@ export async function getCategoryReports(
   }
 }
 
-export async function searchReports(locale: string, category?: string) {
-  const key = `reports:${locale}:${category || 'all'}`;
+export async function searchReports(locale: string, query: string) {
+  if (!query?.trim()) return [];
+
+  const key = `search:${locale}:${query}`;
 
   const cached = getCache<any[]>(key);
   if (cached) {
@@ -138,19 +162,28 @@ export async function searchReports(locale: string, category?: string) {
     return cached;
   }
 
-  let url = `${BASE_URL}/reports?lang=${locale}`;
-  if (category) {
-    url += `&category=${category}`;
-  }
-
   try {
-    const data = await fetchAPI(url, locale);
+    const res = await fetch(`${BASE_URL}/category-wise-reports`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept-Language': locale || 'en',
+        'X-Category-Slug': '',
+        'search': query,
+      },
+      cache: 'no-store',
+    });
 
-    setCache(key, data, CACHE_TTL);
+    if (!res.ok) throw new Error('Failed to search reports');
 
-    return data;
+    const json = await res.json();
+    const reports = json?.reports || [];
+
+    setCache(key, reports, CACHE_TTL);
+
+    return reports;
   } catch (error) {
-    console.error('Reports API error:', error);
+    console.error('Search API error:', error);
     return [];
   }
 }

@@ -27,8 +27,8 @@
         "url": "/faq"
       },
       {
-        "label": "カンファレンスとイベント",
-        "url": "/events"
+        "label": "私たちのチーム",
+        "url": "/our-team"
       }
     ],
     "links": [
@@ -81,7 +81,8 @@
       "phone": "電話番号",
       "job": "役職",
       "company": "会社名",
-      "message": "ご興味のある分野"
+      "message": "ご興味のある分野",
+      "designation": "役職名"
     },
     "placeholders": {
       "name": "フルネームを入力してください",
@@ -90,7 +91,8 @@
       "job": "役職を入力してください",
       "company": "会社名を入力してください",
       "message": "ご興味のある分野をご記入ください",
-      "custom_requirements": "特別なご要望があればご記入ください"
+      "custom_requirements": "特別なご要望があればご記入ください",
+      "designation": "役職名を入力してください（任意）"
     },
     "validation": {
       "name": {

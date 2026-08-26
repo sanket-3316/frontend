@@ -36,6 +36,7 @@ export function ReportSampleModal({
         email: '',
         phone: '', // only number part
         countryCode: '91', // default India, replaced once user's country is detected
+        designation: '',
         custom_requirements: '',
     });
 
@@ -101,6 +102,7 @@ export function ReportSampleModal({
                     name: form.name,
                     email: form.email,
                     phone: `+${form.countryCode}${form.phone}`, // ✅ always correct format
+                    designation: form.designation,
                     custom_requirements: form.custom_requirements,
                     reportId,
                     categoryId,
@@ -188,6 +190,16 @@ export function ReportSampleModal({
                             buttonClass="!border-none"
                             containerClass="!w-full"
                         />
+
+                        {/* Designation (optional) */}
+                        <input
+                            name="designation"
+                            placeholder={formContent.placeholders.designation}
+                            className="w-full border rounded-lg px-3 py-2"
+                            value={form.designation}
+                            onChange={handleChange}
+                        />
+
                         <textarea
                             name="custom_requirements"
                             placeholder={formContent.placeholders.custom_requirements}

@@ -27,8 +27,8 @@
         "url": "/faq"
       },
       {
-        "label": "컨퍼런스 및 이벤트",
-        "url": "/events"
+        "label": "팀 소개",
+        "url": "/our-team"
       }
     ],
     "links": [
@@ -81,7 +81,8 @@
       "phone": "전화번호",
       "job": "직책",
       "company": "회사명",
-      "message": "관심 있는 분야"
+      "message": "관심 있는 분야",
+      "designation": "직함"
     },
     "placeholders": {
       "name": "전체 이름을 입력하세요",
@@ -90,7 +91,8 @@
       "job": "직책을 입력하세요",
       "company": "회사명을 입력하세요",
       "message": "관심 있는 분야를 입력하세요",
-      "custom_requirements": "맞춤 또는 특정 요구 사항을 입력하세요"
+      "custom_requirements": "맞춤 또는 특정 요구 사항을 입력하세요",
+      "designation": "직함을 입력하세요 (선택 사항)"
     },
     "validation": {
       "name": {

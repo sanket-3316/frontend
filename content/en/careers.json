@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "title": "Careers at Bremont Strategy | Join Our Team",
+    "description": "Direct high-stakes strategy and shape global capital. Explore open roles at Bremont Strategy, a leading independent management consulting firm.",
+    "keywords": ["Bremont Strategy careers", "consulting jobs", "market research careers", "strategy jobs"]
+  },
+  "hero": {
+    "title": "Careers at Bremont Strategy",
+    "subtitle": "Direct High-Stakes Strategy. Shape Global Capital."
+  },
+  "intro": "We deliver bespoke intelligence for multi-million-dollar allocations worldwide. At Bremont Strategy, top-tier minds solve complex institutional challenges for Fortune 500 leadership and tier-one investors.",
+  "why": {
+    "title": "Why Bremont",
+    "items": [
+      {
+        "title": "High-Impact Mandates",
+        "description": "Direct exposure to C-suite leaders and global private equity firms."
+      },
+      {
+        "title": "Meritocratic Growth",
+        "description": "Fast-track promotion based entirely on performance and rigor."
+      },
+      {
+        "title": "Radical Transparency",
+        "description": "Flat hierarchy, zero bureaucracy, and direct access to partners."
+      },
+      {
+        "title": "Total Autonomy",
+        "description": "Hybrid flexibility paired with competitive, performance-linked rewards."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Key Benefits",
+    "rows": [
+      {
+        "area": "Flexibility",
+        "features": "Hybrid/remote work options, flexible hours, competitive PTO."
+      },
+      {
+        "area": "Development",
+        "features": "Direct mentorship, executive training, project ownership."
+      },
+      {
+        "area": "Wellbeing",
+        "features": "Comprehensive health insurance, wellness programs, full coverage."
+      },
+      {
+        "area": "Rewards",
+        "features": "Above-market salary, performance bonuses, merit-based perks."
+      }
+    ]
+  },
+  "testimonial": {
+    "title": "What Our People Say",
+    "quote": "You handle critical strategic questions from day one. The standards are high, but the growth is unmatched.",
+    "attribution": "Partner, M&A Practice"
+  },
+  "openings": {
+    "title": "Current Openings",
+    "columns": {
+      "role": "Role",
+      "practiceArea": "Practice Area",
+      "location": "Location"
+    },
+    "noOpenings": "There are no open roles right now — check back soon or send us your resume below."
+  },
+  "join": {
+    "title": "Join Us",
+    "description": "Ready to drive institutional impact? Send your resume to",
+    "email": "sales@bremontstrategy.com"
+  }
+}

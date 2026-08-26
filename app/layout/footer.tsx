@@ -10,6 +10,9 @@ import { getContent } from "@/lib/content";
 import { ReactNode } from "react";
 
 function getFooterLink(url: string, locale: Locale): string {
+  // Careers is English-only — never prefix it with a locale
+  if (url === '/careers') return url;
+
   if (url.startsWith('/')) {
     return locale === DEFAULT_LOCALE ? url : `/${locale}${url}`;
   }

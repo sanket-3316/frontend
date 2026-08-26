@@ -369,6 +369,10 @@ export function Navbar({ locale, categories = [] }: Props) { // ✅ fallback add
                         <button
                           key={item.id}
                           type="button"
+                          onClick={() => {
+                            setSearchOpen(false);
+                            router.push(getLocalePath(item.url));
+                          }}
                           className="w-full text-left px-4 py-3 hover:bg-gray-100 border-b last:border-0"
                         >
                           <p className="text-sm font-medium text-gray-800">
@@ -380,15 +384,14 @@ export function Navbar({ locale, categories = [] }: Props) { // ✅ fallback add
                       {/* View All */}
                       <button
                         type="button"
+                        onClick={handleSearch}
                         className="w-full text-left px-4 py-3 text-blue-600 hover:bg-gray-50"
                       >
                         {locale === 'en'
                           ? 'View all results'
                           : locale === 'ja'
                             ? 'すべて表示'
-                            : locale === 'ko'
-                              ? '모두보기'
-                              : 'عرض النتائج'}
+                            : '모두보기'}
                       </button>
                     </div>
                   )}

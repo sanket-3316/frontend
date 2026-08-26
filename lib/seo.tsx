@@ -30,7 +30,7 @@ export function generateMetadata(
       url: fullUrl,
       type: seoData.type || 'website',
       images: seoData.image ? [{ url: seoData.image }] : [],
-      locale: locale === 'en' ? 'en_US' : locale === 'ja' ? 'ja_JP' : locale === 'ko' ? 'ko_KR' : 'ar_SA',
+      locale: locale === 'en' ? 'en_US' : locale === 'ja' ? 'ja_JP' : 'ko_KR',
       siteName: 'Bremont Strategy',
     },
     twitter: {
@@ -45,7 +45,6 @@ export function generateMetadata(
         'en': `${baseUrl}/`,
         'ja': `${baseUrl}/ja/`,
         'ko': `${baseUrl}/ko/`,
-        'ar': `${baseUrl}/ar/`,
       },
     },
   };
@@ -169,6 +168,57 @@ export function generateArticleSchema(
     },
     url: url,
   };
+}
+
+// Builds Product + AggregateRating + Offer schema straight from the
+// `reports` / `reports_info` / `report_prices` table data returned by
+// getSingleReport(), so it always reflects what's actually in the DB.
+export function generateReportSchema(report: any, url: string): SchemaMarkup {
+  const offers = [
+    { name: 'Single User License', price: report?.single },
+    { name: 'Multi User License', price: report?.multiuser },
+    { name: 'Corporate License', price: report?.corporate },
+    { name: 'Excel Datapack', price: report?.excel },
+  ]
+    .filter((o) => o.price != null && o.price !== '')
+    .map((o) => ({
+      '@type': 'Offer',
+      name: o.name,
+      price: String(o.price),
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      url,
+    }));
+
+  const schema: SchemaMarkup = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: report?.report_title || report?.keyword,
+    description: report?.meta_desc,
+    sku: report?.report_id != null ? String(report.report_id) : undefined,
+    category: report?.category_name,
+    url,
+    brand: {
+      '@type': 'Brand',
+      name: 'Bremont Strategy',
+    },
+  };
+
+  if (report?.rating) {
+    schema.aggregateRating = {
+      '@type': 'AggregateRating',
+      ratingValue: String(report.rating),
+      bestRating: '5',
+      worstRating: '1',
+      reviewCount: String(report.views ?? 1),
+    };
+  }
+
+  if (offers.length > 0) {
+    schema.offers = offers;
+  }
+
+  return schema;
 }
 
 export function generateBreadcrumbSchema(items: Array<{ name: string; url: string }>): SchemaMarkup {

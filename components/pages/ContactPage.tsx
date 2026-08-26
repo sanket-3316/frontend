@@ -50,7 +50,7 @@ export default async function ContactPage({ locale }: Props) {
         {/* HERO */}
         <section className="gradient-wrapper py-14 px-4 text-center">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl font-bold !text-white mb-3">
+            <h1 className="!text-3xl md:!text-5xl font-bold !text-white mb-3">
               {contact.info?.title || "Our Global Offices"}
             </h1>
             <p className="!text-white/80 text-lg">

@@ -44,7 +44,7 @@ export default async function AboutPage({ locale }: Props) {
                         <span className="inline-block bg-white/10 !text-white text-xs font-semibold tracking-widest uppercase px-4 py-1 rounded-full mb-6">
                             Management Consulting
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-bold mb-6 !text-white leading-tight">
+                        <h1 className="!text-3xl md:!text-5xl font-bold mb-6 !text-white leading-tight">
                             {about.hero.title}
                         </h1>
                         <p className="text-lg md:text-xl opacity-85 !text-white max-w-2xl mx-auto leading-relaxed">
