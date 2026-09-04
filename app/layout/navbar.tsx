@@ -235,7 +235,7 @@ export function Navbar({ locale, categories = [] }: Props) { // ✅ fallback add
               </button>
 
               {/* Language Switcher */}
-              <div className={`hidden gap-2 md:flex ${isRTL ? 'flex-row-reverse' : ''}`}>
+              {/* <div className={`hidden gap-2 md:flex ${isRTL ? 'flex-row-reverse' : ''}`}>
                 {SUPPORTED_LOCALES.map((loc) => {
                   const newPath =
                     loc === DEFAULT_LOCALE
@@ -255,7 +255,7 @@ export function Navbar({ locale, categories = [] }: Props) { // ✅ fallback add
                     </button>
                   );
                 })}
-              </div>
+              </div> */}
 
               {/* Mobile Menu Button */}
               <div className="md:hidden">
