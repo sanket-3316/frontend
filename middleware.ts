@@ -7,6 +7,16 @@ const locales = ['en', 'ja', 'ko'];
 export function middleware(request: NextRequest) {
   const { pathname, search } = request.nextUrl;
 
+  // 🔥 Paginated report sitemaps: /reports-N.xml needs to reach the same
+  // [locale] route tree /{locale}/reports-N.xml uses (a second top-level
+  // dynamic segment isn't allowed alongside it) — rewrite before the
+  // generic dot-exclusion below skips it as a "static file".
+  if (/^\/reports-\d+\.xml$/.test(pathname)) {
+    return NextResponse.rewrite(
+      new URL(`/${DEFAULT_LOCALE}${pathname}${search}`, request.url)
+    );
+  }
+
   // ignore static files
   if (
     pathname.startsWith('/_next') ||

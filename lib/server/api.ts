@@ -117,15 +117,23 @@ export async function getReports(
 export async function getCategoryReports(
   locale: string,
   categorySlug?: string,
-  search?: string
+  search?: string,
+  page?: number,
+  perPage: number = 20
 ) {
-  const key = `reports:${locale}:${categorySlug || 'all'}`;
+  const key = `reports:${locale}:${categorySlug || 'all'}:${search || ''}:${page || 'all'}:${perPage}`;
 
-  const cached = getCache<any[]>(key);
+  const cached = getCache<any>(key);
   if (cached) return cached;
 
   try {
-    const res = await fetch(`${BASE_URL}/category-wise-reports`, {
+    const url = new URL(`${BASE_URL}/category-wise-reports`);
+    if (page) {
+      url.searchParams.set('page', String(page));
+      url.searchParams.set('per_page', String(perPage));
+    }
+
+    const res = await fetch(url.toString(), {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -140,14 +148,14 @@ export async function getCategoryReports(
 
     const json = await res.json();
 
-    const data = json || []; 
+    const data = json || {};
 
     setCache(key, data, CACHE_TTL);
 
     return data;
   } catch (error) {
     console.error('Reports API error:', error);
-    return [];
+    return { reports: [], category: null, pagination: null };
   }
 }
 

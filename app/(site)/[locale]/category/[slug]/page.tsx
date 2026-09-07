@@ -11,11 +11,17 @@ import Breadcrumb from '@/components/Breadcrumb';
 import { getCategories, getCategoryReports } from '@/lib/server/api';
 import { getHomeRoute } from '@/lib/routes';
 import ExpandableDescription from '@/components/ExpandableDescription';
+import Pagination from '@/components/Pagination';
+
+const REPORTS_PER_PAGE = 20;
 
 interface categoryPageProps {
   params: {
     locale: string;
     slug: string; // 🔥 add this
+  };
+  searchParams: {
+    page?: string;
   };
 }
 
@@ -36,7 +42,7 @@ type Report = {
   category_id?: number;
 };
 
-export default async function Page({ params }: categoryPageProps) {
+export default async function Page({ params, searchParams }: categoryPageProps) {
   const { locale } = params;
 
   if (!SUPPORTED_LOCALES.includes(locale as Locale)) {
@@ -47,12 +53,20 @@ export default async function Page({ params }: categoryPageProps) {
   const categories = await getCategories(typedLocale);
   const categorySlug = params.slug;
 
+  const currentPage = Math.max(1, parseInt(searchParams?.page || '1', 10) || 1);
+
   const apiResp = await getCategoryReports(
     typedLocale,
-    categorySlug
+    categorySlug,
+    undefined,
+    currentPage,
+    REPORTS_PER_PAGE
   );
   const reports = apiResp?.reports
   const category = apiResp?.category
+  const pagination = apiResp?.pagination
+
+  const basePath = `${typedLocale === 'en' ? '' : `/${typedLocale}`}/category/${categorySlug}`;
 
   const dir = localeConfig[typedLocale].dir;
   const common = await getContent(typedLocale, 'common');
@@ -92,18 +106,28 @@ export default async function Page({ params }: categoryPageProps) {
               <CategorySidebar categories={categories} locale={typedLocale} />
               <div className="md:col-span-3">
                 {reports.length > 0 ? (
-                  <div className="grid  gap-6">
-                    {reports.map((report: Report) => (
-                      <ReportCard
-                        key={report.report_id}
-                        report={report}
-                        formContent={common.form} 
-                        reportContent={common.report} 
-                        reportTitle={common.report.reportTitle} 
-                        requestsampleBtnTitle={common.report.downloadPDF} 
+                  <>
+                    <div className="grid  gap-6">
+                      {reports.map((report: Report) => (
+                        <ReportCard
+                          key={report.report_id}
+                          report={report}
+                          formContent={common.form}
+                          reportContent={common.report}
+                          reportTitle={common.report.reportTitle}
+                          requestsampleBtnTitle={common.report.downloadPDF}
+                        />
+                      ))}
+                    </div>
+
+                    {pagination && (
+                      <Pagination
+                        currentPage={pagination.page}
+                        lastPage={pagination.last_page}
+                        basePath={basePath}
                       />
-                    ))}
-                  </div>
+                    )}
+                  </>
                 ) : (
                   <div className="text-center py-12">
                     <p className="text-gray-500 text-lg">

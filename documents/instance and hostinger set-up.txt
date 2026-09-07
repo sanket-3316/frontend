@@ -38,3 +38,12 @@ DB_PORT=3306
 DB_DATABASE=palmercruz
 DB_USERNAME=palmer
 DB_PASSWORD=Palmer@123
+
+
+php artisan cache:clear
+php artisan config:clear
+php artisan route:clear
+php artisan view:clear
+php artisan optimize:clear
+
+sudo supervisorctl restart all
