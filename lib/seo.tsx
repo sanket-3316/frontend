@@ -1,5 +1,15 @@
 import { Metadata } from 'next';
-import { Locale } from './config';
+import { Locale, SUPPORTED_LOCALES } from './config';
+
+const OG_LOCALE_MAP: Record<Locale, string> = {
+  en: 'en_US',
+  ja: 'ja_JP',
+  ko: 'ko_KR',
+  zh: 'zh_CN',
+  es: 'es_ES',
+  de: 'de_DE',
+  fr: 'fr_FR',
+};
 
 export interface SEOMetadata {
   title: string;
@@ -30,7 +40,7 @@ export function generateMetadata(
       url: fullUrl,
       type: seoData.type || 'website',
       images: seoData.image ? [{ url: seoData.image }] : [],
-      locale: locale === 'en' ? 'en_US' : locale === 'ja' ? 'ja_JP' : 'ko_KR',
+      locale: OG_LOCALE_MAP[locale] || 'en_US',
       siteName: 'Bremont Strategy',
     },
     twitter: {
@@ -41,11 +51,9 @@ export function generateMetadata(
     },
     alternates: {
       canonical: fullUrl,
-      languages: {
-        'en': `${baseUrl}/`,
-        'ja': `${baseUrl}/ja/`,
-        'ko': `${baseUrl}/ko/`,
-      },
+      languages: Object.fromEntries(
+        SUPPORTED_LOCALES.map((l) => [l, l === 'en' ? `${baseUrl}/` : `${baseUrl}/${l}/`])
+      ),
     },
   };
 }

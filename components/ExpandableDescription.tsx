@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import DOMPurify from 'dompurify';
 
 export default function ExpandableDescription({
   html,
@@ -40,7 +39,7 @@ export default function ExpandableDescription({
           expanded ? '' : 'line-clamp-5'
         }`}
         dangerouslySetInnerHTML={{
-          __html: DOMPurify.sanitize(html),
+          __html: html,
         }}
       />
 

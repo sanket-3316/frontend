@@ -1,8 +1,8 @@
 "use client";
 
-import { getCategories, getReports } from "@/lib/server/api";
+import { getReports } from "@/lib/server/api";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type Category = {
     id: number;
@@ -21,51 +21,37 @@ type CategorySectionProps = {
     title: string;
     browseReportsBTN: string;
     browseIndustryBTN: string;
+    categories: Category[];
+    initialReports: Report[];
 };
 
+// Categories and the first category's reports are fetched server-side by
+// the parent page and passed in here — the initial render is fully SSR,
+// strictly scoped to this locale (no client fetch, no loading flash).
+// Only switching to a *different* category tab fetches client-side, since
+// that's genuine runtime interactivity a page load can't pre-render.
 export default function CategorySection({
     lang,
     title,
     browseReportsBTN,
     browseIndustryBTN,
+    categories,
+    initialReports,
 }: CategorySectionProps) {
-    const [categories, setCategories] = useState<Category[]>([]);
-    const [reports, setReports] = useState<Report[]>([]);
-    const [activeCategory, setActiveCategory] = useState<number>(1);
-    const [loading, setLoading] = useState(true);
+    const [reports, setReports] = useState<Report[]>(initialReports);
+    const [activeCategory, setActiveCategory] = useState<number>(categories[0]?.id ?? 0);
     const [reportsLoading, setReportsLoading] = useState(false);
     const locale = lang;
+    const isFirstRender = useRef(true);
 
-    // 🔹 Load categories + default reports
+    // 🔹 Fetch reports when category changes (skips the initial render —
+    // that data already arrived server-rendered via `initialReports`).
     useEffect(() => {
-        const init = async () => {
-            try {
-                setLoading(true); // for categories
-                setReportsLoading(true); // 🔥 for reports
+        if (isFirstRender.current) {
+            isFirstRender.current = false;
+            return;
+        }
 
-                const catRes = await getCategories(locale);
-                const topCategories = catRes.slice(0, 8);
-                setCategories(topCategories);
-
-                if (catRes.length > 0) {
-                    const defaultCat = catRes[0];
-                    setActiveCategory(defaultCat.id);
-
-                    const repRes = await getReports(locale, defaultCat.id, 6);
-                    setReports(repRes?.data || []);
-                }
-            } catch (err) {
-                console.error(err);
-            } finally {
-                setLoading(false);
-                setReportsLoading(false); // 🔥 stop reports loader
-            }
-        };
-        init()
-    }, [locale]);
-
-    // 🔹 Fetch reports when category changes
-    useEffect(() => {
         const fetchReportsByCategory = async () => {
             if (!categories.length) return;
 
@@ -206,7 +192,7 @@ export default function CategorySection({
                                             key={index}
                                             className="rounded-lg p-5 shadow-lg shadow-cyan-500/20"
                                         >
-                                            <Link href={`/report/${report.report_url}`} className="!font-semibold">
+                                            <Link href={locale === 'en' ? `/report/${report.report_url}` : `/${locale}/report/${report.report_url}`} className="!font-semibold">
                                                 {report.keyword}
                                             </Link>
                                             <p className="!text-sm line-clamp-3 mt-1">

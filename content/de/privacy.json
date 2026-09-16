@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "Datenschutzrichtlinie | Bremont Strategy",
+    "description": "Die Datenschutzrichtlinie von Bremont Strategy beschreibt unser Engagement zum Schutz der persönlichen und geschäftlichen Daten, die Sie als Verantwortlicher und Auftragsverarbeiter mit uns teilen.",
+    "keywords": ["Datenschutzrichtlinie", "Bremont Strategy", "Datenschutz", "DSGVO", "Verantwortlicher"]
+  },
+  "hero": {
+    "title": "Datenschutzrichtlinie",
+    "subtitle": "Unser Engagement für den Schutz Ihrer Daten"
+  },
+  "intro": "<strong>Bremont Strategy</strong> (das „Unternehmen“, „wir“) betreibt die Website <a href=\"https://www.bremontstrategy.com/\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.bremontstrategy.com/</a> (die „Website“) und bietet weltweit strategische Marktforschung, Wettbewerbsanalysen und Unternehmensberatungsdienstleistungen an (die „Dienstleistungen“). Wir wissen, dass Ihre Privatsphäre von größter Bedeutung ist. Diese Datenschutzrichtlinie beschreibt unser Engagement zum Schutz der persönlichen und geschäftlichen Daten, die Sie mit uns teilen. <strong>Bremont Strategy fungiert als Verantwortlicher und Auftragsverarbeiter</strong> für alle über diese Website erfassten Informationen.",
+  "sections": [
+    {
+      "number": "1",
+      "title": "Rechtsgrundlage für die Datenverarbeitung",
+      "content": "Wir erfassen und verarbeiten Ihre Informationen im Rahmen klar definierter internationaler Rechtsrahmen:",
+      "items": [
+        "<strong>Vertragserfüllung:</strong> Zur Bereitstellung strategischer Berichte, Abwicklung von Transaktionen oder Ausführung von Ihnen initiierter Datendienste.",
+        "<strong>Berechtigte Geschäftsinteressen:</strong> Zur Optimierung der Website-Leistung, zum Schutz unserer Netzwerksicherheit, zur Verhinderung von Unternehmensbetrug und zur Durchführung gezielten professionellen B2B-Marketings.",
+        "<strong>Rechtliche Compliance:</strong> Zur Erfüllung regulatorischer, steuerlicher, gesetzlicher oder behördlicher Verpflichtungen weltweit."
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Informationen, die Wir Erfassen",
+      "content": "Wir beschränken unsere Datenerfassung auf Informationen, die Ihre Erfahrung direkt verbessern und unsere spezialisierten Dienstleistungen ermöglichen:",
+      "items": [
+        "<strong>Freiwillige Unternehmensinformationen:</strong> Wir erfassen Namen, geschäftliche E-Mail-Adressen, Berufsbezeichnungen, Firmennamen, Branchen und Abrechnungsdaten, wenn Sie Musterberichte anfordern oder eine Transaktion abschließen.",
+        "<strong>Automatisierte Nutzungsinformationen:</strong> Wir erfassen passiv technische Daten wie IP-Adressen, Geräte-Identifikatoren, Browsertypen und Clickstream-Interaktionen, um Trends bei der Nutzbarkeit der Website zu bewerten.",
+        "<strong>Cookies:</strong> Wir verwenden standardmäßige Browser-Cookies, um Ihre Anzeigepräferenzen zu speichern und Ihren Zugriff zu optimieren. Sie können Ihre Browsereinstellungen jederzeit ändern, um Cookies abzulehnen."
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Wie Wir Ihre Informationen Verwenden",
+      "content": "Wir verwenden Ihre Daten ausschließlich zur Ausführung zentraler Geschäftsabläufe und strategischer Unterstützung:",
+      "items": [
+        "<strong>Serviceausführung:</strong> Zur Abwicklung von Unternehmenstransaktionen, Verwaltung von Unternehmenskonten und Bereitstellung individueller Marktanalysen.",
+        "<strong>Gezielte Kommunikation:</strong> Zur Beantwortung formeller Forschungsanfragen, zum Versenden von Wartungshinweisen und zur Bereitstellung angeforderter Brancheneinblicke.",
+        "<strong>Systemoptimierung:</strong> Zur Analyse von Website-Kennzahlen, zur Fehlerbehebung bei technischen Problemen und zur Verbesserung unserer digitalen Analysetools."
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Datenweitergabe und Globale Übermittlungen",
+      "content": "Wir verkaufen, vermieten oder handeln nicht mit Ihren persönlichen oder geschäftlichen Daten für Direktmarketingzwecke Dritter. Wir teilen Informationen nur unter folgenden spezifischen Bedingungen:",
+      "items": [
+        "<strong>Autorisierte Servicepartner:</strong> Mit geprüften technischen Beratern oder sicheren Zahlungsgateways unter strengen Vertraulichkeitsvereinbarungen.",
+        "<strong>Rechtliche und Strukturelle Veränderungen:</strong> Wenn gesetzlich vorgeschrieben oder im Rahmen einer Unternehmensfusion, bei der sich die übernehmende Einheit vertraglich zu einem identischen Datenschutzniveau verpflichtet.",
+        "<strong>Grenzüberschreitende Übermittlungen:</strong> Da wir weltweit tätig sind, können Ihre Daten sicher in Länder außerhalb Ihres Herkunftsgebiets übermittelt und dort verarbeitet werden (wie <strong>die USA oder Indien</strong>). Wir wenden umfassende technische Sicherheitsvorkehrungen an, um sicherzustellen, dass diese Daten vollständig geschützt bleiben."
+      ]
+    },
+    {
+      "number": "5",
+      "title": "Datensicherheit und Technische Schutzmaßnahmen",
+      "content": "Wir setzen strenge technische und organisatorische Sicherheitsmaßnahmen ein, um unbefugten Datenzugriff, -änderung oder -offenlegung zu verhindern:",
+      "items": [
+        "Alle Online-Zahlungskanäle verwenden <strong>Secure-Sockets-Layer(SSL)</strong>-Software und entsprechen vollständig modernen <strong>PCI-DSS-Verschlüsselungsstandards</strong>.",
+        "Wir beschränken den internen Datenzugriff strikt auf zertifizierte Mitarbeiter und Analysten, die die Informationen zur Durchführung Ihrer Marktforschungsprojekte benötigen.",
+        "Obwohl wir branchenübliche Praktiken anwenden, ist keine internetbasierte Übertragung vollständig unangreifbar, und Interaktionen erfolgen auf eigenes Risiko."
+      ]
+    },
+    {
+      "number": "6",
+      "title": "Datenaufbewahrungszyklus",
+      "content": "Wir speichern Ihre Unternehmens- und persönlichen Informationen nur so lange, wie Ihr Konto aktiv bleibt oder wie es zur Erfüllung der in dieser Richtlinie beschriebenen genauen Geschäftszwecke erforderlich ist. Wenn Sie sich entscheiden, Ihre Beziehung zu uns zu beenden, löschen wir Ihre Daten dauerhaft oder anonymisieren sie aus unserer aktiven Speicherinfrastruktur, sofern nicht eine rechtliche, steuerliche oder gesetzliche Aufbewahrung zwingend erforderlich ist.",
+      "items": []
+    },
+    {
+      "number": "7",
+      "title": "Ihre Rechte und Datenkontrolle",
+      "content": "Wir gewähren allen unseren globalen Kunden und Website-Besuchern umfassende Datenverwaltungsrechte im Einklang mit internationalen Standards wie der <strong>DSGVO</strong>:",
+      "items": [
+        "<strong>Zugang &amp; Berichtigung:</strong> Sie können eine vollständige Zusammenfassung der über Sie gespeicherten Daten anfordern oder direkte Korrekturen ungenauer Informationen einreichen.",
+        "<strong>Löschung &amp; Einschränkung:</strong> Sie haben das Recht, zu verlangen, dass wir Ihre Daten dauerhaft aus unseren Systemen entfernen oder deren Verarbeitung aus berechtigten Gründen einschränken.",
+        "<strong>Widerspruchsausübung:</strong> Sie können den Erhalt professioneller Marketing-Updates sofort beenden, indem Sie auf die Schaltfläche „Abbestellen“ in unseren digitalen Mailings klicken oder <a href=\"mailto:legal@bremontstrategy.com\">unser Rechtsteam per E-Mail kontaktieren</a>. Wir bearbeiten alle verifizierten Anfragen zur Datenkontrolle vollständig innerhalb von <strong>48 bis 72 Geschäftsstunden</strong>."
+      ]
+    },
+    {
+      "number": "8",
+      "title": "Richtlinienänderungen und Aktualisierungen",
+      "content": "Wir behalten uns das Recht vor, Teile dieser Datenschutzrichtlinie jederzeit zu ändern oder zu aktualisieren, um sie an sich entwickelnde Branchenvorschriften oder Unternehmenspraktiken anzupassen. Etwaige Überarbeitungen treten sofort mit der Veröffentlichung auf dieser Seite in Kraft. Bei wesentlichen Aktualisierungen, die sich auf die Art und Weise auswirken, wie wir Ihre persönlichen Daten verarbeiten, werden wir Sie deutlich über die Startseite unserer Website oder per direkter E-Mail-Benachrichtigung informieren, bevor die Änderung wirksam wird.",
+      "items": []
+    },
+    {
+      "number": "9",
+      "title": "Beschwerdemanagement und Kontaktinformationen",
+      "content": "Für Anfragen zur Datenverwaltung, Fragen zur gesetzlichen Compliance oder direkte Anliegen bezüglich unserer Datenschutzinfrastruktur kontaktieren Sie bitte unseren Rechtsvertreter:",
+      "items": [
+        "<strong>E-Mail:</strong> <a href=\"mailto:legal@bremontstrategy.com\">legal@bremontstrategy.com</a>",
+        "<strong>Postalische Anfragen:</strong> Bremont Strategy, Legal Compliance Division, 24a Trolley Square, Wilmington, Delaware, 19801, USA"
+      ]
+    }
+  ],
+  "lastUpdated": "Letzte Aktualisierung: 2026",
+  "cta": {
+    "title": "Fragen zu Ihren Daten?",
+    "description": "Kontaktieren Sie unsere Rechtsabteilung für Compliance für Datenverwaltungsanfragen oder Datenschutzfragen."
+  }
+}

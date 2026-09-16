@@ -19,6 +19,14 @@ function marketSuffix(lang: string) {
       return { word: '市場', separator: '' };
     case 'ko':
       return { word: '시장', separator: '' };
+    case 'zh':
+      return { word: '市场', separator: '' };
+    case 'es':
+      return { word: 'Mercado', separator: ' - ' };
+    case 'de':
+      return { word: 'Markt', separator: '-' };
+    case 'fr':
+      return { word: 'Marché', separator: ' ' };
     default:
       return { word: 'Market', separator: ' ' };
   }

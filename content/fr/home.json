@@ -1,0 +1,111 @@
+{
+  "title": "Bremont Strategy - Intelligence Stratégique de Marché",
+  "description": "Découvrez des rapports d'études de marché complets et des insights sectoriels",
+  "keywords": [
+    "étude de marché",
+    "rapports",
+    "insights sectoriels",
+    "intelligence économique"
+  ],
+  "hero": {
+    "title": "Découvrez des Outils d'Étude de Marché Alimentés par l'IA pour une Croissance Commerciale Compétitive",
+    "subtitle": "Obtenez des insights précis et exploitables en temps réel pour prendre des décisions commerciales plus judicieuses. Nos outils d'IA fournissent des tendances de marché et des analyses concurrentielles, vous aidant à rester compétitif et agile.",
+    "cta": "Explorer les Rapports",
+    "image": "/images/hero.jpg"
+  },
+  "statsSection": [
+    {
+      "icon": "FaChartLine",
+      "value": 42,
+      "prefix": "$",
+      "suffix": "Md",
+      "label": "Impact sur les Revenus Généré"
+    },
+    {
+      "icon": "FaLightbulb",
+      "value": 15000,
+      "suffix": "+",
+      "label": "Opportunités à Forte Croissance"
+    },
+    {
+      "icon": "FaGlobe",
+      "value": 60000,
+      "label": "Marchés Connectés"
+    },
+    {
+      "icon": "FaUsers",
+      "value": 330,
+      "suffix": "+",
+      "label": "Analystes et Consultants"
+    }
+  ],
+  "exploreMarketResearchSection": {
+    "title": "Explorez les Rapports d'Études de Marché pour Votre Secteur avec Bremont Strategy",
+    "browseReportsBTN": "Parcourir Tous les Rapports",
+    "browseIndustryBTN": "Voir Tous les Secteurs"
+  },
+  "latestFromBremont": "Dernières Actualités de Bremont Strategy",
+  "testimonialsSection": {
+    "title": "Témoignages Axés sur l'Impact",
+    "testimonials": [
+      {
+        "content": "Les insights ont expliqué ce qui freinait certains de nos produits dans une région particulière. Nous avons apporté quelques changements, et l'impact était visible dès la revue suivante.",
+        "name": "Arnold Shieh",
+        "organization": "IKEA"
+      },
+      {
+        "content": "Leur analyse de marché nous a aidés à identifier les bonnes opportunités. Les résultats ont été visibles rapidement avec de solides retours.",
+        "name": "Riccardo Carlo",
+        "organization": "McKinsey & Company"
+      },
+      {
+        "content": "L'équipe a toujours été disponible et facile à travailler. Leurs recommandations étaient pratiques et efficaces.",
+        "name": "John Katani",
+        "organization": "Strategy Group"
+      },
+      {
+        "content": "Excellent soutien et insights approfondis sur notre activité. Fortement recommandé pour les besoins en études de marché.",
+        "name": "Sarah Williams",
+        "organization": "Deloitte"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Pourquoi Nous Choisir",
+    "content": [
+      {
+        "title": "Insights Pilotés par des Experts",
+        "description": "Notre étude de marché, nos connaissances approfondies et notre analyse minutieuse se traduisent en directives exploitables pour vos décisions.",
+        "img": "/images/icon1.svg"
+      },
+      {
+        "title": "Analyses Sur Mesure",
+        "description": "Nous répondons à vos besoins en études de marché en développant des solutions de recherche personnalisées.",
+        "img": "/images/icon2.svg"
+      },
+      {
+        "title": "Engagés vers l'Excellence",
+        "description": "Notre objectif premier est de faire preuve de professionnalisme de manière constante et de respecter des normes éthiques dans chaque action réalisée.",
+        "img": "/images/icon3.svg"
+      },
+      {
+        "title": "Offres Polyvalentes",
+        "description": "Nos rapports d'études de marché couvrent des périmètres individuels jusqu'à l'échelle de l'entreprise, répondant à la plupart des besoins analytiques.",
+        "img": "/images/icon4.svg"
+      }
+    ]
+  },
+  "trustedByIndustryLeaders": "Approuvé par les Leaders du Secteur",
+  "clientLogos": [
+    "/images/our-clients/abb.png",
+    "/images/our-clients/apple.png",
+    "/images/our-clients/basf.png",
+    "/images/our-clients/baxter.png",
+    "/images/our-clients/bosch.png",
+    "/images/our-clients/dolby.png",
+    "/images/our-clients/exxonmobil.png",
+    "/images/our-clients/herman.png",
+    "/images/our-clients/parker.png",
+    "/images/our-clients/sony.png"
+  ]
+}

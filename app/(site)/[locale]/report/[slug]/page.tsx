@@ -113,6 +113,7 @@ export default async function ReportPage({ params }: Props) {
               reportId={report.report_id}
               categoryId={report.category_id}
               keyword={report.keyword}
+              locale={locale}
               formContent={common.form}
               reportContent={common?.report}
             />
@@ -122,6 +123,7 @@ export default async function ReportPage({ params }: Props) {
               reportId={report.report_id}
               categoryId={report.category_id}
               keyword={report.keyword}
+              locale={locale}
               formContent={common.form}
               reportContent={common?.report}
             />
@@ -168,6 +170,7 @@ export default async function ReportPage({ params }: Props) {
               reportId={report.report_id}
               categoryId={report.category_id}
               keyword={report.keyword}
+              locale={locale}
               formContent={common.form}
               reportContent={common?.report}
             />

@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "关于 Bremont Strategy | 领先的管理咨询公司",
+    "description": "Bremont Strategy 是一家领先的独立管理咨询公司，为全球数百万美元级别的资本配置提供定制化商业情报。",
+    "keywords": ["关于 Bremont Strategy", "管理咨询", "市场调研", "商业情报", "战略咨询"]
+  },
+  "hero": {
+    "title": "关于 Bremont Strategy",
+    "subtitle": "战略市场情报的机构级标准"
+  },
+  "about": {
+    "title": "我们是谁",
+    "description": "<strong>Bremont Strategy</strong>是一家领先的独立管理咨询公司，是市场领导者、跨国企业和一线投资者在应对高风险战略拐点时所依赖的机构基石。我们提供极具权威性的定制商业情报，为全球关键的<strong>数百万美元级资本配置</strong>提供所需的思想深度、声誉与决定性权威。",
+    "description2": "我们的业务是对商品化的现成数据和自动化市场报告的严谨替代方案。我们深知泛泛而谈的信息会带来不可接受的企业风险，因此完全摒弃交易性数据包。相反，我们<strong>构建精英级战略框架</strong>，专为您企业复杂的架构与精确的摩擦点量身定制。",
+    "description3": "为驾驭高度专业化的全球垂直领域——包括<strong>特种化学品、可持续能源框架与先进农业技术</strong>——的复杂性，我们调动资深首席分析师专项团队。我们将调研参数与您的内部目标无缝对齐，消除市场噪音，助您获得无可撼动的行业领导地位。",
+    "description4": "我们通过严谨的<a href=\"#validation-protocol\"><strong>四阶段一致性协议</strong></a>，将全球宏观经济趋势与细致的自下而上微观动态相互印证，从而确保绝对的方法论严谨性。我们刻意拒绝算法报告的短期速度，因为能够经受住严格董事会审查的企业预测模型，需要深厚的人工工程投入。",
+    "description5": "归根结底，我们的公司是<strong>贵公司高管委员会不可或缺的延伸</strong>，也是内部战略部门的有力补充。我们提供决定性的思想洞察，以及持续多年的顾问支持，帮助您把握行业颠覆机遇，并以绝对坚定的信心在任何国际市场部署资本。"
+  },
+  "services": {
+    "title": "我们的核心情报引擎",
+    "description": "这种定制化方法以密集的<strong>人工驱动核心情报引擎</strong>为根基，彻底颠覆了流于表面的自动化调查。我们的全球团队与塑造现代产业的供应链架构师和<strong>C级高管</strong>进行有针对性的高层对话，并通过机构级数据库验证对这些独家一手洞察进行交叉验证。"
+  },
+  "process": {
+    "id": "validation-protocol",
+    "title": "我们的四阶段全球验证协议",
+    "subtitle": "我们严谨的验证结构确保提交给董事会的每一份情报，都经受住地缘政治、宏观经济及技术波动的压力测试。",
+    "steps": [
+      {
+        "number": "01",
+        "title": "深度机构挖掘",
+        "description": "通过<strong>高端数据节点</strong>、企业备案文件与国际贸易台账建立历史基线。"
+      },
+      {
+        "number": "02",
+        "title": "精准一手调研",
+        "description": "与全球关键利益相关方、竞争对手及行业驱动者开展<strong>高层次的人对人访谈</strong>。"
+      },
+      {
+        "number": "03",
+        "title": "定制化定量建模",
+        "description": "将实地数据整合为<strong>定制化的十年预测表</strong>，映射至您企业的具体增长场景。"
+      },
+      {
+        "number": "04",
+        "title": "首席专家小组复核",
+        "description": "由<strong>拥有十年以上领域专长的资深顾问</strong>进行最终交叉验证，确保绝对的战略一致性。"
+      }
+    ]
+  },
+  "capabilities": {
+    "title": "为什么选择 Bremont Strategy",
+    "items": [
+      {
+        "title": "定制化项目启动",
+        "description": "完全围绕<strong>客户专属需求简报</strong>设计，而非预打包或模板化数据。"
+      },
+      {
+        "title": "85% 直接高管访谈",
+        "description": "我们的一手数据引擎依赖于对供应链架构师与C级高管的<strong>录音并转录的直接访谈</strong>。"
+      },
+      {
+        "title": "6-8周专属工程",
+        "description": "相较24-48小时的算法生成，我们提供<strong>6-8周专属的人工主导工程</strong>。"
+      },
+      {
+        "title": "四阶段全球三角验证",
+        "description": "相较标准化数据发行商的单一来源二手案头研究，我们采用严谨的<strong>四阶段交叉验证协议</strong>。"
+      },
+      {
+        "title": "持续多年顾问服务",
+        "description": "<strong>定制化格式与持续多年的顾问服务</strong>，而非一次性PDF静态交付。"
+      },
+      {
+        "title": "董事会级情报",
+        "description": "通过深厚的人工工程，打造能够经受<strong>严格董事会级审查</strong>的企业预测模型。"
+      }
+    ]
+  },
+  "clients": {
+    "title": "我们的知名客户",
+    "items": ["BASF", "UBS", "Ferrero", "P&G", "Deloitte"]
+  }
+}

@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
+import { SUPPORTED_LOCALES, DEFAULT_LOCALE } from '@/lib/config';
 
-const DEFAULT_LOCALE = 'en';
-const locales = ['en', 'ja', 'ko'];
+const locales: string[] = [...SUPPORTED_LOCALES];
 
 export function middleware(request: NextRequest) {
   const { pathname, search } = request.nextUrl;

@@ -1,0 +1,159 @@
+{
+  "site": {
+    "name": "Bremont Strategy",
+    "description": "Führende unabhängige Unternehmensberatung für strategische Marktintelligenz und Kapitalallokationsentscheidungen"
+  },
+  "nav": {
+    "home": "Startseite",
+    "categories": "Branchen",
+    "about": "Über Uns",
+    "contact": "Kontakt",
+    "search": "Suche",
+    "searchPlaceholder": "Suchen...",
+    "loading": "Wird geladen...",
+    "viewAllResults": "Alle Ergebnisse anzeigen",
+    "noResultsFound": "Keine Ergebnisse gefunden",
+    "cancel": "Abbrechen"
+  },
+  "footer": {
+    "certifications": [
+      {
+        "image": "/images/certifications_logo-2026.png",
+        "title": "ISO-zertifiziert"
+      },
+      {
+        "image": "/images/esomar_2026.png",
+        "title": "Authorize.net"
+      }
+    ],
+    "information": [
+      {
+        "label": "Häufige Fragen",
+        "url": "/faq"
+      },
+      {
+        "label": "Unser Team",
+        "url": "/our-team"
+      }
+    ],
+    "links": [
+      {
+        "label": "Karriere",
+        "url": "/careers"
+      },
+      {
+        "label": "Datenschutzrichtlinie",
+        "url": "/privacy-policy"
+      }
+    ],
+    "contact": {
+      "title": "Globaler Hauptsitz",
+      "address": "24a Trolley Square, Wilmington, Delaware, 19801, USA",
+      "phones": [
+        "USA: +1-302-846-2799",
+        "EMEA: +49-176-7450-2496"
+      ],
+      "email": "sales@bremontstrategy.com"
+    },
+    "bottom": {
+      "company": "Bremont Strategy",
+      "copyright": "© 2026 Alle Rechte vorbehalten."
+    },
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "#"
+      },
+      {
+        "name": "twitter",
+        "url": "#"
+      },
+      {
+        "name": "facebook",
+        "url": "#"
+      },
+      {
+        "name": "youtube",
+        "url": "#"
+      }
+    ]
+  },
+  "form": {
+    "title": "Kontaktformular",
+    "labels": {
+      "name": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "job": "Berufsbezeichnung",
+      "company": "Firmenname",
+      "message": "Interessengebiet",
+      "designation": "Position"
+    },
+    "placeholders": {
+      "name": "Geben Sie Ihren vollständigen Namen ein",
+      "email": "Geben Sie Ihre geschäftliche E-Mail-Adresse ein",
+      "phone": "Telefonnummer eingeben (ohne Ländervorwahl)",
+      "job": "Geben Sie Ihre Berufsbezeichnung ein",
+      "company": "Geben Sie Ihren Firmennamen ein",
+      "message": "Geben Sie Ihr Interessengebiet ein",
+      "custom_requirements": "Geben Sie Ihre individuellen oder spezifischen Anforderungen ein",
+      "designation": "Geben Sie Ihre Position ein (optional)"
+    },
+    "validation": {
+      "name": {
+        "required": true,
+        "min": 3
+      },
+      "email": {
+        "required": true,
+        "pattern": "email"
+      },
+      "phone": {
+        "required": true,
+        "min": 8
+      },
+      "message": {
+        "required": true
+      }
+    },
+    "errors": {
+      "name_required": "Name ist erforderlich",
+      "name_min": "Der Name muss mindestens 3 Zeichen lang sein",
+      "email_required": "E-Mail ist erforderlich",
+      "email_invalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "phone_required": "Telefonnummer ist erforderlich",
+      "phone_min": "Die Telefonnummer ist zu kurz",
+      "message_required": "Nachricht ist erforderlich",
+      "captcha_required": "Bitte geben Sie den Sicherheitscode ein"
+    },
+    "captcha": {
+      "label": "Sicherheitscode",
+      "placeholder": "Geben Sie den angezeigten Sicherheitscode ein"
+    },
+    "submit": "Absenden",
+    "success": "Vielen Dank! Ihre Nachricht wurde gesendet."
+  },
+  "report": {
+    "noReportsFound": "In dieser Kategorie wurden keine Berichte gefunden",
+    "categories": "Kategorien",
+    "reportTitle": "[[keyword]]-Markt",
+    "buyNow": "Mit einem Analysten sprechen",
+    "downloadFreePDF": "Jetzt kostenloses PDF herunterladen",
+    "downloadPDF": "Kostenloses PDF herunterladen",
+    "customizeYourReport": "Bericht individuell anpassen",
+    "getFreeSampleOfThisReport": "Kostenloses Muster dieses Berichts anfordern",
+    "reportNotFound": "Bericht nicht gefunden",
+    "aboutThisReport": "ÜBER DIESEN BERICHT",
+    "tableOfContents": "INHALTSVERZEICHNIS",
+    "methodology": "METHODIK",
+    "faqs": "HÄUFIG GESTELLTE FRAGEN"
+  },
+  "search": {
+    "searchResult": "Suchergebnisse",
+    "resultFor": "Ergebnisse für",
+    "noResultFound": "Keine Ergebnisse gefunden",
+    "trySearchingWithDifferentKeywords": "Versuchen Sie es mit anderen Suchbegriffen",
+    "searchQuery": "Geben Sie einen Suchbegriff ein, um zu beginnen",
+    "searchMarketResearchReports": "Marktforschungsberichte durchsuchen"
+  }
+}

@@ -4,6 +4,10 @@
     "description": "Bremont Strategy의 전략적 시장 조사, 경쟁 분석 및 경영 컨설팅 서비스에 대해 문의하세요. 미국, 독일, 인도에 사무소가 있습니다.",
     "keywords": ["Bremont Strategy 문의", "컨설팅", "시장 조사", "전략 컨설팅"]
   },
+  "hero": {
+    "subtitle": "전략적 시장 인텔리전스 및 컨설팅 문의는 글로벌 팀에 연락하세요."
+  },
+  "connectDescription": "Bremont Strategy의 소셜 미디어를 팔로우하여 최신 시장 인텔리전스와 업계 인사이트를 받아보세요.",
   "form": {
     "title": "메시지 보내기"
   },

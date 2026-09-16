@@ -1,14 +1,19 @@
 {
   "site": {
-    "name": "마켓 리서치 허브",
-    "description": "시장 조사 보고서 및 인사이트 제공 선도 기업"
+    "name": "Bremont Strategy",
+    "description": "전략적 시장 인텔리전스 및 자본 배분 의사결정을 지원하는 선도적인 경영 컨설팅 회사"
   },
   "nav": {
     "home": "홈",
-    "categories": "카테고리",
+    "categories": "산업",
     "about": "회사 소개",
     "contact": "문의하기",
-    "search": "검색"
+    "search": "검색",
+    "searchPlaceholder": "검색...",
+    "loading": "로딩 중...",
+    "viewAllResults": "모두보기",
+    "noResultsFound": "검색 결과가 없습니다",
+    "cancel": "취소"
   },
   "footer": {
     "certifications": [

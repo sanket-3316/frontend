@@ -66,6 +66,12 @@ export default async function Page({ params, searchParams }: categoryPageProps) 
   const category = apiResp?.category
   const pagination = apiResp?.pagination
 
+  // A category with no translation for this locale legitimately doesn't
+  // exist at this URL — 404 cleanly instead of crashing on category.* below.
+  if (!category) {
+    notFound();
+  }
+
   const basePath = `${typedLocale === 'en' ? '' : `/${typedLocale}`}/category/${categorySlug}`;
 
   const dir = localeConfig[typedLocale].dir;
@@ -112,6 +118,7 @@ export default async function Page({ params, searchParams }: categoryPageProps) 
                         <ReportCard
                           key={report.report_id}
                           report={report}
+                          locale={typedLocale}
                           formContent={common.form}
                           reportContent={common.report}
                           reportTitle={common.report.reportTitle}

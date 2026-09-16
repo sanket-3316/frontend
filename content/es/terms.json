@@ -1,0 +1,24 @@
+{
+  "title": "Términos y Condiciones",
+  "description": "Términos y condiciones de Bremont Strategy",
+  "keywords": ["términos", "condiciones", "legal"],
+  "sections": [
+    {
+      "title": "1. Aceptación de los Términos",
+      "content": "Al acceder y utilizar este sitio web, usted acepta y se compromete a cumplir con los términos y disposiciones de este acuerdo. Si no está de acuerdo con lo anterior, por favor no utilice este servicio."
+    },
+    {
+      "title": "2. Licencia de Uso",
+      "content": "Se concede permiso para descargar temporalmente una copia de los materiales (información o software) en nuestro sitio web únicamente para visualización personal, no comercial y transitoria. Esta es la concesión de una licencia, no una transferencia de título, y bajo esta licencia usted no puede: modificar o copiar los materiales; utilizar los materiales con fines comerciales o para exhibición pública."
+    },
+    {
+      "title": "3. Exención de Responsabilidad",
+      "content": "Los materiales en nuestro sitio web se proporcionan \"tal cual\". No ofrecemos garantías, expresas o implícitas, y por la presente rechazamos y negamos todas las demás garantías, incluidas, sin limitación, las garantías o condiciones implícitas de comerciabilidad, idoneidad para un propósito particular, o no infracción de propiedad intelectual u otra violación de derechos."
+    },
+    {
+      "title": "4. Limitaciones",
+      "content": "En ningún caso nuestra empresa o sus proveedores serán responsables de ningún daño (incluidos, sin limitación, los daños por pérdida de datos o beneficios, o por interrupción del negocio) que surja del uso o la imposibilidad de usar los materiales de nuestro sitio web."
+    }
+  ],
+  "lastUpdated": "Última actualización: 2026"
+}

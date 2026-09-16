@@ -12,6 +12,7 @@ type ModalProps = {
     reportId: string | number;
     keyword: string;
     categoryId?: string | number;
+    locale?: string;
     formContent: any;
     formTitle: string;
     getFreeSampleOfThisReport: string;
@@ -23,6 +24,7 @@ export function ReportSampleModal({
     reportId,
     keyword,
     categoryId,
+    locale,
     formContent,
     formTitle,
     getFreeSampleOfThisReport,
@@ -106,6 +108,7 @@ export function ReportSampleModal({
                     custom_requirements: form.custom_requirements,
                     reportId,
                     categoryId,
+                    locale,
                 }),
             });
 

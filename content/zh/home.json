@@ -1,0 +1,111 @@
+{
+  "title": "Bremont Strategy - 战略市场情报",
+  "description": "探索全面的市场调研报告与行业洞察",
+  "keywords": [
+    "市场调研",
+    "报告",
+    "行业洞察",
+    "商业情报"
+  ],
+  "hero": {
+    "title": "发现驱动企业增长的AI市场调研工具",
+    "subtitle": "实时获取精准且可执行的洞察，助力更明智的商业决策。我们的AI工具提供市场趋势与竞争对手分析，帮助您保持竞争力与敏捷性。",
+    "cta": "浏览报告",
+    "image": "/images/hero.jpg"
+  },
+  "statsSection": [
+    {
+      "icon": "FaChartLine",
+      "value": 42,
+      "prefix": "$",
+      "suffix": "十亿",
+      "label": "创造的营收影响"
+    },
+    {
+      "icon": "FaLightbulb",
+      "value": 15000,
+      "suffix": "+",
+      "label": "高增长机遇"
+    },
+    {
+      "icon": "FaGlobe",
+      "value": 60000,
+      "label": "互联市场"
+    },
+    {
+      "icon": "FaUsers",
+      "value": 330,
+      "suffix": "+",
+      "label": "分析师与顾问"
+    }
+  ],
+  "exploreMarketResearchSection": {
+    "title": "与 Bremont Strategy 一起探索适合您行业的市场调研报告",
+    "browseReportsBTN": "浏览所有报告",
+    "browseIndustryBTN": "查看所有行业"
+  },
+  "latestFromBremont": "Bremont Strategy 最新动态",
+  "testimonialsSection": {
+    "title": "客户见证，成效驱动",
+    "testimonials": [
+      {
+        "content": "这些洞察揭示了我们某个地区几款产品增长受阻的原因。我们做出了相应调整，效果在下一次业绩审查中就清晰可见。",
+        "name": "Arnold Shieh",
+        "organization": "IKEA"
+      },
+      {
+        "content": "他们的市场分析帮助我们锁定了正确的机遇，成效很快显现，回报显著。",
+        "name": "Riccardo Carlo",
+        "organization": "McKinsey & Company"
+      },
+      {
+        "content": "团队始终随时响应、易于合作，他们的建议切实可行且富有成效。",
+        "name": "John Katani",
+        "organization": "Strategy Group"
+      },
+      {
+        "content": "出色的支持与深入的业务洞察，强烈推荐给有市场调研需求的企业。",
+        "name": "Sarah Williams",
+        "organization": "Deloitte"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "为什么选择我们",
+    "content": [
+      {
+        "title": "专家驱动的洞察",
+        "description": "我们的市场调研、深厚知识和缜密分析，能够转化为助您决策的可执行指南。",
+        "img": "/images/icon1.svg"
+      },
+      {
+        "title": "定制化分析",
+        "description": "我们通过开发量身定制的研究解决方案，满足您的市场调研需求。",
+        "img": "/images/icon2.svg"
+      },
+      {
+        "title": "追求卓越",
+        "description": "我们的首要目标是在每一项工作中始终如一地展现专业精神并坚守职业道德。",
+        "img": "/images/icon3.svg"
+      },
+      {
+        "title": "多元化服务",
+        "description": "我们的市场调研报告服务涵盖从个人到企业级的各类需求，满足绝大多数分析需求。",
+        "img": "/images/icon4.svg"
+      }
+    ]
+  },
+  "trustedByIndustryLeaders": "深受行业领导者信赖",
+  "clientLogos": [
+    "/images/our-clients/abb.png",
+    "/images/our-clients/apple.png",
+    "/images/our-clients/basf.png",
+    "/images/our-clients/baxter.png",
+    "/images/our-clients/bosch.png",
+    "/images/our-clients/dolby.png",
+    "/images/our-clients/exxonmobil.png",
+    "/images/our-clients/herman.png",
+    "/images/our-clients/parker.png",
+    "/images/our-clients/sony.png"
+  ]
+}

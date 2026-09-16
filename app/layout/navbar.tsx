@@ -14,12 +14,26 @@ type Category = {
   slug: string;
 };
 
+type NavContent = {
+  home: string;
+  categories: string;
+  about: string;
+  contact: string;
+  search: string;
+  searchPlaceholder: string;
+  loading: string;
+  viewAllResults: string;
+  noResultsFound: string;
+  cancel: string;
+};
+
 type Props = {
   locale: Locale;
   categories: Category[]; // ✅ from server
+  nav: NavContent;
 };
 
-export function Navbar({ locale, categories = [] }: Props) { // ✅ fallback added
+export function Navbar({ locale, categories = [], nav }: Props) { // ✅ fallback added
 
   const router = useRouter();
   const pathname = usePathname();
@@ -142,20 +156,14 @@ export function Navbar({ locale, categories = [] }: Props) { // ✅ fallback add
                 className={`text-sm font-medium ${isHome ? 'parent-active' : ''
                   }`}
               >
-                {locale === 'en' ? 'Home' : locale === 'ja' ? 'ホーム' : locale === 'ko' ? '홈' : 'الرئيسية'}
+                {nav.home}
               </Link>
 
               {/* Categories Dropdown */}
               <div className="relative group">
                 <Link href={'#'} className={`text-sm font-medium flex items-center gap-1 ${isCategoryPage ? 'parent-active' : ''
                   }`}>
-                  {locale === 'en'
-                    ? 'Industries'
-                    : locale === 'ja'
-                      ? '産業'
-                      : locale === 'ko'
-                        ? '산업'
-                        : 'الصناعات'}
+                  {nav.categories}
                   <svg
                     className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180"
                     viewBox="0 0 24 24"
@@ -209,7 +217,7 @@ export function Navbar({ locale, categories = [] }: Props) { // ✅ fallback add
                 className={`text-sm font-medium ${isAbout ? 'parent-active' : ''
                   }`}
               >
-                {locale === 'en' ? 'About' : locale === 'ja' ? '私たちについて' : locale === 'ko' ? '소개' : 'معلومات عنا'}
+                {nav.about}
               </Link>
 
               {/* Contact */}
@@ -218,7 +226,7 @@ export function Navbar({ locale, categories = [] }: Props) { // ✅ fallback add
                 className={`text-sm font-medium ${isContact ? 'parent-active' : ''
                   }`}
               >
-                {locale === 'en' ? 'Contact' : locale === 'ja' ? 'お問い合わせ' : locale === 'ko' ? '문의' : 'اتصل بنا'}
+                {nav.contact}
               </Link>
 
             </div>
@@ -279,20 +287,14 @@ export function Navbar({ locale, categories = [] }: Props) { // ✅ fallback add
             <div className="bg-white border-t p-4 space-y-4">
 
               <Link href={getLocalePath('/')} className="block">
-                {locale === 'en' ? 'Home' : locale === 'ja' ? 'ホーム' : locale === 'ko' ? '홈' : 'الرئيسية'}
+                {nav.home}
               </Link>
               {/* Categories Toggle */}
               <button
                 onClick={() => setCategoryOpen(!categoryOpen)}
                 className="w-full flex justify-between items-center font-medium"
               >
-                {locale === 'en'
-                  ? 'Industries'
-                  : locale === 'ja'
-                    ? '産業'
-                    : locale === 'ko'
-                      ? '산업'
-                      : 'الصناعات'}
+                {nav.categories}
                 <span className={`transition-transform ${categoryOpen ? "rotate-180" : ""}`}>
                   ▼
                 </span>
@@ -316,13 +318,11 @@ export function Navbar({ locale, categories = [] }: Props) { // ✅ fallback add
               </div>
 
               <Link href={getLocalePath('/about-us')} className="block">
-                {locale === 'en' ? 'About' : locale === 'ja' ? '私たちについて' : locale === 'ko' ? '소개' : 'معلومات عنا'}
-
+                {nav.about}
               </Link>
 
               <Link href={getLocalePath('/contact-us')} className="block">
-                {locale === 'en' ? 'Contact' : locale === 'ja' ? 'お問い合わせ' : locale === 'ko' ? '문의' : 'اتصل بنا'}
-
+                {nav.contact}
               </Link>
 
             </div>
@@ -353,14 +353,14 @@ export function Navbar({ locale, categories = [] }: Props) { // ✅ fallback add
                   type="text"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Search..."
+                  placeholder={nav.searchPlaceholder}
                   className="w-full border-b-2 border-gray-300 py-2 text-lg outline-none focus:border-blue-600"
                 />
 
                 {/* Search Results Dropdown - Would be populated with real results */}
                 <div className="mt-4 max-h-80 overflow-y-auto">
                   {loading && (
-                    <p className="text-sm text-gray-400">Loading...</p>
+                    <p className="text-sm text-gray-400">{nav.loading}</p>
                   )}
 
                   {!loading && results.length > 0 && (
@@ -387,18 +387,14 @@ export function Navbar({ locale, categories = [] }: Props) { // ✅ fallback add
                         onClick={handleSearch}
                         className="w-full text-left px-4 py-3 text-blue-600 hover:bg-gray-50"
                       >
-                        {locale === 'en'
-                          ? 'View all results'
-                          : locale === 'ja'
-                            ? 'すべて表示'
-                            : '모두보기'}
+                        {nav.viewAllResults}
                       </button>
                     </div>
                   )}
 
                   {!loading && searchQuery.length >= 3 && results.length === 0 && (
                     <p className="text-sm text-gray-400 px-2 py-3">
-                      No results found
+                      {nav.noResultsFound}
                     </p>
                   )}
                 </div>
@@ -409,13 +405,13 @@ export function Navbar({ locale, categories = [] }: Props) { // ✅ fallback add
                     onClick={() => setSearchOpen(false)}
                     className="px-4 py-2 text-gray-600 hover:text-gray-900 transition-colors"
                   >
-                    {locale === 'en' ? 'Cancel' : locale === 'ja' ? 'キャンセル' : locale === 'ko' ? '취소' : 'إلغاء'}
+                    {nav.cancel}
                   </button>
                   <button
                     type="submit"
                     className="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors font-medium"
                   >
-                    {locale === 'en' ? 'Search' : locale === 'ja' ? '検索' : locale === 'ko' ? '검색' : 'بحث'}
+                    {nav.search}
                   </button>
                 </div>
               </form>

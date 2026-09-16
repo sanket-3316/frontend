@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { SUPPORTED_LOCALES, Locale, localeConfig } from '@/lib/config';
 import { Navbar } from '../../layout/navbar';
 import { getCategories } from '@/lib/server/api';
+import { getContent } from '@/lib/content';
 import Footer from '@/app/layout/footer';
 
 interface Props {
@@ -27,10 +28,11 @@ export default async function LocaleLayout({ children, params }: Props) {
   const { dir } = localeConfig[locale as Locale];
 
   const categories = await getCategories(locale as Locale);
+  const common = await getContent(locale as Locale, 'common');
 
   return (
     <div dir={dir} className="flex flex-col min-h-screen">
-      <Navbar locale={locale as Locale} categories={categories} />
+      <Navbar locale={locale as Locale} categories={categories} nav={common.nav} />
       {children}
       <Footer locale={locale} />
     </div>

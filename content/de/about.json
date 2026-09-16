@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "Über Bremont Strategy | Führende Unternehmensberatung",
+    "description": "Bremont Strategy ist eine führende unabhängige Unternehmensberatung, die maßgeschneiderte Business Intelligence für Kapitalallokationen in Millionenhöhe weltweit liefert.",
+    "keywords": ["über Bremont Strategy", "Unternehmensberatung", "Marktforschung", "Business Intelligence", "strategische Beratung"]
+  },
+  "hero": {
+    "title": "Über Bremont Strategy",
+    "subtitle": "Der institutionelle Standard für strategische Marktintelligenz"
+  },
+  "about": {
+    "title": "Wer Wir Sind",
+    "description": "<strong>Bremont Strategy</strong> ist eine führende unabhängige Unternehmensberatung und ein institutioneller Eckpfeiler für Marktführer, multinationale Unternehmen und erstklassige Investoren, die hochriskante strategische Wendepunkte navigieren. Wir liefern gebieterische, maßgeschneiderte Business Intelligence, die das intellektuelle Gewicht, die Reputation und die definitive Autorität bietet, die für kritische, <strong>weltweite Kapitalallokationen in Millionenhöhe</strong> erforderlich sind.",
+    "description2": "Unsere Praxis ist eine rigorose Alternative zu kommodifizierten Standarddaten und automatisierten Marktberichten. In der Erkenntnis, dass generische Informationen ein inakzeptables Unternehmensrisiko darstellen, umgehen wir transaktionale Datenpakete vollständig. Stattdessen <strong>entwickeln wir elitäre strategische Rahmenwerke</strong>, die exklusiv auf die komplexe Architektur und die präzisen Reibungspunkte Ihres Unternehmens zugeschnitten sind.",
+    "description3": "Um die Komplexität hochspezialisierter globaler Branchen zu navigieren — darunter <strong>technische Chemikalien, nachhaltige Energiekonzepte und fortschrittliche Agrartechnologien</strong> — mobilisieren wir engagierte Teams erfahrener Principal-Analysten. Wir richten unsere Untersuchungsparameter nahtlos an Ihrem internen Mandat aus und eliminieren Marktrauschen, um eine unangreifbare Position der Branchenführerschaft zu sichern.",
+    "description4": "Wir setzen absolute methodische Integrität durch ein exaktes, <a href=\"#validation-protocol\"><strong>vierstufiges Konsistenzprotokoll</strong></a> durch, das globale makroökonomische Trends mit akribischer Bottom-up-Mikrodynamik abgleicht. Wir lehnen bewusst die kurzfristige Geschwindigkeit algorithmischer Berichterstattung ab, da unternehmerische Prognosemodelle, die intensiver Prüfung auf Vorstandsebene standhalten müssen, tiefgreifendes menschliches Engineering erfordern.",
+    "description5": "Letztendlich fungiert unser Unternehmen als <strong>unverzichtbare Erweiterung Ihres Führungsausschusses</strong> und Ihrer internen Strategieabteilungen. Wir liefern die definitiven intellektuellen Einblicke und die kontinuierliche, mehrjährige Beratungsunterstützung, die erforderlich sind, um Branchenumbrüche zu nutzen und Kapital mit absoluter, unerschütterlicher Zuversicht in jedem internationalen Markt einzusetzen."
+  },
+  "services": {
+    "title": "Unsere Primäre Intelligence-Engine",
+    "description": "Dieser maßgeschneiderte Ansatz basiert auf einer intensiven, <strong>von Menschen gesteuerten primären Intelligence-Engine</strong>, die oberflächliche automatisierte Umfragen vollständig untergräbt. Unsere globalen Teams führen gezielte, hochrangige Dialoge mit Lieferkettenarchitekten und <strong>C-Level-Führungskräften</strong>, die moderne Branchen prägen, und validieren diese exklusiven Felderkenntnisse kreuzweise mit institutioneller Datenbankvalidierung."
+  },
+  "process": {
+    "id": "validation-protocol",
+    "title": "Unser 4-Stufiges Globales Validierungsprotokoll",
+    "subtitle": "Unsere rigorose Validierungsstruktur garantiert, dass alle an Ihren Vorstand gelieferten Erkenntnisse gegen geopolitische, makroökonomische und technische Volatilität stresstestet werden.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Tiefgreifende Institutionelle Datenerschließung",
+        "description": "Etablierung historischer Baselines über <strong>Premium-Datenknoten</strong>, Unternehmensregistrierungen und internationale Handelsregister."
+      },
+      {
+        "number": "02",
+        "title": "Gezielte Primärerhebung",
+        "description": "Durchführung <strong>hochrangiger Mensch-zu-Mensch-Interviews</strong> mit wichtigen globalen Stakeholdern, Wettbewerbern und Branchentreibern."
+      },
+      {
+        "number": "03",
+        "title": "Maßgeschneiderte Quantitative Modellierung",
+        "description": "Synthese von Felddaten zu <strong>individuellen 10-Jahres-Prognosetabellen</strong>, abgestimmt auf Ihre spezifischen Unternehmenswachstumsszenarien."
+      },
+      {
+        "number": "04",
+        "title": "Überprüfung durch das Principal-SME-Gremium",
+        "description": "Finale Kreuzvalidierung durch <strong>Senior-Berater mit über 10 Jahren Fachexpertise</strong>, um absolute strategische Ausrichtung sicherzustellen."
+      }
+    ]
+  },
+  "capabilities": {
+    "title": "Warum Bremont Strategy Wählen",
+    "items": [
+      {
+        "title": "Maßgeschneiderte Projektinitiierung",
+        "description": "Vollständig um <strong>kundenspezifische Briefings</strong> herum konzipiert, nicht um vorgefertigte oder vorlagenbasierte Daten."
+      },
+      {
+        "title": "85% Direkte Interviews mit Führungskräften",
+        "description": "Unsere primäre Daten-Engine stützt sich auf <strong>aufgezeichnete und transkribierte direkte Interviews</strong> mit Lieferkettenarchitekten und C-Level-Führungskräften."
+      },
+      {
+        "title": "6–8 Wochen Engagiertes Engineering",
+        "description": "<strong>Engagiertes, von Menschen geleitetes Engineering</strong> über 6–8 Wochen im Vergleich zu 24–48-stündiger algorithmischer Generierung."
+      },
+      {
+        "title": "4-Stufige Globale Triangulation",
+        "description": "Rigoroses <strong>4-stufiges Kreuzvalidierungsprotokoll</strong> im Vergleich zur einquelligen Sekundärrecherche standardisierter Datenherausgeber."
+      },
+      {
+        "title": "Kontinuierliche Mehrjährige Beratung",
+        "description": "<strong>Maßgeschneiderte Formate und kontinuierliche mehrjährige Beratung</strong>, keine transaktionale statische PDF-Lieferung."
+      },
+      {
+        "title": "Vorstandsreife Intelligence",
+        "description": "Unternehmensprognosemodelle, die durch tiefgreifendes menschliches Engineering <strong>intensiver Prüfung auf Vorstandsebene</strong> standhalten."
+      }
+    ]
+  },
+  "clients": {
+    "title": "Unsere Namhaften Kunden",
+    "items": ["BASF", "UBS", "Ferrero", "P&G", "Deloitte"]
+  }
+}

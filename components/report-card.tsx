@@ -19,8 +19,6 @@ type Report = {
   category_id?: number;
 };
 
-type Locale = 'en' | 'ja' | 'ko' | 'ar';
-
 type formContent = {
   [key: string]: any;
 };
@@ -60,9 +58,10 @@ interface ReportCardProps {
   reportContent?: any;
   reportTitle?: string;
   requestsampleBtnTitle?: string;
+  locale?: string;
 }
 
-export function ReportCard({ report, formContent, reportContent, reportTitle, requestsampleBtnTitle }: ReportCardProps) {
+export function ReportCard({ report, formContent, reportContent, reportTitle, requestsampleBtnTitle, locale }: ReportCardProps) {
   return (
     <div className="bg-white rounded-xl flex flex-col hover:shadow-md transition shadow-lg shadow-cyan-500/10 p-5 border">
 
@@ -98,6 +97,7 @@ export function ReportCard({ report, formContent, reportContent, reportTitle, re
           reportId={report.report_id}
           categoryId={report.category_id}
           keyword={report.keyword}
+          locale={locale}
           formContent={formContent}
           reportContent={reportContent}
         />

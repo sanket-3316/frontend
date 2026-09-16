@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "Sobre Bremont Strategy | Firma Líder en Consultoría de Gestión",
+    "description": "Bremont Strategy es una firma líder e independiente de consultoría de gestión que ofrece inteligencia empresarial a medida para asignaciones de capital multimillonarias en todo el mundo.",
+    "keywords": ["sobre Bremont Strategy", "consultoría de gestión", "investigación de mercado", "inteligencia empresarial", "consultoría estratégica"]
+  },
+  "hero": {
+    "title": "Sobre Bremont Strategy",
+    "subtitle": "El Estándar Institucional para la Inteligencia Estratégica de Mercado"
+  },
+  "about": {
+    "title": "Quiénes Somos",
+    "description": "<strong>Bremont Strategy</strong> es una firma líder e independiente de consultoría de gestión y un pilar institucional para líderes del mercado, empresas multinacionales e inversores de primer nivel que navegan puntos de inflexión estratégicos de alto riesgo. Ofrecemos inteligencia empresarial contundente y a medida que proporciona el peso intelectual, el prestigio y la autoridad definitiva necesarios para <strong>asignaciones de capital multimillonarias a nivel mundial</strong>.",
+    "description2": "Nuestra práctica es una alternativa rigurosa a los datos genéricos comercializados y a los informes de mercado automatizados. Reconociendo que la información genérica introduce un riesgo corporativo inaceptable, evitamos por completo los paquetes de datos transaccionales. En su lugar, <strong>diseñamos marcos estratégicos de élite</strong> adaptados exclusivamente a la arquitectura compleja y a los puntos de fricción precisos de su empresa.",
+    "description3": "Para navegar las complejidades de sectores globales altamente especializados —incluidos <strong>productos químicos técnicos, marcos de energía sostenible y agrotecnologías avanzadas</strong>— movilizamos equipos dedicados de analistas principales veteranos. Alineamos nuestros parámetros de investigación con su mandato interno, eliminando el ruido del mercado para asegurar una posición inquebrantable de liderazgo en la industria.",
+    "description4": "Hacemos cumplir una integridad metodológica absoluta a través de un exigente <a href=\"#validation-protocol\"><strong>protocolo de consistencia de cuatro etapas</strong></a> que contrasta las tendencias macroeconómicas globales con dinámicas micro meticulosas desde la base. Rechazamos deliberadamente la velocidad a corto plazo de los informes algorítmicos, porque los modelos de previsión corporativa capaces de resistir un escrutinio intenso a nivel de junta directiva requieren una profunda ingeniería humana.",
+    "description5": "En última instancia, nuestra firma funciona como una <strong>extensión indispensable de su comité ejecutivo</strong> y de las divisiones internas de estrategia. Proporcionamos el insight intelectual definitivo y el apoyo consultivo continuo y plurianual necesario para capitalizar las disrupciones de la industria y desplegar capital con una confianza absoluta e inquebrantable en cualquier mercado internacional."
+  },
+  "services": {
+    "title": "Nuestro Motor de Inteligencia Primaria",
+    "description": "Este enfoque a medida se basa en un intensivo <strong>motor de inteligencia primaria impulsado por personas</strong> que subvierte por completo las encuestas automatizadas superficiales. Nuestros equipos globales realizan diálogos específicos de alto nivel con arquitectos de la cadena de suministro y <strong>ejecutivos de nivel C</strong> que dan forma a las industrias modernas, validando de forma cruzada estos insights exclusivos de campo con validación de bases de datos de grado institucional."
+  },
+  "process": {
+    "id": "validation-protocol",
+    "title": "Nuestro Protocolo Global de Validación de 4 Etapas",
+    "subtitle": "Nuestra rigurosa estructura de validación garantiza que toda la inteligencia entregada a su junta directiva sea sometida a pruebas de estrés frente a la volatilidad geopolítica, macroeconómica y técnica.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Minería Institucional en Profundidad",
+        "description": "Establecimiento de líneas base históricas a través de <strong>nodos de datos premium</strong>, registros corporativos y libros de comercio internacional."
+      },
+      {
+        "number": "02",
+        "title": "Obtención Primaria Dirigida",
+        "description": "Realización de <strong>entrevistas humanas de alto nivel</strong> con actores clave globales, competidores e impulsores de la industria."
+      },
+      {
+        "number": "03",
+        "title": "Modelado Cuantitativo a Medida",
+        "description": "Síntesis de datos de campo en <strong>hojas de previsión personalizadas a 10 años</strong> mapeadas a los escenarios específicos de crecimiento de su empresa."
+      },
+      {
+        "number": "04",
+        "title": "Revisión del Panel de Expertos Principales",
+        "description": "Validación cruzada final por <strong>consultores senior con más de 10 años de experiencia en el sector</strong> para garantizar una alineación estratégica absoluta."
+      }
+    ]
+  },
+  "capabilities": {
+    "title": "Por Qué Elegir Bremont Strategy",
+    "items": [
+      {
+        "title": "Inicio de Proyecto a Medida",
+        "description": "Diseñado enteramente en torno a <strong>briefs específicos del cliente</strong>, no datos preempaquetados ni basados en plantillas."
+      },
+      {
+        "title": "85% de Entrevistas Directas a Ejecutivos",
+        "description": "Nuestro motor de datos primario se basa en <strong>entrevistas directas grabadas y transcritas</strong> con arquitectos de la cadena de suministro y ejecutivos de nivel C."
+      },
+      {
+        "title": "Ingeniería Dedicada de 6 a 8 Semanas",
+        "description": "<strong>Ingeniería dedicada liderada por personas</strong> durante 6-8 semanas frente a la generación algorítmica de 24-48 horas."
+      },
+      {
+        "title": "Triangulación Global de 4 Etapas",
+        "description": "Riguroso <strong>protocolo de validación cruzada de 4 etapas</strong> frente a la investigación secundaria de escritorio de fuente única de editores de datos estandarizados."
+      },
+      {
+        "title": "Asesoramiento Continuo Plurianual",
+        "description": "<strong>Formatos a medida y asesoramiento continuo plurianual</strong>, no una entrega estática de PDF transaccional."
+      },
+      {
+        "title": "Inteligencia Lista para la Junta Directiva",
+        "description": "Modelos de previsión corporativa capaces de resistir un <strong>escrutinio intenso a nivel de junta directiva</strong> gracias a una profunda ingeniería humana."
+      }
+    ]
+  },
+  "clients": {
+    "title": "Nuestros Clientes Destacados",
+    "items": ["BASF", "UBS", "Ferrero", "P&G", "Deloitte"]
+  }
+}

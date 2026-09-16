@@ -11,6 +11,7 @@ import LatestReports from '@/components/LatestReports';
 import CategorySection from '@/components/CategorySection';
 import StatsSection from '@/components/StatsSection';
 import { getContent } from '@/lib/content';
+import { getCategories, getReports } from '@/lib/server/api';
 
 interface HomePageProps {
   params: { locale: string };
@@ -51,6 +52,27 @@ export default async function Home({ params }: HomePageProps) {
   const typedLocale = locale as Locale;
   const content = await getContent(typedLocale, 'home');
   const common = await getContent(typedLocale, 'common');
+
+  // Fetched server-side so the section renders in the initial HTML — no
+  // client-side loading flash, and it's strictly this locale's own reports
+  // (the backend query is scoped to the requested language, no fallback).
+  const latestReportsResp = await getReports(typedLocale, 0, 10);
+  const latestReports = (latestReportsResp?.data || []).map((item: any) => ({
+    report_id: item.report_id,
+    keyword: item.keyword,
+    report_url: item.report_url,
+    thumbnailSvg: `/report/thumbnail/${item.report_url}.svg?keyword=${encodeURIComponent(item.keyword)}&lang=${typedLocale}`,
+  }));
+
+  // Same for the "Explore Market Research" tabs — the first category's
+  // reports render server-side; switching tabs after that is genuine
+  // runtime interactivity a page load can't pre-render.
+  const homeCategories = await getCategories(typedLocale);
+  const topCategories = homeCategories.slice(0, 8);
+  const firstCategoryReportsResp = topCategories[0]
+    ? await getReports(typedLocale, topCategories[0].id, 6)
+    : null;
+  const initialCategoryReports = firstCategoryReportsResp?.data || [];
 
   const organizationSchema = generateOrganizationSchema();
   const dir = localeConfig[typedLocale].dir;
@@ -119,7 +141,9 @@ export default async function Home({ params }: HomePageProps) {
           <CategorySection lang={locale}
             title={content.exploreMarketResearchSection.title}
             browseReportsBTN={content.exploreMarketResearchSection.browseReportsBTN}
-            browseIndustryBTN={content.exploreMarketResearchSection.browseIndustryBTN} />
+            browseIndustryBTN={content.exploreMarketResearchSection.browseIndustryBTN}
+            categories={topCategories}
+            initialReports={initialCategoryReports} />
 
           <section className="py-10 px-5 ">
             <div className="mx-auto max-w-7xl ">
@@ -127,9 +151,11 @@ export default async function Home({ params }: HomePageProps) {
                 <h2 className="!text-2xl sm:!text-3xl md:!text-4xl font-semibold leading-snug text-center mb-10">{content.latestFromBremont}</h2>
               </div>
               <div>
-                <LatestReports 
-                lang={locale} 
-                reportTitle={common.report.reportTitle}/>
+                <LatestReports
+                  reports={latestReports}
+                  reportTitle={common.report.reportTitle}
+                  locale={typedLocale}
+                />
               </div>
             </div>
           </section>

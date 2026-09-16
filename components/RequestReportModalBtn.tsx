@@ -12,6 +12,7 @@ type Props = {
     reportContent: any;
     variant?: 'primary' | 'outline';
     icon?: string;
+    locale?: string;
 };
 
 export default function RequestReportModalBtn({
@@ -23,6 +24,7 @@ export default function RequestReportModalBtn({
     reportContent,
     variant = 'primary',
     icon = '⬇',
+    locale,
 }: Props) {
     const [open, setOpen] = useState(false);
     const reportTitle = reportContent?.reportTitle?.replace('[[keyword]]', keyword)
@@ -51,6 +53,7 @@ export default function RequestReportModalBtn({
                 reportId={reportId}
                 keyword={keyword}
                 categoryId={categoryId ?? ''}
+                locale={locale}
                 formContent={formContent}
                 formTitle={reportTitle}
                 getFreeSampleOfThisReport={reportContent.getFreeSampleOfThisReport}

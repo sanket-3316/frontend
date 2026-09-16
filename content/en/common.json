@@ -8,7 +8,12 @@
     "categories": "Industries",
     "about": "About Us",
     "contact": "Contact Us",
-    "search": "Search"
+    "search": "Search",
+    "searchPlaceholder": "Search...",
+    "loading": "Loading...",
+    "viewAllResults": "View all results",
+    "noResultsFound": "No results found",
+    "cancel": "Cancel"
   },
   "footer": {
     "certifications": [

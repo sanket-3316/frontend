@@ -1,0 +1,159 @@
+{
+  "site": {
+    "name": "Bremont Strategy",
+    "description": "专注于战略市场情报与资本配置决策的领先独立管理咨询公司"
+  },
+  "nav": {
+    "home": "首页",
+    "categories": "行业",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "search": "搜索",
+    "searchPlaceholder": "搜索...",
+    "loading": "加载中...",
+    "viewAllResults": "查看全部结果",
+    "noResultsFound": "未找到结果",
+    "cancel": "取消"
+  },
+  "footer": {
+    "certifications": [
+      {
+        "image": "/images/certifications_logo-2026.png",
+        "title": "ISO 认证"
+      },
+      {
+        "image": "/images/esomar_2026.png",
+        "title": "Authorize.net"
+      }
+    ],
+    "information": [
+      {
+        "label": "常见问题",
+        "url": "/faq"
+      },
+      {
+        "label": "我们的团队",
+        "url": "/our-team"
+      }
+    ],
+    "links": [
+      {
+        "label": "招聘信息",
+        "url": "/careers"
+      },
+      {
+        "label": "隐私政策",
+        "url": "/privacy-policy"
+      }
+    ],
+    "contact": {
+      "title": "全球总部",
+      "address": "24a Trolley Square, Wilmington, Delaware, 19801, USA",
+      "phones": [
+        "美国: +1-302-846-2799",
+        "欧洲/中东/非洲: +49-176-7450-2496"
+      ],
+      "email": "sales@bremontstrategy.com"
+    },
+    "bottom": {
+      "company": "Bremont Strategy",
+      "copyright": "© 2026 版权所有。"
+    },
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "#"
+      },
+      {
+        "name": "twitter",
+        "url": "#"
+      },
+      {
+        "name": "facebook",
+        "url": "#"
+      },
+      {
+        "name": "youtube",
+        "url": "#"
+      }
+    ]
+  },
+  "form": {
+    "title": "联系表单",
+    "labels": {
+      "name": "姓名",
+      "email": "电子邮箱",
+      "phone": "电话号码",
+      "job": "职位",
+      "company": "公司名称",
+      "message": "关注领域",
+      "designation": "职务"
+    },
+    "placeholders": {
+      "name": "请输入您的姓名",
+      "email": "请输入您的商务邮箱",
+      "phone": "请输入电话号码（不含国家代码）",
+      "job": "请输入您的职位",
+      "company": "请输入您的公司名称",
+      "message": "请输入您关注的领域",
+      "custom_requirements": "请输入您的定制或具体需求",
+      "designation": "请输入您的职务（选填）"
+    },
+    "validation": {
+      "name": {
+        "required": true,
+        "min": 3
+      },
+      "email": {
+        "required": true,
+        "pattern": "email"
+      },
+      "phone": {
+        "required": true,
+        "min": 8
+      },
+      "message": {
+        "required": true
+      }
+    },
+    "errors": {
+      "name_required": "姓名为必填项",
+      "name_min": "姓名至少需要3个字符",
+      "email_required": "电子邮箱为必填项",
+      "email_invalid": "请输入有效的电子邮箱地址",
+      "phone_required": "电话号码为必填项",
+      "phone_min": "电话号码过短",
+      "message_required": "留言为必填项",
+      "captcha_required": "请输入安全验证码"
+    },
+    "captcha": {
+      "label": "安全验证码",
+      "placeholder": "请输入显示的安全验证码"
+    },
+    "submit": "提交",
+    "success": "感谢您！您的消息已发送。"
+  },
+  "report": {
+    "noReportsFound": "该分类下暂无报告",
+    "categories": "分类",
+    "reportTitle": "[[keyword]] 市场",
+    "buyNow": "咨询分析师",
+    "downloadFreePDF": "立即下载免费PDF",
+    "downloadPDF": "下载免费PDF",
+    "customizeYourReport": "定制您的报告",
+    "getFreeSampleOfThisReport": "获取本报告的免费样本",
+    "reportNotFound": "未找到报告",
+    "aboutThisReport": "关于本报告",
+    "tableOfContents": "目录",
+    "methodology": "研究方法",
+    "faqs": "常见问题"
+  },
+  "search": {
+    "searchResult": "搜索结果",
+    "resultFor": "搜索结果：",
+    "noResultFound": "未找到结果",
+    "trySearchingWithDifferentKeywords": "请尝试使用其他关键词搜索",
+    "searchQuery": "请输入搜索关键词以开始",
+    "searchMarketResearchReports": "搜索市场调研报告"
+  }
+}

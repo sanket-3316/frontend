@@ -54,13 +54,7 @@ export default async function ContactPage({ locale }: Props) {
               {contact.info?.title || "Our Global Offices"}
             </h1>
             <p className="!text-white/80 text-lg">
-              {typedLocale === 'en'
-                ? "Reach our global team for strategic market intelligence and consulting inquiries."
-                : typedLocale === 'ja'
-                  ? "戦略的市場インテリジェンスおよびコンサルティングのお問い合わせは、グローバルチームまでご連絡ください。"
-                  : typedLocale === 'ko'
-                    ? "전략적 시장 인텔리전스 및 컨설팅 문의는 글로벌 팀에 연락하세요."
-                    : "تواصل مع فريقنا العالمي لاستفسارات استخبارات السوق الاستراتيجية والاستشارات."}
+              {contact.hero?.subtitle}
             </p>
           </div>
         </section>
@@ -138,13 +132,7 @@ export default async function ContactPage({ locale }: Props) {
                   <strong>{contact.connectWithUs}</strong>
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  {typedLocale === 'en'
-                    ? "Follow Bremont Strategy on social media for the latest market intelligence, industry insights, and strategic research."
-                    : typedLocale === 'ja'
-                      ? "Bremont Strategyのソーシャルメディアをフォローして、最新の市場インテリジェンスと業界インサイトをご確認ください。"
-                      : typedLocale === 'ko'
-                        ? "Bremont Strategy의 소셜 미디어를 팔로우하여 최신 시장 인텔리전스와 업계 인사이트를 받아보세요."
-                        : "تابع Bremont Strategy على وسائل التواصل الاجتماعي للحصول على أحدث استخبارات السوق والرؤى الصناعية."}
+                  {contact.connectDescription}
                 </p>
               </div>
 

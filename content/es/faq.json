@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Preguntas Frecuentes | Bremont Strategy",
+    "description": "Respuestas a preguntas comunes sobre los entregables, la metodología, las licencias y el proceso de contratación de Bremont Strategy.",
+    "keywords": ["preguntas frecuentes Bremont Strategy", "FAQ investigación de mercado", "preguntas sobre contratación de consultoría"]
+  },
+  "hero": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Todo lo que necesita saber para trabajar con Bremont Strategy."
+  },
+  "sections": [
+    {
+      "title": "Entregables y Alcance",
+      "items": [
+        {
+          "q": "¿Qué nivel de profundidad analítica ofrece Bremont Strategy?",
+          "a": "<p>Ofrecemos inteligencia institucional de alta granularidad mapeada a dinámicas de país, región y sector. Cada entregable incluye líneas base históricas, dimensionamiento de mercado en tiempo real y previsiones predictivas no lineales diseñadas para resistir la debida diligencia institucional.</p>"
+        },
+        {
+          "q": "¿En qué formatos se entregan los resultados?",
+          "a": "<p>Cada proyecto genera tres activos principales:</p><ul><li><strong>Informe Ejecutivo:</strong> Presentaciones en PDF y PPT editables listas para la junta directiva.</li><li><strong>Modelo Financiero:</strong> Libro de Excel desbloqueado y totalmente auditado.</li><li><strong>Datos Estructurados:</strong> Conjuntos de datos JSON/CSV listos para API para integración inmediata en sistemas de BI.</li></ul>"
+        },
+        {
+          "q": "¿Se pueden organizar alcances personalizados o mandatos de investigación parciales?",
+          "a": "<p>Sí. Para transacciones específicas, due diligence de fusiones y adquisiciones, o expansiones regionales acotadas, nuestros responsables de práctica estructuran mandatos de inteligencia a medida alineados precisamente con sus requisitos de asignación de capital.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Metodología y Rigor de Datos",
+      "items": [
+        {
+          "q": "¿Cómo garantiza Bremont Strategy la precisión y autoridad de los datos?",
+          "a": "<p>Empleamos un marco de validación de doble capa:</p><ol><li><strong>Inteligencia Primaria:</strong> Compromiso directo en campo y entrevistas estructuradas con ejecutivos de nivel C, autoridades de compras y actores clave de la industria.</li><li><strong>Modelado Determinista:</strong> Modelado cuantitativo triangulado respaldado por registros comerciales, regulatorios y financieros verificados. Mantenemos una política de tolerancia cero para la generación de datos automatizada o sintética.</li></ol>"
+        },
+        {
+          "q": "¿Cómo funcionan sus modelos de previsión predictiva?",
+          "a": "<p>Rechazamos las aproximaciones lineales de CAGR. Bremont Strategy utiliza modelado econométrico ascendente, análisis de regresión y previsiones basadas en escenarios para capturar con precisión los cambios regulatorios, las curvas S de adopción tecnológica y los ciclos macroeconómicos.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Licencias y Contratación",
+      "items": [
+        {
+          "q": "¿Qué modelos de licencia están disponibles?",
+          "a": "<ul><li><strong>Licencia de Usuario Único:</strong> Diseñada para analistas individuales o investigación de un solo proyecto.</li><li><strong>Licencia Multiusuario:</strong> Autorización para 2 a 5 tomadores de decisiones clave dentro de un departamento designado.</li><li><strong>Licencia Empresarial:</strong> Acceso global sin restricciones en entidades corporativas, filiales y juntas de inversión.</li></ul>"
+        },
+        {
+          "q": "¿Qué soporte posterior a la contratación se incluye?",
+          "a": "<p>Cada entrega incluye acceso directo a nuestro equipo central de investigación para explicaciones metodológicas, apoyo en la defensa de presentaciones ante la junta directiva y hasta un 15% de ajustes de alcance gratuitos después de la entrega.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Adquisición y Ejecución",
+      "items": [
+        {
+          "q": "¿Con qué rapidez se ejecutan los entregables a medida?",
+          "a": "<p>Los activos de inteligencia estándar se transfieren inmediatamente tras la formalización. Los mandatos de inteligencia personalizados y las modificaciones a medida se completan dentro de los plazos acordados durante el alcance inicial.</p>"
+        },
+        {
+          "q": "¿Qué métodos de pago y flujos de adquisición admiten?",
+          "a": "<p>Admitimos transferencias bancarias corporativas, órdenes de compra institucionales (PO) y las principales tarjetas de crédito. Los formatos de facturación personalizados y el cumplimiento de la incorporación de proveedores pueden gestionarse a través de <a href=\"mailto:sales@bremontstrategy.com\">sales@bremontstrategy.com</a>.</p>"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Asóciese con Bremont Strategy",
+    "description": "¿Tiene un mandato estratégico específico? Hable directamente con nuestro equipo de asesoría.",
+    "phone": "+1-302-846-2799",
+    "email": "sales@bremontstrategy.com"
+  }
+}

@@ -1,14 +1,19 @@
 {
   "site": {
-    "name": "マーケットリサーチハブ",
-    "description": "市場調査レポートとインサイトの主要プロバイダー"
+    "name": "Bremont Strategy",
+    "description": "戦略的市場インテリジェンスと資本配分の意思決定を支援する大手経営コンサルティング会社"
   },
   "nav": {
     "home": "ホーム",
-    "categories": "カテゴリ",
+    "categories": "産業",
     "about": "私たちについて",
     "contact": "お問い合わせ",
-    "search": "検索"
+    "search": "検索",
+    "searchPlaceholder": "検索...",
+    "loading": "読み込み中...",
+    "viewAllResults": "すべて表示",
+    "noResultsFound": "結果が見つかりません",
+    "cancel": "キャンセル"
   },
   "footer": {
      "certifications": [

@@ -73,6 +73,7 @@ export default async function SearchPage({ params, searchParams }: SearchPagePro
                   <ReportCard
                     key={report.id}
                     report={report}
+                    locale={typedLocale}
                     formContent={commonContent.form}
                     reportContent={commonContent.report}
                     reportTitle={commonContent.report.reportTitle}

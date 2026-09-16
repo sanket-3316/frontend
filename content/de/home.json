@@ -1,0 +1,111 @@
+{
+  "title": "Bremont Strategy - Strategische Marktintelligenz",
+  "description": "Entdecken Sie umfassende Marktforschungsberichte und Branchenerkenntnisse",
+  "keywords": [
+    "Marktforschung",
+    "Berichte",
+    "Brancheneinblicke",
+    "Business Intelligence"
+  ],
+  "hero": {
+    "title": "Entdecken Sie KI-gestützte Marktforschungstools für wettbewerbsfähiges Unternehmenswachstum",
+    "subtitle": "Erhalten Sie präzise, umsetzbare Erkenntnisse in Echtzeit, um klügere Geschäftsentscheidungen zu treffen. Unsere KI-Tools liefern Markttrends und Wettbewerbsanalysen, damit Sie wettbewerbsfähig und agil bleiben.",
+    "cta": "Berichte Entdecken",
+    "image": "/images/hero.jpg"
+  },
+  "statsSection": [
+    {
+      "icon": "FaChartLine",
+      "value": 42,
+      "prefix": "$",
+      "suffix": "Mrd.",
+      "label": "Erzielte Umsatzwirkung"
+    },
+    {
+      "icon": "FaLightbulb",
+      "value": 15000,
+      "suffix": "+",
+      "label": "Wachstumsstarke Chancen"
+    },
+    {
+      "icon": "FaGlobe",
+      "value": 60000,
+      "label": "Vernetzte Märkte"
+    },
+    {
+      "icon": "FaUsers",
+      "value": 330,
+      "suffix": "+",
+      "label": "Analysten & Berater"
+    }
+  ],
+  "exploreMarketResearchSection": {
+    "title": "Entdecken Sie mit Bremont Strategy Marktforschungsberichte für Ihre Branche",
+    "browseReportsBTN": "Alle Berichte Durchsuchen",
+    "browseIndustryBTN": "Alle Branchen Ansehen"
+  },
+  "latestFromBremont": "Neuigkeiten von Bremont Strategy",
+  "testimonialsSection": {
+    "title": "Von Wirkung Getriebene Referenzen",
+    "testimonials": [
+      {
+        "content": "Die Erkenntnisse erklärten, was einige unserer Produkte in einer bestimmten Region zurückhielt. Wir haben einige Änderungen vorgenommen, und die Wirkung war bereits im nächsten Review deutlich sichtbar.",
+        "name": "Arnold Shieh",
+        "organization": "IKEA"
+      },
+      {
+        "content": "Ihre Marktanalyse half uns, die richtigen Chancen zu identifizieren. Die Ergebnisse waren schnell sichtbar mit starken Renditen.",
+        "name": "Riccardo Carlo",
+        "organization": "McKinsey & Company"
+      },
+      {
+        "content": "Das Team war immer verfügbar und einfach in der Zusammenarbeit. Ihre Empfehlungen waren praxisnah und wirkungsvoll.",
+        "name": "John Katani",
+        "organization": "Strategy Group"
+      },
+      {
+        "content": "Hervorragende Unterstützung und tiefe Einblicke in unser Geschäft. Sehr empfehlenswert für Marktforschungsbedarf.",
+        "name": "Sarah Williams",
+        "organization": "Deloitte"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Warum Uns Wählen",
+    "content": [
+      {
+        "title": "Von Experten geleitete Erkenntnisse",
+        "description": "Unsere Marktforschung, unser fundiertes Wissen und unsere gründliche Analyse lassen sich in umsetzbare Leitlinien für Ihre Entscheidungen übersetzen.",
+        "img": "/images/icon1.svg"
+      },
+      {
+        "title": "Maßgeschneiderte Analysen",
+        "description": "Wir gehen auf Ihre Marktforschungsanforderungen ein, indem wir maßgeschneiderte Forschungslösungen entwickeln.",
+        "img": "/images/icon2.svg"
+      },
+      {
+        "title": "Streben nach Exzellenz",
+        "description": "Unser vorrangiges Ziel ist es, bei jeder ausgeführten Handlung durchgängig Professionalität zu demonstrieren und ethische Standards einzuhalten.",
+        "img": "/images/icon3.svg"
+      },
+      {
+        "title": "Vielseitiges Angebot",
+        "description": "Unsere Marktforschungsberichte reichen von individuellen bis hin zu unternehmensweiten Umfängen und decken die meisten Analysebedürfnisse ab.",
+        "img": "/images/icon4.svg"
+      }
+    ]
+  },
+  "trustedByIndustryLeaders": "Vertraut von Branchenführern",
+  "clientLogos": [
+    "/images/our-clients/abb.png",
+    "/images/our-clients/apple.png",
+    "/images/our-clients/basf.png",
+    "/images/our-clients/baxter.png",
+    "/images/our-clients/bosch.png",
+    "/images/our-clients/dolby.png",
+    "/images/our-clients/exxonmobil.png",
+    "/images/our-clients/herman.png",
+    "/images/our-clients/parker.png",
+    "/images/our-clients/sony.png"
+  ]
+}

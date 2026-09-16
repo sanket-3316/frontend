@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "title": "Kontaktieren Sie Bremont Strategy | Globale Unternehmensberatung",
+    "description": "Kontaktieren Sie Bremont Strategy für strategische Marktforschung, Wettbewerbsanalyse und Unternehmensberatung. Büros in den USA, Deutschland und Indien.",
+    "keywords": ["Bremont Strategy kontaktieren", "Beratungsanfrage", "Marktforschungskontakt", "strategische Beratung"]
+  },
+  "hero": {
+    "subtitle": "Erreichen Sie unser globales Team für Anfragen zu strategischer Marktintelligenz und Beratung."
+  },
+  "connectDescription": "Folgen Sie Bremont Strategy in den sozialen Medien für die neuesten Marktinformationen, Brancheneinblicke und strategische Forschung.",
+  "form": {
+    "title": "Senden Sie Uns Eine Nachricht"
+  },
+  "info": {
+    "title": "Unsere Globalen Büros",
+    "offices": [
+      {
+        "region": "Globaler Hauptsitz",
+        "address": "<strong>Bremont Strategy</strong>, 24a Trolley Square, Wilmington, Delaware, 19801, USA",
+        "phone": "+1-302-846-2799",
+        "email": "<a href=\"mailto:sales@bremontstrategy.com\">sales@bremontstrategy.com</a>"
+      },
+      {
+        "region": "Europa, Naher Osten und Afrika",
+        "address": "<strong>Bremont Strategy</strong>, 702, Techspace Eiswerk, Köpenicker Str. 40B, 10179 Berlin, Germany",
+        "phone": "+49-176-7450-2496",
+        "email": "<a href=\"mailto:sales@bremontstrategy.com\">sales@bremontstrategy.com</a>"
+      },
+      {
+        "region": "Asien-Pazifik",
+        "address": "<strong>Bremont Strategy</strong>, 504, Smartworks M-Agile, Sr No 112, Pancard Club Rd, Baner, Pune, Maharashtra, India 411045",
+        "phone": null,
+        "email": "<a href=\"mailto:sales@bremontstrategy.com\">sales@bremontstrategy.com</a>"
+      }
+    ],
+    "legalEmail": "<a href=\"mailto:legal@bremontstrategy.com\">legal@bremontstrategy.com</a>",
+    "legalNote": "Für Anfragen zum Datenmanagement und zum Datenschutz wenden Sie sich bitte an unsere Rechtsabteilung für Compliance."
+  },
+  "connectWithUs": "Vernetzen Sie Sich Mit Uns"
+}

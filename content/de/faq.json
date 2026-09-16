@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Häufig Gestellte Fragen | Bremont Strategy",
+    "description": "Antworten auf häufig gestellte Fragen zu den Leistungen, der Methodik, den Lizenzen und dem Beauftragungsprozess von Bremont Strategy.",
+    "keywords": ["Bremont Strategy FAQ", "Marktforschung FAQ", "Fragen zur Beratungsbeauftragung"]
+  },
+  "hero": {
+    "title": "Häufig Gestellte Fragen",
+    "subtitle": "Alles, was Sie über die Zusammenarbeit mit Bremont Strategy wissen müssen."
+  },
+  "sections": [
+    {
+      "title": "Leistungen & Umfang",
+      "items": [
+        {
+          "q": "Welchen Grad an analytischer Tiefe bietet Bremont Strategy?",
+          "a": "<p>Wir liefern hochgranulare institutionelle Erkenntnisse, die auf Länder-, Regional- und Branchendynamiken abgebildet sind. Jede Leistung umfasst historische Baselines, Echtzeit-Marktdimensionierung und nichtlineare Prognosen, die für institutionelle Due-Diligence-Prüfungen konzipiert sind.</p>"
+        },
+        {
+          "q": "In welchen Formaten werden die Leistungen bereitgestellt?",
+          "a": "<p>Jedes Engagement liefert drei Kernvermögenswerte:</p><ul><li><strong>Management-Bericht:</strong> Vorstandsreife PDF- und editierbare PPT-Präsentationen.</li><li><strong>Finanzmodell:</strong> Entsperrtes, vollständig geprüftes Excel-Arbeitsblatt.</li><li><strong>Strukturierte Daten:</strong> API-fähige JSON/CSV-Datensätze zur sofortigen BI-Systemintegration.</li></ul>"
+        },
+        {
+          "q": "Können individuelle Umfänge oder Teilforschungsaufträge vereinbart werden?",
+          "a": "<p>Ja. Für gezielte Transaktionen, M&amp;A-Due-Diligence oder eng gefasste regionale Expansionen strukturieren unsere Praxisleiter maßgeschneiderte Intelligence-Mandate, die präzise auf Ihre Kapitalallokationsanforderungen abgestimmt sind.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Methodik & Datenstrenge",
+      "items": [
+        {
+          "q": "Wie gewährleistet Bremont Strategy Datengenauigkeit und Autorität?",
+          "a": "<p>Wir setzen ein zweistufiges Validierungsframework ein:</p><ol><li><strong>Primäre Intelligence:</strong> Direkter Feldeinsatz und strukturierte Interviews mit C-Level-Führungskräften, Beschaffungsbehörden und wichtigen Branchenakteuren.</li><li><strong>Deterministische Modellierung:</strong> Triangulierte quantitative Modellierung, gestützt auf verifizierte Handels-, Regulierungs- und Finanzunterlagen. Wir verfolgen eine Nulltoleranzpolitik für automatisierte oder synthetische Datengenerierung.</li></ol>"
+        },
+        {
+          "q": "Wie funktionieren Ihre prädiktiven Prognosemodelle?",
+          "a": "<p>Wir lehnen lineare CAGR-Annäherungen ab. Bremont Strategy nutzt Bottom-up-ökonometrische Modellierung, Regressionsanalyse und szenariobasierte Prognosen, um regulatorische Veränderungen, S-Kurven der Technologieadoption und makroökonomische Zyklen präzise zu erfassen.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Lizenzierung & Beauftragung",
+      "items": [
+        {
+          "q": "Welche Lizenzmodelle sind verfügbar?",
+          "a": "<ul><li><strong>Einzelbenutzerlizenz:</strong> Konzipiert für einzelne Analysten oder Einzelprojektforschung.</li><li><strong>Mehrbenutzerlizenz:</strong> Autorisierung für 2–5 wichtige Entscheidungsträger innerhalb einer benannten Abteilung.</li><li><strong>Unternehmenslizenz:</strong> Uneingeschränkter globaler Zugang für Unternehmenseinheiten, Tochtergesellschaften und Investmentgremien.</li></ul>"
+        },
+        {
+          "q": "Welche Unterstützung nach dem Engagement ist enthalten?",
+          "a": "<p>Jede Lieferung umfasst direkten Zugang zu unserem Kernforschungsteam für methodische Durchsprachen, Unterstützung bei der Verteidigung von Vorstandspräsentationen und bis zu 15% kostenlose Umfangsanpassungen nach der Lieferung.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Beauftragung & Umsetzung",
+      "items": [
+        {
+          "q": "Wie schnell werden maßgeschneiderte Leistungen umgesetzt?",
+          "a": "<p>Standard-Intelligence-Assets werden sofort nach Vertragsabschluss übertragen. Individuelle Intelligence-Mandate und maßgeschneiderte Anpassungen werden innerhalb der während des anfänglichen Scopings vereinbarten Fristen abgeschlossen.</p>"
+        },
+        {
+          "q": "Welche Zahlungsmethoden und Beschaffungsprozesse unterstützen Sie?",
+          "a": "<p>Wir unterstützen Firmenüberweisungen, institutionelle Bestellungen (POs) und gängige Kreditkarten. Individuelle Rechnungsformate und die Einhaltung des Lieferanten-Onboardings können über <a href=\"mailto:sales@bremontstrategy.com\">sales@bremontstrategy.com</a> abgewickelt werden.</p>"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Mit Bremont Strategy Zusammenarbeiten",
+    "description": "Haben Sie ein spezifisches strategisches Anliegen? Sprechen Sie direkt mit unserem Beratungsteam.",
+    "phone": "+1-302-846-2799",
+    "email": "sales@bremontstrategy.com"
+  }
+}

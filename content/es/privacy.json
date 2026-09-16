@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "Política de Privacidad | Bremont Strategy",
+    "description": "La Política de Privacidad de Bremont Strategy describe nuestro compromiso de proteger los datos personales y comerciales que usted comparte con nosotros como Responsable y Encargado del Tratamiento de Datos.",
+    "keywords": ["política de privacidad", "Bremont Strategy", "protección de datos", "RGPD", "responsable del tratamiento de datos"]
+  },
+  "hero": {
+    "title": "Política de Privacidad",
+    "subtitle": "Nuestro Compromiso con la Protección de sus Datos"
+  },
+  "intro": "<strong>Bremont Strategy</strong> (la \"Compañía\", \"nosotros\") opera el sitio web <a href=\"https://www.bremontstrategy.com/\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.bremontstrategy.com/</a> (el \"Sitio Web\") y presta servicios de investigación de mercado estratégica, análisis competitivo y consultoría de gestión a nivel mundial (los \"Servicios\"). Reconocemos que su privacidad es de suma importancia. Esta Política de Privacidad describe nuestro compromiso de proteger los datos personales y comerciales que comparte con nosotros. <strong>Bremont Strategy actúa como Responsable y Encargado del Tratamiento de Datos</strong> de toda la información recopilada a través de este Sitio Web.",
+  "sections": [
+    {
+      "number": "1",
+      "title": "Base Legal para el Procesamiento de Datos",
+      "content": "Recopilamos y procesamos su información bajo marcos legales internacionales claramente definidos:",
+      "items": [
+        "<strong>Ejecución de un Contrato:</strong> Para entregar informes estratégicos, cumplir transacciones o ejecutar servicios de datos iniciados por usted.",
+        "<strong>Intereses Comerciales Legítimos:</strong> Para optimizar el rendimiento del sitio web, proteger la seguridad de nuestra red, prevenir el fraude corporativo y llevar a cabo marketing B2B profesional y dirigido.",
+        "<strong>Cumplimiento Legal:</strong> Para cumplir con obligaciones regulatorias, fiscales, estatutarias o de cumplimiento de la ley a nivel mundial."
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Información que Recopilamos",
+      "content": "Limitamos nuestra recopilación de datos a la información que mejora directamente su experiencia y permite prestar nuestros Servicios especializados:",
+      "items": [
+        "<strong>Información Corporativa Voluntaria:</strong> Recopilamos nombres, direcciones de correo electrónico corporativas, cargos, nombres de empresas, sectores de industria y datos de facturación cuando solicita informes de muestra o completa una transacción.",
+        "<strong>Información de Uso Automatizada:</strong> Rastreamos de forma pasiva datos técnicos como direcciones IP, identificadores de dispositivos, tipos de navegador e interacciones de clickstream para evaluar tendencias de usabilidad del sitio web.",
+        "<strong>Cookies:</strong> Utilizamos cookies estándar del navegador para recordar sus preferencias de visualización y agilizar su acceso. Puede modificar la configuración de su navegador para rechazar cookies en cualquier momento."
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Cómo Utilizamos su Información",
+      "content": "Utilizamos sus datos estrictamente para ejecutar operaciones comerciales centrales y apoyo estratégico:",
+      "items": [
+        "<strong>Ejecución del Servicio:</strong> Para procesar transacciones empresariales, gestionar cuentas corporativas y entregar hojas de ingeniería de mercado personalizadas.",
+        "<strong>Comunicaciones Dirigidas:</strong> Para responder a consultas formales de investigación, enviar alertas de mantenimiento del servicio y entregar los insights de la industria solicitados.",
+        "<strong>Optimización del Sistema:</strong> Para analizar métricas del sitio web, resolver problemas técnicos y mejorar nuestras herramientas analíticas digitales."
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Compartición de Información y Transferencias Globales",
+      "content": "No vendemos, alquilamos ni intercambiamos sus datos personales o corporativos con terceros para sus fines de marketing directo. Solo compartimos información bajo estas condiciones específicas:",
+      "items": [
+        "<strong>Socios de Servicio Autorizados:</strong> Con consultores técnicos verificados o pasarelas de pago seguras bajo estrictos acuerdos de confidencialidad.",
+        "<strong>Transformaciones Legales y Estructurales:</strong> Cuando lo exija la ley, o durante una fusión corporativa en la que la entidad adquirente se comprometa contractualmente a un nivel idéntico de protección de la privacidad.",
+        "<strong>Transferencias Transfronterizas:</strong> Debido a que operamos globalmente, sus datos pueden transferirse de forma segura y procesarse en países fuera de su jurisdicción de origen (como <strong>Estados Unidos o India</strong>). Aplicamos plenas salvaguardas técnicas para garantizar que estos datos permanezcan completamente protegidos."
+      ]
+    },
+    {
+      "number": "5",
+      "title": "Seguridad de Datos y Salvaguardas Técnicas",
+      "content": "Implementamos rigurosas medidas de seguridad técnicas y organizativas para prevenir el acceso, alteración o divulgación no autorizados de datos:",
+      "items": [
+        "Todos los canales de pago en línea utilizan software de <strong>Capa de Sockets Seguros (SSL)</strong> y cumplen totalmente con los estándares modernos de <strong>cifrado PCI-DSS</strong>.",
+        "Restringimos el acceso interno a los datos estrictamente a empleados y analistas certificados que requieren la información para ejecutar sus proyectos de investigación de mercado.",
+        "Aunque utilizamos prácticas estándar de la industria, ninguna transmisión basada en internet es completamente impenetrable, y las interacciones se realizan bajo su propio riesgo."
+      ]
+    },
+    {
+      "number": "6",
+      "title": "Ciclo de Vida de Retención de Datos",
+      "content": "Almacenamos su información corporativa y personal solo durante el tiempo que su cuenta permanezca activa o según sea necesario para cumplir con los fines comerciales precisos descritos en esta política. Si decide terminar su relación con nosotros, eliminaremos permanentemente o anonimizaremos sus datos de nuestra infraestructura de almacenamiento activa, a menos que la conservación legal, fiscal o estatutaria sea obligatoria.",
+      "items": []
+    },
+    {
+      "number": "7",
+      "title": "Sus Derechos y Control de Datos",
+      "content": "Extendemos derechos integrales de gestión de datos a todos nuestros clientes globales y visitantes del sitio web, en alineación con estándares internacionales como el <strong>RGPD</strong>:",
+      "items": [
+        "<strong>Acceso y Rectificación:</strong> Puede solicitar un resumen completo de los datos que tenemos sobre usted o presentar correcciones directas a información inexacta.",
+        "<strong>Supresión y Restricción:</strong> Tiene el derecho de solicitar que eliminemos permanentemente sus datos de nuestros sistemas o que restrinjamos su procesamiento por motivos legítimos.",
+        "<strong>Ejecución de la Exclusión Voluntaria:</strong> Puede dejar de recibir actualizaciones de marketing profesional al instante haciendo clic en el botón \"Cancelar suscripción\" en nuestros correos digitales o <a href=\"mailto:legal@bremontstrategy.com\">enviando un correo a nuestro equipo legal</a>. Ejecutaremos completamente todas las solicitudes verificadas de control de datos dentro de <strong>48 a 72 horas hábiles</strong>."
+      ]
+    },
+    {
+      "number": "8",
+      "title": "Modificaciones y Actualizaciones de la Política",
+      "content": "Nos reservamos el derecho de modificar o actualizar partes de esta Política de Privacidad en cualquier momento para adaptarnos a las regulaciones industriales o prácticas corporativas en evolución. Cualquier revisión entra en vigor inmediatamente tras su publicación en esta página. Para actualizaciones sustanciales que afecten la forma en que manejamos sus datos personales, le notificaremos de manera destacada a través de la página de inicio de nuestro Sitio Web o mediante una alerta directa por correo electrónico antes de que el cambio entre en vigor.",
+      "items": []
+    },
+    {
+      "number": "9",
+      "title": "Resolución de Quejas e Información de Contacto",
+      "content": "Para solicitudes de gestión de datos, preguntas de cumplimiento estatutario o inquietudes directas sobre nuestra infraestructura de privacidad, contacte a nuestro representante legal:",
+      "items": [
+        "<strong>Correo electrónico:</strong> <a href=\"mailto:legal@bremontstrategy.com\">legal@bremontstrategy.com</a>",
+        "<strong>Consultas Postales:</strong> Bremont Strategy, Legal Compliance Division, 24a Trolley Square, Wilmington, Delaware, 19801, USA"
+      ]
+    }
+  ],
+  "lastUpdated": "Última actualización: 2026",
+  "cta": {
+    "title": "¿Preguntas sobre sus datos?",
+    "description": "Contacte a nuestra División de Cumplimiento Legal para solicitudes de gestión de datos o consultas de privacidad."
+  }
+}

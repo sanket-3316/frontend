@@ -72,13 +72,7 @@ export default async function TermsPage({ params }: TermsPageProps) {
               {/* Last Updated */}
               <div className="mt-12 text-center text-gray-600">
                 <p>
-                  {typedLocale === 'en'
-                    ? 'Last updated: January 2024'
-                    : typedLocale === 'ja'
-                    ? '最終更新: 2024年1月'
-                    : typedLocale === 'ko'
-                    ? '마지막 업데이트: 2024년 1월'
-                    : 'آخر تحديث: يناير 2024'}
+                  {content?.lastUpdated}
                 </p>
               </div>
             </div>

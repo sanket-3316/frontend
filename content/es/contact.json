@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "title": "Contacte a Bremont Strategy | Consultoría de Gestión Global",
+    "description": "Póngase en contacto con Bremont Strategy para servicios de investigación de mercado estratégica, análisis competitivo y consultoría de gestión. Oficinas en EE. UU., Alemania e India.",
+    "keywords": ["contactar Bremont Strategy", "consulta de consultoría", "contacto de investigación de mercado", "consultoría estratégica"]
+  },
+  "hero": {
+    "subtitle": "Póngase en contacto con nuestro equipo global para consultas de inteligencia estratégica de mercado y consultoría."
+  },
+  "connectDescription": "Siga a Bremont Strategy en redes sociales para obtener la última inteligencia de mercado, insights de la industria e investigación estratégica.",
+  "form": {
+    "title": "Envíenos un Mensaje"
+  },
+  "info": {
+    "title": "Nuestras Oficinas Globales",
+    "offices": [
+      {
+        "region": "Sede Global",
+        "address": "<strong>Bremont Strategy</strong>, 24a Trolley Square, Wilmington, Delaware, 19801, USA",
+        "phone": "+1-302-846-2799",
+        "email": "<a href=\"mailto:sales@bremontstrategy.com\">sales@bremontstrategy.com</a>"
+      },
+      {
+        "region": "Europa, Oriente Medio y África",
+        "address": "<strong>Bremont Strategy</strong>, 702, Techspace Eiswerk, Köpenicker Str. 40B, 10179 Berlin, Germany",
+        "phone": "+49-176-7450-2496",
+        "email": "<a href=\"mailto:sales@bremontstrategy.com\">sales@bremontstrategy.com</a>"
+      },
+      {
+        "region": "Asia-Pacífico",
+        "address": "<strong>Bremont Strategy</strong>, 504, Smartworks M-Agile, Sr No 112, Pancard Club Rd, Baner, Pune, Maharashtra, India 411045",
+        "phone": null,
+        "email": "<a href=\"mailto:sales@bremontstrategy.com\">sales@bremontstrategy.com</a>"
+      }
+    ],
+    "legalEmail": "<a href=\"mailto:legal@bremontstrategy.com\">legal@bremontstrategy.com</a>",
+    "legalNote": "Para consultas sobre gestión de datos y privacidad, contacte a nuestra División de Cumplimiento Legal."
+  },
+  "connectWithUs": "Conecte con nosotros"
+}

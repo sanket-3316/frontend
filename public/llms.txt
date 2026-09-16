@@ -1,0 +1,29 @@
+# Bremont Strategy
+
+> Bremont Strategy is an independent management consulting firm delivering bespoke market research, competitive analysis, and strategic business intelligence for multi-million dollar capital allocation decisions worldwide.
+
+Bremont Strategy publishes market research reports covering historical baselines, real-time market sizing, and forecasting across a wide range of industries. Deliverables include executive reports, financial models, and structured data, backed by primary interviews and a four-stage validation methodology rather than automated or synthetic data generation.
+
+The site is available in 7 languages: English (default, unprefixed URLs), Japanese (`/ja`), Korean (`/ko`), Chinese (`/zh`), Spanish (`/es`), German (`/de`), and French (`/fr`). Each report, industry, and static page is available under every locale prefix except Careers, which is published in English only.
+
+## Company
+
+- [About Us](https://www.bremontstrategy.com/about-us): Who Bremont Strategy is and the four-stage global validation protocol behind every report.
+- [Our Team](https://www.bremontstrategy.com/our-team): Leadership behind the research and consulting practice.
+- [Contact Us](https://www.bremontstrategy.com/contact-us): Global offices (USA, Germany, India) and contact form.
+- [Careers](https://www.bremontstrategy.com/careers): Open roles (English only).
+- [FAQ](https://www.bremontstrategy.com/faq): Deliverables, methodology, licensing, and engagement questions.
+
+## Research
+
+- [Market Research Reports](https://www.bremontstrategy.com/reports): Industry categories and report listings.
+- Individual reports are published at `/report/{report-slug}` in every supported locale.
+
+## Legal
+
+- [Privacy Policy](https://www.bremontstrategy.com/privacy-policy)
+- [Terms & Conditions](https://www.bremontstrategy.com/terms-conditions)
+
+## Sitemap
+
+- [Sitemap Index](https://www.bremontstrategy.com/sitemap.xml): References the static-pages sitemap and paginated report sitemaps (`/reports-{n}.xml` per locale, 10,000 URLs per file).

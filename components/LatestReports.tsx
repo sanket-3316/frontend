@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
-import { getReports } from "@/lib/server/api";
+import { useEffect, useRef } from "react";
 
 type Report = {
     report_id: number;
@@ -12,88 +11,59 @@ type Report = {
     category: string;
     thumbnailSvg: string;
 };
+
 type Props = {
-    lang: string
-    reportTitle: string
-}
-export default function LatestReports({ lang, reportTitle }: Props) {
-    const [reports, setReports] = useState<Report[]>([]);
+    reports: Report[];
+    reportTitle: string;
+    locale: string;
+};
+
+// Data is fetched server-side by the parent page (fully server-rendered —
+// no client fetch, no loading flash). This component only owns the
+// carousel's scroll interactivity, which genuinely needs the browser.
+export default function LatestReports({ reports, reportTitle, locale }: Props) {
     const scrollRef = useRef<HTMLDivElement>(null);
-    const locale = lang;
 
-    // 🔹 Fetch API or fallback
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                // 🔥 call your API function
-                const res = await getReports(locale, 0, 10); // ✅ limit 10
+        if (!scrollRef.current || reports.length === 0) return;
 
-                const data = res?.data || [];
+        const container = scrollRef.current;
+        let animationFrame: any;
+        let isPaused = false;
 
-                if (data.length) {
-                    // 🔥 map API response to your UI structure
-                    const formatted = data.map((item: any) => ({
-                        report_id: item.report_id,
-                        keyword: item.keyword, // or report_title if available
-                        report_url: item.report_url,
-                        // Runtime SVG thumbnail — generated entirely on the frontend
-                        // (app/report/thumbnail/[file]/route.ts), no backend call.
-                        // `keyword` already comes from this same locale-aware fetch.
-                        thumbnailSvg: `/report/thumbnail/${item.report_url}.svg?keyword=${encodeURIComponent(item.keyword)}&lang=${locale}`,
-                    }));
+        const speed = 0.5; // 🔥 lower = smoother
 
-                    setReports(formatted);
-                } else {
-                    throw new Error("No data");
-                }
-            } catch (err) {
-                console.error(err);
+        const scroll = () => {
+            if (!container || isPaused) return;
+
+            container.scrollLeft += speed;
+
+            // 👉 reset when half reached (because duplicated list)
+            if (container.scrollLeft >= container.scrollWidth / 2) {
+                container.scrollLeft = 0;
             }
+
+            animationFrame = requestAnimationFrame(scroll);
         };
 
-        fetchData();
-    }, [locale]);
-
-  useEffect(() => {
-    if (!scrollRef.current || reports.length === 0) return;
-
-    const container = scrollRef.current;
-    let animationFrame: any;
-    let isPaused = false;
-
-    const speed = 0.5; // 🔥 lower = smoother
-
-    const scroll = () => {
-        if (!container || isPaused) return;
-
-        container.scrollLeft += speed;
-
-        // 👉 reset when half reached (because duplicated list)
-        if (container.scrollLeft >= container.scrollWidth / 2) {
-            container.scrollLeft = 0;
-        }
-
         animationFrame = requestAnimationFrame(scroll);
-    };
 
-    animationFrame = requestAnimationFrame(scroll);
+        // 👉 hover control
+        const handleMouseEnter = () => (isPaused = true);
+        const handleMouseLeave = () => {
+            isPaused = false;
+            animationFrame = requestAnimationFrame(scroll);
+        };
 
-    // 👉 hover control
-    const handleMouseEnter = () => (isPaused = true);
-    const handleMouseLeave = () => {
-        isPaused = false;
-        animationFrame = requestAnimationFrame(scroll);
-    };
+        container.addEventListener("mouseenter", handleMouseEnter);
+        container.addEventListener("mouseleave", handleMouseLeave);
 
-    container.addEventListener("mouseenter", handleMouseEnter);
-    container.addEventListener("mouseleave", handleMouseLeave);
-
-    return () => {
-        cancelAnimationFrame(animationFrame);
-        container.removeEventListener("mouseenter", handleMouseEnter);
-        container.removeEventListener("mouseleave", handleMouseLeave);
-    };
-}, [reports]);
+        return () => {
+            cancelAnimationFrame(animationFrame);
+            container.removeEventListener("mouseenter", handleMouseEnter);
+            container.removeEventListener("mouseleave", handleMouseLeave);
+        };
+    }, [reports]);
 
     const scrollLeft = () => {
         if (!scrollRef.current) return;
@@ -115,13 +85,14 @@ export default function LatestReports({ lang, reportTitle }: Props) {
         scrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
     };
 
+    if (reports.length === 0) return null;
 
     return (
         <div className="relative">
 
             {/* 🔹 SCROLL CONTAINER */}
             <div
-                ref={scrollRef}                
+                ref={scrollRef}
                 className="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar px-2"
             >
                 {[...reports, ...reports].map((report, index) => (
@@ -129,7 +100,7 @@ export default function LatestReports({ lang, reportTitle }: Props) {
                         key={index}
                         className="min-w-[80%] sm:min-w-[45%] md:min-w-[30%] lg:min-w-[23%]"
                     >
-                        <Card report={report} reportTitle={reportTitle} />
+                        <Card report={report} reportTitle={reportTitle} locale={locale} />
                     </div>
                 ))}
             </div>
@@ -156,7 +127,11 @@ export default function LatestReports({ lang, reportTitle }: Props) {
 }
 
 /* 🔹 CARD */
-function Card({ report, reportTitle }: { report: Report, reportTitle: string }) {
+function Card({ report, reportTitle, locale }: { report: Report, reportTitle: string, locale: string }) {
+    // English is unprefixed; every other locale keeps its own prefix so the
+    // link stays on the same language instead of dropping into English.
+    const href = locale === 'en' ? `/report/${report.report_url}` : `/${locale}/report/${report.report_url}`;
+
     return (
         <div className="text-center group">
 
@@ -174,7 +149,7 @@ function Card({ report, reportTitle }: { report: Report, reportTitle: string }) 
 
             {/* Title */}
             <Link
-                href={`/report/${report.report_url}`}
+                href={href}
                 className="block mt-4 !text-sm !md:text-base font-medium text-blue-900 hover:underline"
             >
                 {reportTitle?.replace('[[keyword]]', report.keyword)}

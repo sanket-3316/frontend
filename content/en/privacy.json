@@ -92,5 +92,9 @@
       ]
     }
   ],
-  "lastUpdated": "Last updated: 2026"
+  "lastUpdated": "Last updated: 2026",
+  "cta": {
+    "title": "Questions about your data?",
+    "description": "Contact our Legal Compliance Division for data management requests or privacy enquiries."
+  }
 }

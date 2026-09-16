@@ -7,6 +7,10 @@
   "form": {
     "title": "Send Us a Message"
   },
+  "hero": {
+    "subtitle": "Reach our global team for strategic market intelligence and consulting inquiries."
+  },
+  "connectDescription": "Follow Bremont Strategy on social media for the latest market intelligence, industry insights, and strategic research.",
   "info": {
     "title": "Our Global Offices",
     "offices": [

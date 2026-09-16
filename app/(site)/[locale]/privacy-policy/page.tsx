@@ -160,16 +160,10 @@ export default async function PrivacyPolicyPage({ params }: { params: Params }) 
         <section className="py-12 px-4 gradient-wrapper">
           <div className="max-w-2xl mx-auto text-center">
             <h3 className="text-2xl font-bold !text-white mb-3">
-              {locale === 'en' ? 'Questions about your data?' :
-                locale === 'ja' ? 'データについてご質問がありますか？' :
-                  locale === 'ko' ? '데이터에 대한 질문이 있으신가요?' :
-                    'هل لديك أسئلة حول بياناتك؟'}
+              {privacy?.cta?.title}
             </h3>
             <p className="!text-white/70 mb-6 text-sm">
-              {locale === 'en' ? 'Contact our Legal Compliance Division for data management requests or privacy enquiries.' :
-                locale === 'ja' ? 'データ管理リクエストやプライバシーに関するお問い合わせは法務コンプライアンス部門にご連絡ください。' :
-                  locale === 'ko' ? '데이터 관리 요청이나 개인정보 문의는 법무 컴플라이언스 부서에 문의하세요.' :
-                    'تواصل مع قسم الامتثال القانوني لطلبات إدارة البيانات أو استفسارات الخصوصية.'}
+              {privacy?.cta?.description}
             </p>
             <a
               href="mailto:sales@bremontstrategy.com"

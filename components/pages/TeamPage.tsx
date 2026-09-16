@@ -94,11 +94,7 @@ export default async function TeamPage({ locale }: Props) {
                     className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#0077b5] hover:underline w-fit"
                   >
                     <Linkedin size={16} />
-                    {typedLocale === 'en'
-                      ? 'View LinkedIn'
-                      : typedLocale === 'ja'
-                        ? 'LinkedInを見る'
-                        : 'LinkedIn 보기'}
+                    {team?.viewLinkedin}
                   </a>
                 )}
               </div>

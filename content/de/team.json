@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "title": "Unser Team | Bremont Strategy",
+    "description": "Lernen Sie die Führung hinter der Forschungs- und Beratungspraxis von Bremont Strategy kennen — jahrzehntelange kombinierte Expertise in Marktintelligenz und Strategie.",
+    "keywords": ["Bremont Strategy Team", "Führung", "Research Manager", "Senior Consultant"]
+  },
+  "hero": {
+    "title": "Unser Team",
+    "subtitle": "Die Menschen hinter der Forschungs- und Beratungspraxis von Bremont Strategy."
+  },
+  "viewLinkedin": "LinkedIn Ansehen",
+  "members": [
+    {
+      "name": "Phillip Holland",
+      "title": "Research Manager | Bremont Strategy",
+      "linkedin": "https://www.linkedin.com/in/phillip-holland11/",
+      "bio": "Phillip Holland ist Research Manager bei Bremont Strategy mit 10 Jahren Branchenerfahrung, darunter sieben Jahre strategische Führung im Unternehmen. Als ausgezeichneter Fachexperte (SME) für Marktintelligenz ist Phillip auf die Entwicklung robuster Forschungsrahmen und die Leitung hochwertiger Beratungsprojekte spezialisiert. Seine maßgebliche Anleitung ermöglicht es Organisationen, sich wandelnde Marktparadigmen in langfristige Wettbewerbsvorteile umzuwandeln."
+    },
+    {
+      "name": "James Sifferman",
+      "title": "Senior Consultant | Bremont Strategy",
+      "linkedin": "https://www.linkedin.com/in/james-sifferman/",
+      "bio": "James Sifferman ist Senior Consultant bei Bremont Strategy mit 7 Jahren Erfahrung in Marktforschung und Beratung, darunter 3 Jahre im Unternehmen. Als anerkannter Fachexperte (SME) zeichnet sich James durch die Umwandlung komplexer Marktdynamiken in maßgeschneiderte, wirkungsstarke strategische Erkenntnisse aus. Seine analytische Sorgfalt befähigt Kunden, Branchenveränderungen zu navigieren, aufkommende Chancen zu identifizieren und das Geschäftswachstum zu beschleunigen."
+    },
+    {
+      "name": "Mark Anderson",
+      "title": "Vice President of Business Development | Bremont Strategy",
+      "linkedin": null,
+      "bio": "Mark Anderson bringt 12 Jahre Führungserfahrung in der Marktforschung mit, darunter sechs Jahre, in denen er das strategische Wachstum bei Bremont Strategy vorangetrieben hat. Als anerkannter SME gestaltet Mark risikoreiche Geschäftsstrategien und baut hochwertige globale Partnerschaften auf. Seine Vision verwandelt komplexe Marktumbrüche in langfristige Wettbewerbsvorteile und positioniert Kunden an der Spitze der Branchenentwicklung."
+    }
+  ]
+}

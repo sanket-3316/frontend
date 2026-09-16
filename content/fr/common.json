@@ -1,0 +1,159 @@
+{
+  "site": {
+    "name": "Bremont Strategy",
+    "description": "Cabinet de conseil en gestion indépendant de premier plan spécialisé dans l'intelligence stratégique de marché et les décisions d'allocation de capital"
+  },
+  "nav": {
+    "home": "Accueil",
+    "categories": "Secteurs",
+    "about": "À Propos",
+    "contact": "Contact",
+    "search": "Rechercher",
+    "searchPlaceholder": "Rechercher...",
+    "loading": "Chargement...",
+    "viewAllResults": "Voir tous les résultats",
+    "noResultsFound": "Aucun résultat trouvé",
+    "cancel": "Annuler"
+  },
+  "footer": {
+    "certifications": [
+      {
+        "image": "/images/certifications_logo-2026.png",
+        "title": "Certifié ISO"
+      },
+      {
+        "image": "/images/esomar_2026.png",
+        "title": "Authorize.net"
+      }
+    ],
+    "information": [
+      {
+        "label": "FAQ",
+        "url": "/faq"
+      },
+      {
+        "label": "Notre Équipe",
+        "url": "/our-team"
+      }
+    ],
+    "links": [
+      {
+        "label": "Carrières",
+        "url": "/careers"
+      },
+      {
+        "label": "Politique de Confidentialité",
+        "url": "/privacy-policy"
+      }
+    ],
+    "contact": {
+      "title": "Siège Mondial",
+      "address": "24a Trolley Square, Wilmington, Delaware, 19801, USA",
+      "phones": [
+        "USA : +1-302-846-2799",
+        "EMEA : +49-176-7450-2496"
+      ],
+      "email": "sales@bremontstrategy.com"
+    },
+    "bottom": {
+      "company": "Bremont Strategy",
+      "copyright": "© 2026 Tous droits réservés."
+    },
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "#"
+      },
+      {
+        "name": "twitter",
+        "url": "#"
+      },
+      {
+        "name": "facebook",
+        "url": "#"
+      },
+      {
+        "name": "youtube",
+        "url": "#"
+      }
+    ]
+  },
+  "form": {
+    "title": "Formulaire de Contact",
+    "labels": {
+      "name": "Nom Complet",
+      "email": "Adresse E-mail",
+      "phone": "Numéro de Téléphone",
+      "job": "Poste",
+      "company": "Nom de l'Entreprise",
+      "message": "Domaine d'Intérêt",
+      "designation": "Fonction"
+    },
+    "placeholders": {
+      "name": "Entrez votre nom complet",
+      "email": "Entrez votre e-mail professionnel",
+      "phone": "Entrez le numéro de téléphone (sans indicatif pays)",
+      "job": "Entrez votre poste",
+      "company": "Entrez le nom de votre entreprise",
+      "message": "Entrez votre domaine d'intérêt",
+      "custom_requirements": "Entrez vos exigences personnalisées ou spécifiques",
+      "designation": "Entrez votre fonction (facultatif)"
+    },
+    "validation": {
+      "name": {
+        "required": true,
+        "min": 3
+      },
+      "email": {
+        "required": true,
+        "pattern": "email"
+      },
+      "phone": {
+        "required": true,
+        "min": 8
+      },
+      "message": {
+        "required": true
+      }
+    },
+    "errors": {
+      "name_required": "Le nom est requis",
+      "name_min": "Le nom doit contenir au moins 3 caractères",
+      "email_required": "L'e-mail est requis",
+      "email_invalid": "Veuillez saisir une adresse e-mail valide",
+      "phone_required": "Le numéro de téléphone est requis",
+      "phone_min": "Le numéro de téléphone est trop court",
+      "message_required": "Le message est requis",
+      "captcha_required": "Veuillez saisir le code de sécurité"
+    },
+    "captcha": {
+      "label": "Code de Sécurité",
+      "placeholder": "Saisissez le code de sécurité affiché"
+    },
+    "submit": "Envoyer",
+    "success": "Merci ! Votre message a été envoyé."
+  },
+  "report": {
+    "noReportsFound": "Aucun rapport trouvé dans cette catégorie",
+    "categories": "Catégories",
+    "reportTitle": "Marché [[keyword]]",
+    "buyNow": "Consulter un Analyste",
+    "downloadFreePDF": "Télécharger le PDF Gratuit Maintenant",
+    "downloadPDF": "Télécharger le PDF Gratuit",
+    "customizeYourReport": "Personnalisez Votre Rapport",
+    "getFreeSampleOfThisReport": "Obtenez un échantillon gratuit de ce rapport",
+    "reportNotFound": "Rapport introuvable",
+    "aboutThisReport": "À PROPOS DE CE RAPPORT",
+    "tableOfContents": "TABLE DES MATIÈRES",
+    "methodology": "MÉTHODOLOGIE",
+    "faqs": "QUESTIONS FRÉQUENTES"
+  },
+  "search": {
+    "searchResult": "Résultats de Recherche",
+    "resultFor": "Résultats pour",
+    "noResultFound": "Aucun résultat trouvé",
+    "trySearchingWithDifferentKeywords": "Essayez de rechercher avec des mots-clés différents",
+    "searchQuery": "Saisissez un terme de recherche pour commencer",
+    "searchMarketResearchReports": "Rechercher des rapports d'études de marché"
+  }
+}
