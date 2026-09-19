@@ -29,6 +29,18 @@ type Props = {
 
 const SITE_URL = 'https://www.bremontstrategy.com';
 
+// Injects id="section-N" onto each <h2> in document order (server-side —
+// DOMParser isn't available during SSR) so ReportSidebar's outline links,
+// which compute the same section-N ids client-side from the same h2 list,
+// have a real DOM target to scroll to.
+function injectHeadingIds(html: string): string {
+  let index = 0;
+  return html.replace(/<h2(\s[^>]*)?>/gi, (_match, attrs) => {
+    const id = `section-${index++}`;
+    return `<h2${attrs || ''} id="${id}">`;
+  });
+}
+
 // ✅ SEO Metadata — built from the actual report, not a hardcoded stand-in
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = params;
@@ -80,6 +92,7 @@ export default async function ReportPage({ params }: Props) {
   ]);
   const reportSchema = generateReportSchema(report, reportUrl);
   const faqSchema = generateFAQSchema(report.primary_interview_insights);
+  const descriptionHtml = injectHeadingIds(report.description || '');
 
   // Rest-of-site latest reports — language-scoped like the homepage carousel,
   // fetched server-side, current report excluded.
@@ -178,26 +191,28 @@ export default async function ReportPage({ params }: Props) {
         {/* ============ SIDEBAR ============ */}
 
         <div className="lg:col-span-1 space-y-4">
-          <div className="hidden lg:block lg:col-span-1 self-start sticky top-30 space-y-4">
+          <div className="lg:col-span-1 self-start lg:sticky lg:top-30 space-y-4">
 
             <ReportSidebar
-              html={report.description}
+              html={descriptionHtml}
               aboutThisReport={common?.report?.aboutThisReport}
               tableOfContents={common?.report?.tableOfContents}
               methodology={common?.report?.methodology}
               faqs={common?.report?.faqs}
             />
 
-
-            <RequestReportModalBtn
-              btnTitle={common?.report?.downloadFreePDF}
-              reportId={report.report_id}
-              categoryId={report.category_id}
-              keyword={report.keyword}
-              locale={locale}
-              formContent={common.form}
-              reportContent={common?.report}
-            />
+            {/* Mobile already has a persistent download CTA via ReportStickyBar */}
+            <div className="hidden lg:block">
+              <RequestReportModalBtn
+                btnTitle={common?.report?.downloadFreePDF}
+                reportId={report.report_id}
+                categoryId={report.category_id}
+                keyword={report.keyword}
+                locale={locale}
+                formContent={common.form}
+                reportContent={common?.report}
+              />
+            </div>
 
           </div>
 
@@ -208,9 +223,9 @@ export default async function ReportPage({ params }: Props) {
         <div className="lg:col-span-3 space-y-6 bg-white rounded-md px-2">
 
           <div
-            className={`subtitle !text-white transition-all duration-300 overflow-hidden `}
+            className={`subtitle transition-all duration-300 overflow-hidden `}
             dangerouslySetInnerHTML={{
-              __html: report.description
+              __html: descriptionHtml
             }}
           />
 
