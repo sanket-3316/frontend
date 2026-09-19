@@ -137,6 +137,7 @@
     "noReportsFound": "该分类下暂无报告",
     "categories": "分类",
     "reportTitle": "[[keyword]] 市场",
+    "readMore": "阅读更多",
     "buyNow": "咨询分析师",
     "downloadFreePDF": "立即下载免费PDF",
     "downloadPDF": "下载免费PDF",
@@ -146,7 +147,8 @@
     "aboutThisReport": "关于本报告",
     "tableOfContents": "目录",
     "methodology": "研究方法",
-    "faqs": "常见问题"
+    "faqs": "常见问题",
+    "latestReports": "最新报告"
   },
   "search": {
     "searchResult": "搜索结果",

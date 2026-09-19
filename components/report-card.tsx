@@ -58,20 +58,31 @@ interface ReportCardProps {
   reportContent?: any;
   reportTitle?: string;
   requestsampleBtnTitle?: string;
+  readMoreLabel?: string;
   locale?: string;
 }
 
-export function ReportCard({ report, formContent, reportContent, reportTitle, requestsampleBtnTitle, locale }: ReportCardProps) {
+export function ReportCard({ report, formContent, reportContent, reportTitle, requestsampleBtnTitle, readMoreLabel, locale }: ReportCardProps) {
+  // English is unprefixed; every other locale keeps its own prefix so the
+  // link stays on the same language instead of dropping into English.
+  const href = !locale || locale === 'en' ? `/report/${report.report_url}` : `/${locale}/report/${report.report_url}`;
+
   return (
     <div className="bg-white rounded-xl flex flex-col hover:shadow-md transition shadow-lg shadow-cyan-500/10 p-5 border">
 
       {/* Title */}
-      <h1 className="text-lg font-semibold mb-3">
+      <h1 className="text-lg font-semibold mb-3 flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
         <Link
-          href={`/report/${report.report_url}`}
+          href={href}
           className="!text-[#074c65] cursor-pointer"
         >
           {reportTitle?.replace('[[keyword]]', report.keyword)}
+        </Link>
+        <Link
+          href={href}
+          className="shrink-0 text-xs font-medium !text-white bg-[#074c65] hover:!bg-[#053a4d] transition-colors rounded-full px-3 py-1"
+        >
+          {readMoreLabel || 'Read More'}
         </Link>
       </h1>
 

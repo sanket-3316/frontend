@@ -137,6 +137,7 @@
     "noReportsFound": "이 카테고리에는 보고서가 없습니다",
     "categories": "카테고리",
     "reportTitle": "[[keyword]] 시장",
+    "readMore": "더 보기",
     "buyNow": "애널리스트와 상담하기",
     "downloadFreePDF": "무료 PDF 다운로드",
     "downloadPDF": "PDF 다운로드",
@@ -146,7 +147,8 @@
     "aboutThisReport": "이 보고서에 대하여",
     "tableOfContents": "목차",
     "methodology": "조사 방법론",
-    "faqs": "자주 묻는 질문"
+    "faqs": "자주 묻는 질문",
+    "latestReports": "최신 보고서"
   },
   "search": {
     "searchResult": "검색 결과",

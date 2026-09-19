@@ -137,6 +137,7 @@
     "noReportsFound": "このカテゴリーにはレポートが見つかりませんでした",
     "categories": "カテゴリー",
     "reportTitle": "[[keyword]]市場",
+    "readMore": "続きを読む",
     "buyNow": "アナリストに相談する",
     "downloadFreePDF": "無料PDFをダウンロード",
     "downloadPDF": "PDFをダウンロード",
@@ -146,7 +147,8 @@
     "aboutThisReport": "本レポートについて",
     "tableOfContents": "目次",
     "methodology": "調査手法",
-    "faqs": "よくある質問"
+    "faqs": "よくある質問",
+    "latestReports": "最新レポート"
   },
   "search": {
     "searchResult": "検索結果",

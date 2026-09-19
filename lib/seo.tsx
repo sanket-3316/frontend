@@ -229,6 +229,41 @@ export function generateReportSchema(report: any, url: string): SchemaMarkup {
   return schema;
 }
 
+// Extracts Q/A pairs from the GPT-generated FAQ HTML (`<h3>Question</h3><p>Answer</p>`
+// pairs stored in report_descriptions.primary_interview_insights) via regex rather
+// than a DOM parser — DOMParser doesn't exist during Node SSR.
+export function generateFAQSchema(faqHtml?: string | null): SchemaMarkup | null {
+  if (!faqHtml) return null;
+
+  const stripTags = (s: string) => s.replace(/<[^>]+>/g, '').trim();
+  const pairs: Array<{ question: string; answer: string }> = [];
+  const regex = /<h3[^>]*>([\s\S]*?)<\/h3>\s*<p[^>]*>([\s\S]*?)<\/p>/gi;
+
+  let match: RegExpExecArray | null;
+  while ((match = regex.exec(faqHtml)) !== null) {
+    const question = stripTags(match[1]);
+    const answer = stripTags(match[2]);
+    if (question && answer) {
+      pairs.push({ question, answer });
+    }
+  }
+
+  if (!pairs.length) return null;
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: pairs.map((p) => ({
+      '@type': 'Question',
+      name: p.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: p.answer,
+      },
+    })),
+  };
+}
+
 export function generateBreadcrumbSchema(items: Array<{ name: string; url: string }>): SchemaMarkup {
   return {
     '@context': 'https://schema.org',

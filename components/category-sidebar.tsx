@@ -25,7 +25,7 @@ export function CategorySidebar({ categories, locale }: CategorySidebarProps) {
         {categories.map((cat) => (
           <li key={cat.slug}>
             <button
-              onClick={() => router.push(`/${locale}/category/${cat.slug}`)}
+              onClick={() => router.push(locale === 'en' ? `/category/${cat.slug}` : `/${locale}/category/${cat.slug}`)}
               className={`w-full px-4 py-2 rounded text-left !text-base ${
                 activeCategory === cat.slug
                   ? 'gradient-wrapper text-white'

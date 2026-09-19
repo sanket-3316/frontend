@@ -137,6 +137,7 @@
     "noReportsFound": "No se encontraron informes en esta categoría",
     "categories": "Categorías",
     "reportTitle": "Mercado de [[keyword]]",
+    "readMore": "Leer Más",
     "buyNow": "Consultar con un Analista",
     "downloadFreePDF": "Descargar PDF Gratis Ahora",
     "downloadPDF": "Descargar PDF Gratis",
@@ -146,7 +147,8 @@
     "aboutThisReport": "SOBRE ESTE INFORME",
     "tableOfContents": "ÍNDICE",
     "methodology": "METODOLOGÍA",
-    "faqs": "PREGUNTAS FRECUENTES"
+    "faqs": "PREGUNTAS FRECUENTES",
+    "latestReports": "Últimos Informes"
   },
   "search": {
     "searchResult": "Resultados de Búsqueda",

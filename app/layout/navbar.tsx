@@ -129,19 +129,18 @@ export function Navbar({ locale, categories = [], nav }: Props) { // ✅ fallbac
                   src={`/images/bremont-strategy.png`}
                   alt="Bremont Strategy"
                   width={160}
-                  height={40}
-                  className="h-9 w-auto"
+                  height={50}
+                  className="h-15 w-auto"
                   priority
                 />
               </Link>
 
               {/* CONTACT NUMBERS (DESKTOP ONLY) */}
               <div className="hidden lg:flex items-center gap-6 text-sm border-l pl-6">
-                <div className="flex items-center gap-2">
-                  <span className="text-blue-600"><Phone size={16} className="text-blue-600" /></span>
+                <div className="flex items-center gap-1">
                   <div className="leading-tight">
-                    <div>USA: <a href="tel:+13028462799" className="hover:text-blue-600">+1-302-846-2799</a></div>
-                    <div>EMEA: <a href="tel:+4917674502496" className="hover:text-blue-600">+49-176-7450-2496</a></div>
+                    <div>USA: <a href="tel:+13028462799" className="hover:!text-blue-600 !leading-5 !text-base">+1-302-846-2799</a></div>
+                    <div>EMEA: <a href="tel:+4917674502496" className="hover:!text-blue-600 !leading-5 !text-base">+49-176-7450-2496</a></div>
                   </div>
                 </div>
               </div>
@@ -153,7 +152,7 @@ export function Navbar({ locale, categories = [], nav }: Props) { // ✅ fallbac
               {/* Home */}
               <Link
                 href={getLocalePath('/')}
-                className={`text-sm font-medium ${isHome ? 'parent-active' : ''
+                className={`text-sm font-medium rounded px-2 py-1 transition-colors hover:!bg-[#074c65] hover:!text-white ${isHome ? 'parent-active' : ''
                   }`}
               >
                 {nav.home}
@@ -161,7 +160,7 @@ export function Navbar({ locale, categories = [], nav }: Props) { // ✅ fallbac
 
               {/* Categories Dropdown */}
               <div className="relative group">
-                <Link href={'#'} className={`text-sm font-medium flex items-center gap-1 ${isCategoryPage ? 'parent-active' : ''
+                <Link href={'#'} className={`text-sm font-medium flex items-center gap-1 rounded px-2 py-1 transition-colors hover:!bg-[#074c65] hover:!text-white ${isCategoryPage ? 'parent-active' : ''
                   }`}>
                   {nav.categories}
                   <svg
@@ -198,7 +197,7 @@ export function Navbar({ locale, categories = [], nav }: Props) { // ✅ fallbac
                         <Link
                           key={cat.slug}
                           href={getLocalePath(`/category/${cat.slug}`)}
-                          className={`block rounded-md px-2 ${isCategoryActive(cat.slug)
+                          className={`block rounded-md px-2 py-1 transition-colors hover:!bg-[#074c65] hover:!text-white ${isCategoryActive(cat.slug)
                             ? 'category-active' : ''
                             }`}
                         >
@@ -214,7 +213,7 @@ export function Navbar({ locale, categories = [], nav }: Props) { // ✅ fallbac
               {/* About */}
               <Link
                 href={getLocalePath('/about-us')}
-                className={`text-sm font-medium ${isAbout ? 'parent-active' : ''
+                className={`text-sm font-medium rounded px-2 py-1 transition-colors hover:!bg-[#074c65] hover:!text-white ${isAbout ? 'parent-active' : ''
                   }`}
               >
                 {nav.about}
@@ -223,7 +222,7 @@ export function Navbar({ locale, categories = [], nav }: Props) { // ✅ fallbac
               {/* Contact */}
               <Link
                 href={getLocalePath('/contact-us')}
-                className={`text-sm font-medium ${isContact ? 'parent-active' : ''
+                className={`text-sm font-medium rounded px-2 py-1 transition-colors hover:!bg-[#074c65] hover:!text-white ${isContact ? 'parent-active' : ''
                   }`}
               >
                 {nav.contact}
@@ -286,13 +285,13 @@ export function Navbar({ locale, categories = [], nav }: Props) { // ✅ fallbac
           >
             <div className="bg-white border-t p-4 space-y-4">
 
-              <Link href={getLocalePath('/')} className="block">
+              <Link href={getLocalePath('/')} className="block rounded px-2 py-1 transition-colors hover:!bg-[#074c65] hover:!text-white">
                 {nav.home}
               </Link>
               {/* Categories Toggle */}
               <button
                 onClick={() => setCategoryOpen(!categoryOpen)}
-                className="w-full flex justify-between items-center font-medium"
+                className="w-full flex justify-between items-center font-medium rounded px-2 py-1 transition-colors hover:!bg-[#074c65] hover:!text-white"
               >
                 {nav.categories}
                 <span className={`transition-transform ${categoryOpen ? "rotate-180" : ""}`}>
@@ -309,7 +308,7 @@ export function Navbar({ locale, categories = [], nav }: Props) { // ✅ fallbac
                     <Link
                       key={cat.slug}
                       href={getLocalePath(`/category/${cat.slug}`)}
-                      className="block text-sm text-gray-600 hover:text-blue-600"
+                      className="block text-sm text-gray-600 rounded px-2 py-1 transition-colors hover:!bg-[#074c65] hover:!text-white"
                     >
                       {cat.name}
                     </Link>
@@ -317,11 +316,11 @@ export function Navbar({ locale, categories = [], nav }: Props) { // ✅ fallbac
                 </div>
               </div>
 
-              <Link href={getLocalePath('/about-us')} className="block">
+              <Link href={getLocalePath('/about-us')} className="block rounded px-2 py-1 transition-colors hover:!bg-[#074c65] hover:!text-white">
                 {nav.about}
               </Link>
 
-              <Link href={getLocalePath('/contact-us')} className="block">
+              <Link href={getLocalePath('/contact-us')} className="block rounded px-2 py-1 transition-colors hover:!bg-[#074c65] hover:!text-white">
                 {nav.contact}
               </Link>
 

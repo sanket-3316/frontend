@@ -137,6 +137,7 @@
     "noReportsFound": "In dieser Kategorie wurden keine Berichte gefunden",
     "categories": "Kategorien",
     "reportTitle": "[[keyword]]-Markt",
+    "readMore": "Mehr Erfahren",
     "buyNow": "Mit einem Analysten sprechen",
     "downloadFreePDF": "Jetzt kostenloses PDF herunterladen",
     "downloadPDF": "Kostenloses PDF herunterladen",
@@ -146,7 +147,8 @@
     "aboutThisReport": "ÜBER DIESEN BERICHT",
     "tableOfContents": "INHALTSVERZEICHNIS",
     "methodology": "METHODIK",
-    "faqs": "HÄUFIG GESTELLTE FRAGEN"
+    "faqs": "HÄUFIG GESTELLTE FRAGEN",
+    "latestReports": "Neueste Berichte"
   },
   "search": {
     "searchResult": "Suchergebnisse",

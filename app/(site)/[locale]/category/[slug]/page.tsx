@@ -123,6 +123,7 @@ export default async function Page({ params, searchParams }: categoryPageProps) 
                           reportContent={common.report}
                           reportTitle={common.report.reportTitle}
                           requestsampleBtnTitle={common.report.downloadPDF}
+                          readMoreLabel={common.report.readMore}
                         />
                       ))}
                     </div>

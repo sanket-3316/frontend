@@ -1,19 +1,22 @@
+import { notFound } from 'next/navigation';
 import Breadcrumb from '@/components/Breadcrumb';
 import { ReportSampleModal } from '@/components/report-sample-modal';
 import ReportSidebar from '@/components/ReportSidebar';
 import ReportStickyBar from '@/components/ReportStickyBar';
 import RequestReportModalBtn from '@/components/RequestReportModalBtn';
 import ReportTableOfContents from '@/components/ReportTableOfContents';
+import LatestReports from '@/components/LatestReports';
 import { Locale } from '@/lib/config';
 import { getContent } from '@/lib/content';
 import { getHomeRoute } from '@/lib/routes';
-import { getSingleReport } from '@/lib/server/api';
+import { getSingleReport, getReports } from '@/lib/server/api';
 import {
   generateMetadata as generateSEO,
   SchemaScript,
   generateOrganizationSchema,
   generateBreadcrumbSchema,
   generateReportSchema,
+  generateFAQSchema,
 } from '@/lib/seo';
 import { Metadata } from 'next';
 
@@ -57,25 +60,46 @@ export default async function ReportPage({ params }: Props) {
   const apiResp = await getSingleReport(locale, slug);
 
   const report = apiResp?.report;
+  // A report not yet translated into this locale legitimately doesn't exist
+  // at this URL — 404 cleanly instead of silently falling back to English.
   if (!report) {
-    return <div>{common?.report?.reportNotFound}</div>;
+    notFound();
   }
 
-
-  const reportUrl = `${SITE_URL}${locale === 'en' ? '' : `/${locale}`}/report/${slug}`;
+  // English is unprefixed; every other locale keeps its own prefix so the
+  // category link/schema stays on the same language instead of dropping
+  // into English.
+  const localePrefix = locale === 'en' ? '' : `/${locale}`;
+  const reportUrl = `${SITE_URL}${localePrefix}/report/${slug}`;
+  const categoryUrl = `${SITE_URL}${localePrefix}/category/${report.category_slug}`;
   const organizationSchema = generateOrganizationSchema();
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: common.nav.home, url: `${SITE_URL}${locale === 'en' ? '' : `/${locale}`}/` },
-    { name: report.category_name, url: `${SITE_URL}/category/${report.category_slug}` },
+    { name: common.nav.home, url: `${SITE_URL}${localePrefix}/` },
+    { name: report.category_name, url: categoryUrl },
     { name: report.keyword, url: reportUrl },
   ]);
   const reportSchema = generateReportSchema(report, reportUrl);
+  const faqSchema = generateFAQSchema(report.primary_interview_insights);
+
+  // Rest-of-site latest reports — language-scoped like the homepage carousel,
+  // fetched server-side, current report excluded.
+  const latestReportsResp = await getReports(typedLocale, 0, 13);
+  const latestReports = (latestReportsResp?.data || [])
+    .filter((item: any) => item.report_id !== report.report_id)
+    .slice(0, 12)
+    .map((item: any) => ({
+      report_id: item.report_id,
+      keyword: item.keyword,
+      report_url: item.report_url,
+      thumbnailSvg: `/report/thumbnail/${item.report_url}.svg?keyword=${encodeURIComponent(item.keyword)}&lang=${typedLocale}`,
+    }));
 
   return (
     <div className="bg-gray-50 min-h-screen" id="report-page">
       <SchemaScript schema={organizationSchema} />
       <SchemaScript schema={breadcrumbSchema} />
       <SchemaScript schema={reportSchema} />
+      {faqSchema && <SchemaScript schema={faqSchema} />}
 
       <ReportStickyBar
         reportId={report.report_id}
@@ -141,7 +165,7 @@ export default async function ReportPage({ params }: Props) {
           },
           {
             label: report.category_name,
-            href: `/category/${report.category_slug}`
+            href: `${localePrefix}/category/${report.category_slug}`
           }, {
             label: report.keyword,
           },
@@ -196,9 +220,34 @@ export default async function ReportPage({ params }: Props) {
             methodologyTitle={common?.report?.methodology}
           />
 
+          {report.primary_interview_insights && (
+            <section
+              id="frequently-asked-questions"
+              className="scroll-mt-32 border-t pt-6 pb-2"
+              dangerouslySetInnerHTML={{
+                __html: report.primary_interview_insights,
+              }}
+            />
+          )}
+
         </div>
 
       </div>
+
+      {latestReports.length > 0 && (
+        <section className="py-10 px-5 mt-6">
+          <div className="mx-auto max-w-7xl">
+            <h2 className="!text-2xl sm:!text-3xl md:!text-4xl font-semibold leading-snug text-center mb-10">
+              {common?.report?.latestReports}
+            </h2>
+            <LatestReports
+              reports={latestReports}
+              reportTitle={common?.report?.reportTitle}
+              locale={locale}
+            />
+          </div>
+        </section>
+      )}
 
     </div>
   );

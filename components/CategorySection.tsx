@@ -160,7 +160,7 @@ export default function CategorySection({
                             })}
 
                             <Link
-                                href="/category/agriculture"
+                                href={locale === 'en' ? '/category/agriculture' : `/${locale}/category/agriculture`}
                                 className="w-full block text-center mt-4 border border-white !text-white py-3 rounded-lg hover:bg-white hover:!text-blue-600 transition"
                             >
                                 {browseIndustryBTN}
@@ -204,7 +204,7 @@ export default function CategorySection({
 
                                 <div className="text-center mt-6">
                                     <Link
-                                        href="/category/agriculture"
+                                        href={locale === 'en' ? '/category/agriculture' : `/${locale}/category/agriculture`}
                                         className="gradient-wrapper !text-white px-6 py-3 rounded-lg"
                                     >
                                         {browseReportsBTN}

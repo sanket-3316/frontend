@@ -78,6 +78,7 @@ export default async function SearchPage({ params, searchParams }: SearchPagePro
                     reportContent={commonContent.report}
                     reportTitle={commonContent.report.reportTitle}
                     requestsampleBtnTitle={commonContent.report.downloadPDF}
+                    readMoreLabel={commonContent.report.readMore}
                   />
                 ))}
               </div>
