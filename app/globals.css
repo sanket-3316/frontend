@@ -340,6 +340,9 @@ nav .navbar .category-active {
   font-weight: bold !important;
 }
 
+#report-page p {
+  text-align: justify;
+}
 
 #report-page p,
 #report-page li {
@@ -397,12 +400,15 @@ nav .navbar .category-active {
   min-width: 600px;
 }
 
-/* Header Row */
-#report-page table tbody tr:first-child {
-  background-color: #d3edf7;
-  /* your theme */
-  color: #ffffff !important;
+#report-page table thead tr {
+  background-color: #074c65;
+  color: #fff !important;
 }
+#report-page table thead tr th,#report-page table thead tr td{
+  color: #fff ;
+}
+
+
 
 /* Cells */
 #report-page table th,
@@ -422,9 +428,13 @@ nav .navbar .category-active {
 }
 
 /* Hover effect */
-#report-page table tr:hover {
-  background-color: #eef6f9;
+#report-page table tbody tr:hover {
+  background-color: #eff6fd;
 }
+#report-page .report-scope tr td:first-child {
+    font-weight: bold;
+}
+
 
 /* Responsive (mobile) */
 @media (max-width: 768px) {
@@ -453,9 +463,8 @@ nav .navbar .category-active {
   color: #ffffff;
 }
 
-.hero-section-category .industryBreadcrumDiv h1
-{  
+.hero-section-category .industryBreadcrumDiv h1 {
   color: #ffffff;
   font-size: 24px !important;
-  
+
 }

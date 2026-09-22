@@ -91,7 +91,7 @@ export default async function Home({ params }: HomePageProps) {
         <main className="flex-grow">
           {/* Hero Section */}
           <section
-            className="relative bg-cover bg-center bg-no-repeat h-[75vh] lg:h-[80vh] flex items-center"
+            className="relative bg-cover bg-center bg-no-repeat h-[70vh] lg:h-[72vh] flex items-center"
             style={{ backgroundImage: "url('/images/bg/hero.jpg')" }}
           >
             <div className="container relative z-10 mx-auto px-6 max-w-screen-xl">

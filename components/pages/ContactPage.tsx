@@ -102,14 +102,7 @@ export default async function ContactPage({ locale }: Props) {
               ))}
             </div>
 
-            {/* LEGAL NOTE */}
-            {contact.info?.legalNote && (
-              <div className="mt-6 bg-blue-50 border border-blue-100 rounded-lg px-6 py-4 text-sm text-gray-700">
-                <strong className="text-[#0b1f5c]">Privacy &amp; Legal:</strong>{" "}
-                {contact.info.legalNote}{" "}
-                <span dangerouslySetInnerHTML={{ __html: contact.info.legalEmail }} />
-              </div>
-            )}
+         
           </div>
         </section>
 

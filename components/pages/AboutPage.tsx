@@ -40,7 +40,7 @@ export default async function AboutPage({ locale }: Props) {
                 {/* HERO */}
                 <section className="gradient-wrapper  py-20 px-4 text-center relative overflow-hidden">
                     <div className="absolute inset-0 opacity-10 bg-[url('/images/grid.svg')] bg-center" />
-                    <div className="relative max-w-4xl mx-auto">
+                    <div className="relative max-w-6xl mx-auto">
                         <span className="inline-block bg-white/10 !text-white text-xs font-semibold tracking-widest uppercase px-4 py-1 rounded-full mb-6">
                             Management Consulting
                         </span>
@@ -55,7 +55,7 @@ export default async function AboutPage({ locale }: Props) {
 
                 {/* ABOUT — WHO WE ARE */}
                 <section className="py-16 px-4 bg-white" id="who-we-are">
-                    <div className="max-w-4xl mx-auto">
+                    <div className="max-w-6xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#0b1f5c] mb-8 border-b-2 border-blue-100 pb-4">
                             {about.about.title}
                         </h2>
