@@ -354,6 +354,10 @@ nav .navbar .category-active {
   margin-bottom: 10px;
 }
 
+#report-page table li {
+  font-size:14px;
+}
+
 #report-page ul {
   list-style: disc;
   margin-left: 18px;
