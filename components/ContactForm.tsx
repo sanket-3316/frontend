@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import PhoneInput from "react-phone-input-2";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import FormField from "@/components/ui/FormField";
 import { useDetectedCountry } from "@/hooks/use-detected-country";
 import {
@@ -21,7 +21,6 @@ type FormState = {
   job: string;
   company: string;
   message: string;
-  captcha: string;
 };
 
 export default function ContactForm({ content }: { content: any }) {
@@ -33,11 +32,9 @@ export default function ContactForm({ content }: { content: any }) {
     job: "",
     company: "",
     message: "",
-    captcha: "",
   });
 
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [captcha] = useState("2608");
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   const detectedCountry = useDetectedCountry();
@@ -89,9 +86,6 @@ export default function ContactForm({ content }: { content: any }) {
     if (!form.message)
       e.message = content.errors.message_required;
 
-    if (form.captcha !== captcha)
-      e.captcha = content.errors.captcha_required;
-
     setErrors(e);
     return Object.keys(e).length === 0;
   };
@@ -133,7 +127,6 @@ export default function ContactForm({ content }: { content: any }) {
         job: "",
         company: "",
         message: "",
-        captcha: "",
       });
       setPhoneTouched(false);
 
@@ -147,8 +140,6 @@ export default function ContactForm({ content }: { content: any }) {
 
   return (
     <div className=" p-6 md:p-10 ">
-      <Toaster position="top-right" />
-
       <h2 className="text-2xl font-bold text-center">
         {content.title}
       </h2>

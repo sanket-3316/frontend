@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import PhoneInput from 'react-phone-input-2';
 import { useDetectedCountry } from '@/hooks/use-detected-country';
 
@@ -120,7 +120,10 @@ export function ReportSampleModal({
             }
 
             toast.success(formContent.success);
-            onClose();
+
+            // Let the toast actually be seen before the modal (and its form)
+            // disappears — closing immediately raced the toast off-screen.
+            setTimeout(() => onClose(), 1500);
         } catch (err) {
             toast.error('Server error');
         } finally {
@@ -130,7 +133,6 @@ export function ReportSampleModal({
 
     return (
         <>
-            <Toaster position="top-right" />
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4">
 
                 <div className="relative w-full max-w-md bg-white rounded-xl shadow-xl p-6">
