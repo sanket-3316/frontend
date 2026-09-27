@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { Locale, SUPPORTED_LOCALES } from './config';
+import { getContactDetails } from './server/api';
 
 const OG_LOCALE_MAP: Record<Locale, string> = {
   en: 'en_US',
@@ -64,7 +65,14 @@ export interface SchemaMarkup {
   [key: string]: any;
 }
 
-export function generateOrganizationSchema(): SchemaMarkup {
+// async — pulls the live phone/email from the dashboard-editable settings
+// (cached, see getContactDetails()) instead of hardcoding them here. Every
+// call site already runs inside an async server component, so this only
+// ever needs an `await` added, not a value threaded through.
+export async function generateOrganizationSchema(): Promise<SchemaMarkup> {
+  const contact = await getContactDetails();
+  const email = contact.email || 'sales@bremontstrategy.com';
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -81,15 +89,15 @@ export function generateOrganizationSchema(): SchemaMarkup {
       {
         '@type': 'ContactPoint',
         contactType: 'Sales',
-        telephone: '+1-302-846-2799',
-        email: 'sales@bremontstrategy.com',
+        telephone: contact.phone_usa || '+1-302-846-2799',
+        email,
         areaServed: 'US',
       },
       {
         '@type': 'ContactPoint',
         contactType: 'Sales',
-        telephone: '+49-176-7450-2496',
-        email: 'sales@bremontstrategy.com',
+        telephone: contact.phone_emea || '+49-176-7450-2496',
+        email,
         areaServed: 'DE',
       },
     ],
@@ -104,7 +112,9 @@ export function generateOrganizationSchema(): SchemaMarkup {
   };
 }
 
-export function generateContactPageSchema(): SchemaMarkup {
+export async function generateContactPageSchema(): Promise<SchemaMarkup> {
+  const contact = await getContactDetails();
+
   return {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
@@ -114,8 +124,8 @@ export function generateContactPageSchema(): SchemaMarkup {
     mainEntity: {
       '@type': 'Organization',
       name: 'Bremont Strategy',
-      telephone: '+1-302-846-2799',
-      email: 'sales@bremontstrategy.com',
+      telephone: contact.phone_usa || '+1-302-846-2799',
+      email: contact.email || 'sales@bremontstrategy.com',
       address: {
         '@type': 'PostalAddress',
         streetAddress: '24a Trolley Square',

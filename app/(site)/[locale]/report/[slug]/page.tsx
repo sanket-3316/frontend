@@ -84,7 +84,7 @@ export default async function ReportPage({ params }: Props) {
   const localePrefix = locale === 'en' ? '' : `/${locale}`;
   const reportUrl = `${SITE_URL}${localePrefix}/report/${slug}`;
   const categoryUrl = `${SITE_URL}${localePrefix}/category/${report.category_slug}`;
-  const organizationSchema = generateOrganizationSchema();
+  const organizationSchema = await generateOrganizationSchema();
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: common.nav.home, url: `${SITE_URL}${localePrefix}/` },
     { name: report.category_name, url: categoryUrl },

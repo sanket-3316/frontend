@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import PhoneInput from "react-phone-input-2";
+import toast, { Toaster } from "react-hot-toast";
 import FormField from "@/components/ui/FormField";
 import { useDetectedCountry } from "@/hooks/use-detected-country";
 import {
@@ -38,6 +39,7 @@ export default function ContactForm({ content }: { content: any }) {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [captcha] = useState("2608");
   const [success, setSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
   const detectedCountry = useDetectedCountry();
   const [phoneTouched, setPhoneTouched] = useState(false);
 
@@ -94,28 +96,58 @@ export default function ContactForm({ content }: { content: any }) {
     return Object.keys(e).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
 
-    setSuccess(true);
-    setForm({
-      name: "",
-      email: "",
-      phone: "",
-      countryCode: detectedCountry.dialCode,
-      job: "",
-      company: "",
-      message: "",
-      captcha: "",
-    });
-    setPhoneTouched(false);
+    try {
+      setLoading(true);
 
-    setTimeout(() => setSuccess(false), 4000);
+      const res = await fetch("/api/contact-message", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: `+${form.countryCode}${form.phone}`,
+          job_title: form.job,
+          company: form.company,
+          message: form.message,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        toast.error(data.message || "Something went wrong");
+        return;
+      }
+
+      toast.success(data.message || content.success);
+      setSuccess(true);
+      setForm({
+        name: "",
+        email: "",
+        phone: "",
+        countryCode: detectedCountry.dialCode,
+        job: "",
+        company: "",
+        message: "",
+        captcha: "",
+      });
+      setPhoneTouched(false);
+
+      setTimeout(() => setSuccess(false), 4000);
+    } catch (err) {
+      toast.error("Server error");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className=" p-6 md:p-10 ">
+      <Toaster position="top-right" />
 
       <h2 className="text-2xl font-bold text-center">
         {content.title}
@@ -201,8 +233,12 @@ export default function ContactForm({ content }: { content: any }) {
           </div>
         )}
 
-        <button className="w-full bg-blue-600 text-white py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">
-          {content.submit}
+        <button
+          type="submit"
+          disabled={loading}
+          className="w-full bg-[#074c65] text-white py-3 rounded-lg text-lg font-semibold hover:bg-[#074c65] transition disabled:opacity-60"
+        >
+          {loading ? "Submitting..." : content.submit}
         </button>
 
       </form>

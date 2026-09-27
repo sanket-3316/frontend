@@ -1,5 +1,6 @@
 import { NextRequest } from 'next/server';
 import { BUSINESS_CARD_SVG, buildWrappedLeftText } from '@/lib/thumbnail-template';
+import { getContactDetails } from '@/lib/server/api';
 
 // GET /report/thumbnail/{report_url}.svg?keyword=Biogas&lang=en
 //
@@ -63,7 +64,13 @@ export async function GET(
     2
   );
 
-  const svg = BUSINESS_CARD_SVG.replace('[[title_block]]', titleBlock);
+  const contactDetails = await getContactDetails();
+
+  const svg = BUSINESS_CARD_SVG
+    .replace('[[title_block]]', titleBlock)
+    .replace('[[phone_1]]', contactDetails.phone_usa || '+1-302-846-2799')
+    .replace('[[phone_2]]', contactDetails.phone_emea || '+49-176-7450-2496')
+    .replace('[[email]]', contactDetails.email || 'sales@bremontstrategy.com');
 
   return new Response(svg, {
     headers: {

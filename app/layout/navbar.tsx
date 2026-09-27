@@ -27,13 +27,22 @@ type NavContent = {
   cancel: string;
 };
 
+type ContactDetails = {
+  phone_usa: string;
+  phone_emea: string;
+  email: string;
+};
+
 type Props = {
   locale: Locale;
   categories: Category[]; // ✅ from server
   nav: NavContent;
+  contactDetails?: ContactDetails;
 };
 
-export function Navbar({ locale, categories = [], nav }: Props) { // ✅ fallback added
+export function Navbar({ locale, categories = [], nav, contactDetails }: Props) { // ✅ fallback added
+  const phoneUsa = contactDetails?.phone_usa || '+1-302-846-2799';
+  const phoneEmea = contactDetails?.phone_emea || '+49-176-7450-2496';
 
   const router = useRouter();
   const pathname = usePathname();
@@ -139,8 +148,8 @@ export function Navbar({ locale, categories = [], nav }: Props) { // ✅ fallbac
               <div className="hidden lg:flex items-center gap-6 text-sm border-l pl-6">
                 <div className="flex items-center gap-1">
                   <div className="leading-tight">
-                    <div>USA: <a href="tel:+13028462799" className="hover:!text-blue-600 !leading-5 !text-base">+1-302-846-2799</a></div>
-                    <div>EMEA: <a href="tel:+4917674502496" className="hover:!text-blue-600 !leading-5 !text-base">+49-176-7450-2496</a></div>
+                    <div>USA: <a href={`tel:${phoneUsa.replace(/[^+\d]/g, '')}`} className="hover:!text-blue-600 !leading-5 !text-base">{phoneUsa}</a></div>
+                    <div>EMEA: <a href={`tel:${phoneEmea.replace(/[^+\d]/g, '')}`} className="hover:!text-blue-600 !leading-5 !text-base">{phoneEmea}</a></div>
                   </div>
                 </div>
               </div>
@@ -408,7 +417,7 @@ export function Navbar({ locale, categories = [], nav }: Props) { // ✅ fallbac
                   </button>
                   <button
                     type="submit"
-                    className="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors font-medium"
+                    className="px-6 py-2 bg-[#074c65] text-white rounded hover:bg-[#074c65] transition-colors font-medium"
                   >
                     {nav.search}
                   </button>

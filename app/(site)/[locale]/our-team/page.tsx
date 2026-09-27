@@ -45,7 +45,7 @@ export function generateStaticParams() {
 export default async function Page({ params }: { params: Params }) {
   const locale = getValidLocale(params.locale);
 
-  const organizationSchema = generateOrganizationSchema();
+  const organizationSchema = await generateOrganizationSchema();
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: 'https://www.bremontstrategy.com/' },
     { name: 'Our Team', url: 'https://www.bremontstrategy.com/our-team' },

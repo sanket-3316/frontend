@@ -7,6 +7,7 @@ import { Locale, DEFAULT_LOCALE } from "@/lib/config";
 import { getRoute } from "@/lib/routes";
 import ScrollToTop from "@/components/ScrollToTop";
 import { getContent } from "@/lib/content";
+import { getContactDetails } from "@/lib/server/api";
 import { ReactNode } from "react";
 
 function getFooterLink(url: string, locale: Locale): string {
@@ -54,6 +55,19 @@ type Props = {
 export default async function Footer({ locale }: Props) {
   const common = await getContent(locale, "common");
   const content: FooterContent = common.footer;
+
+  // Phone/email are dashboard-editable (Settings > Contact Details) — the
+  // "USA:"/"EMEA:" labels stay from the static content, only the numbers
+  // and email address come from the live setting, with the static content
+  // as a fallback if that fetch ever comes back empty.
+  const contactDetails = await getContactDetails();
+  const dynamicPhones = [
+    contactDetails.phone_usa ? `USA: ${contactDetails.phone_usa}` : null,
+    contactDetails.phone_emea ? `EMEA: ${contactDetails.phone_emea}` : null,
+  ].filter((p): p is string => Boolean(p));
+  const phones = dynamicPhones.length ? dynamicPhones : content.contact.phones;
+  const email = contactDetails.email || content.contact.email;
+
   const iconMap: Record<string, ReactNode> = {
     linkedin: <Linkedin size={18} />,
     twitter: <Twitter size={18} />,
@@ -126,7 +140,7 @@ export default async function Footer({ locale }: Props) {
           <p className="mb-4  !text-white">{content.contact.address}</p>
 
           <div className="space-y-1  !text-white">
-            {content.contact.phones.map((phone, i) => (
+            {phones.map((phone, i) => (
               <a
                 key={i}
                 href={`tel:${phone.replace(/\D/g, "")}`}
@@ -138,10 +152,10 @@ export default async function Footer({ locale }: Props) {
           </div>
 
           <a
-            href={`mailto:${content.contact.email}`}
+            href={`mailto:${email}`}
             className="block mt-3 hover:underline  !text-white"
           >
-            {content.contact.email}
+            {email}
           </a>
         </div>
 

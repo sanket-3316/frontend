@@ -59,7 +59,7 @@ export default async function Page({ params }: { params: Params }) {
 
   assertEnglishOnly(locale);
 
-  const organizationSchema = generateOrganizationSchema();
+  const organizationSchema = await generateOrganizationSchema();
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: 'https://www.bremontstrategy.com/' },
     { name: 'Careers', url: 'https://www.bremontstrategy.com/careers' },

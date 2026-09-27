@@ -12,6 +12,7 @@ import {
 } from '@/lib/seo';
 import Breadcrumb from '@/components/Breadcrumb';
 import { getHomeRoute } from '@/lib/routes';
+import { getContactDetails } from '@/lib/server/api';
 import { Shield } from 'lucide-react';
 
 type Params = { locale: string };
@@ -53,8 +54,10 @@ export default async function PrivacyPolicyPage({ params }: { params: Params }) 
   const privacy = await getContent(locale, 'privacy');
   const common = await getContent(locale, 'common');
   const dir = localeConfig[locale].dir;
+  const contactDetails = await getContactDetails();
+  const contactEmail = contactDetails.email || 'sales@bremontstrategy.com';
 
-  const organizationSchema = generateOrganizationSchema();
+  const organizationSchema = await generateOrganizationSchema();
   const privacySchema = generatePrivacyPageSchema();
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: 'https://www.bremontstrategy.com/' },
@@ -166,10 +169,10 @@ export default async function PrivacyPolicyPage({ params }: { params: Params }) 
               {privacy?.cta?.description}
             </p>
             <a
-              href="mailto:sales@bremontstrategy.com"
+              href={`mailto:${contactEmail}`}
               className="inline-block bg-white text-[#0b1f5c] font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition"
             >
-              sales@bremontstrategy.com
+              {contactEmail}
             </a>
           </div>
         </section>

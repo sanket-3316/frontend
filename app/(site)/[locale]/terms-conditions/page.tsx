@@ -40,7 +40,7 @@ export default async function TermsPage({ params }: TermsPageProps) {
   const content = await getContent(typedLocale, 'terms');
   const commonContent = await getContent(typedLocale, 'common');
 
-  const organizationSchema = generateOrganizationSchema();
+  const organizationSchema = await generateOrganizationSchema();
   const dir = localeConfig[typedLocale].dir;
 
   return (

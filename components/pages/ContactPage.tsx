@@ -6,6 +6,7 @@ import { SUPPORTED_LOCALES, Locale, localeConfig } from "@/lib/config";
 import ContactForm from "../ContactForm";
 import Breadcrumb from "../Breadcrumb";
 import { getHomeRoute } from "@/lib/routes";
+import { getContactDetails } from "@/lib/server/api";
 import { MapPin, Phone, Mail, Globe, Facebook, Linkedin, X } from "lucide-react";
 
 type Props = {
@@ -23,6 +24,7 @@ export default async function ContactPage({ locale }: Props) {
 
   const common = await getContent(typedLocale, "common");
   const contact = await getContent(typedLocale, "contact");
+  const contactDetails = await getContactDetails();
 
   const offices: Array<{
     region: string;
@@ -148,7 +150,7 @@ export default async function ContactPage({ locale }: Props) {
                 </div>
 
                 <a
-                  href="mailto:sales@bremontstrategy.com"
+                  href={`mailto:${contactDetails.email || "sales@bremontstrategy.com"}`}
                   className="bg-[#ef4444] !text-white text-sm font-medium px-4 py-2.5 rounded-lg hover:opacity-90 transition flex items-center justify-center gap-2"
                 >
                   <Mail size={18} />
@@ -160,26 +162,34 @@ export default async function ContactPage({ locale }: Props) {
 
               {/* QUICK CONTACT */}
               <div className="space-y-3 text-sm text-gray-700">
-                <div className="flex items-center gap-3">
-                  <Phone size={16} className="text-[#0b1f5c] shrink-0" />
-                  <div>
-                    <div className="font-semibold text-[#0b1f5c] text-xs uppercase tracking-wide mb-0.5">USA Headquarters</div>
-                    <a href="tel:+13028462799" className="hover:text-blue-600">+1-302-846-2799</a>
+                {(contactDetails.phone_usa || "+1-302-846-2799") && (
+                  <div className="flex items-center gap-3">
+                    <Phone size={16} className="text-[#0b1f5c] shrink-0" />
+                    <div>
+                      <div className="font-semibold text-[#0b1f5c] text-xs uppercase tracking-wide mb-0.5">USA Headquarters</div>
+                      <a href={`tel:${(contactDetails.phone_usa || "+1-302-846-2799").replace(/[^+\d]/g, "")}`} className="hover:text-blue-600">
+                        {contactDetails.phone_usa || "+1-302-846-2799"}
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Phone size={16} className="text-[#0b1f5c] shrink-0" />
-                  <div>
-                    <div className="font-semibold text-[#0b1f5c] text-xs uppercase tracking-wide mb-0.5">EMEA Office</div>
-                    <a href="tel:+4917674502496" className="hover:text-blue-600">+49-176-7450-2496</a>
+                )}
+                {(contactDetails.phone_emea || "+49-176-7450-2496") && (
+                  <div className="flex items-center gap-3">
+                    <Phone size={16} className="text-[#0b1f5c] shrink-0" />
+                    <div>
+                      <div className="font-semibold text-[#0b1f5c] text-xs uppercase tracking-wide mb-0.5">EMEA Office</div>
+                      <a href={`tel:${(contactDetails.phone_emea || "+49-176-7450-2496").replace(/[^+\d]/g, "")}`} className="hover:text-blue-600">
+                        {contactDetails.phone_emea || "+49-176-7450-2496"}
+                      </a>
+                    </div>
                   </div>
-                </div>
+                )}
                 <div className="flex items-center gap-3">
                   <Mail size={16} className="text-[#0b1f5c] shrink-0" />
                   <div>
                     <div className="font-semibold text-[#0b1f5c] text-xs uppercase tracking-wide mb-0.5">Sales Enquiries</div>
-                    <a href="mailto:sales@bremontstrategy.com" className="hover:text-blue-600">
-                      sales@bremontstrategy.com
+                    <a href={`mailto:${contactDetails.email || "sales@bremontstrategy.com"}`} className="hover:text-blue-600">
+                      {contactDetails.email || "sales@bremontstrategy.com"}
                     </a>
                   </div>
                 </div>

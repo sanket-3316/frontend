@@ -74,7 +74,7 @@ export default async function Home({ params }: HomePageProps) {
     : null;
   const initialCategoryReports = firstCategoryReportsResp?.data || [];
 
-  const organizationSchema = generateOrganizationSchema();
+  const organizationSchema = await generateOrganizationSchema();
   const dir = localeConfig[typedLocale].dir;
 
   const getLocalePath = (path: string) => {

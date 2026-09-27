@@ -1,5 +1,7 @@
-// Business-card style report thumbnail template. The [[title_block]] token
-// is replaced at request time in app/report/thumbnail/[file]/route.ts.
+// Business-card style report thumbnail template. The [[title_block]],
+// [[phone_1]], [[phone_2]], and [[email]] tokens are replaced at request
+// time in app/report/thumbnail/[file]/route.ts — phone/email come from the
+// dashboard-editable contact details (Settings > Contact Details).
 export const BUSINESS_CARD_SVG = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 561 321" width="1122" height="642">
 
@@ -94,10 +96,10 @@ export const BUSINESS_CARD_SVG = `<?xml version="1.0" encoding="UTF-8"?>
 
   [[title_block]]
 
-  <text id="phone-1"   x="69.5" y="172.5" class="info c-info">+1-302-846-2799</text>
-  <text id="phone-2"   x="69.5" y="188.5" class="info c-info">+49-176-7450-2496</text>
+  <text id="phone-1"   x="69.5" y="172.5" class="info c-info">[[phone_1]]</text>
+  <text id="phone-2"   x="69.5" y="188.5" class="info c-info">[[phone_2]]</text>
   <text id="website"   x="69.5" y="217.5" class="info c-info">www.bremontstrategy.com</text>
-  <text id="email"     x="69.5" y="234.5" class="info c-info">sales@bremontstrategy.com</text>
+  <text id="email"     x="69.5" y="234.5" class="info c-info">[[email]]</text>
   <text id="address-1" x="69.5" y="264"   class="info c-info"> 24a Trolley Square, Wilmington,</text>
   <text id="address-2" x="69.5" y="280"   class="info c-info">Delaware, 19801, USA</text>
 

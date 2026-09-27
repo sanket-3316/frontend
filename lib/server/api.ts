@@ -197,6 +197,32 @@ export async function searchReports(locale: string, query: string) {
 }
 
 
+export async function getContactDetails() {
+  const cacheKey = 'contact-details';
+
+  const cached = getCache<{ phone_usa: string; phone_emea: string; email: string }>(cacheKey);
+  if (cached) {
+    return cached;
+  }
+
+  try {
+    const data = await fetchAPI(`${BASE_URL}/contact-details`, 'en');
+
+    const details = {
+      phone_usa: data.phone_usa || '',
+      phone_emea: data.phone_emea || '',
+      email: data.email || '',
+    };
+
+    setCache(cacheKey, details, CACHE_TTL);
+
+    return details;
+  } catch (error) {
+    console.error('Contact details API error:', error);
+    return { phone_usa: '', phone_emea: '', email: '' };
+  }
+}
+
 export async function getSingleReport(
   locale: string,
   reportSlug?: string,
